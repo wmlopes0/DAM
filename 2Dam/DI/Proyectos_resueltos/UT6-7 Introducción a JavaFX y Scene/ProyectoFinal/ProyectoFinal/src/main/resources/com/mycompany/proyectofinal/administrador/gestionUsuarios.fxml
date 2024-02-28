@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="700.0" styleClass="fondo" stylesheets="@../../../../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.administrador.GestionUsuariosController">
+   <children>
+      <TableView fx:id="tablaUsuarios" layoutX="20.0" layoutY="73.0" prefHeight="375.0" prefWidth="661.0" styleClass="tabla" stylesheets="@../../../../styles/styles.css">
+        <columns>
+          <TableColumn fx:id="columnaId" prefWidth="42.0" text="ID" />
+          <TableColumn fx:id="columnaNombre" prefWidth="168.0" text="Nombre" />
+            <TableColumn fx:id="columnaDatos" prefWidth="189.0" text="Datos" />
+            <TableColumn fx:id="columnaClasesPagadas" prefWidth="135.0" text="Clases pagadas" />
+            <TableColumn fx:id="columnaTipoUsuario" prefWidth="126.0" text="Tipo usuario" />
+        </columns>
+      </TableView>
+      <Button fx:id="botonAlta" layoutX="97.0" layoutY="478.0" mnemonicParsing="false" onAction="#alta" prefHeight="25.0" prefWidth="97.0" stylesheets="@../../../../styles/styles.css" text="Alta" />
+      <Button fx:id="botonBaja" layoutX="504.0" layoutY="478.0" mnemonicParsing="false" onAction="#baja" prefHeight="47.0" prefWidth="125.0" stylesheets="@../../../../styles/styles.css" text="Baja" />
+      <Button fx:id="botonAddClasesPagadas" layoutX="234.0" layoutY="478.0" mnemonicParsing="false" onAction="#anadirClasesPagadas" stylesheets="@../../../../styles/styles.css" text="Añadir clases pagadas" />
+      <Label layoutX="183.0" layoutY="21.0" styleClass="labelTitulo" stylesheets="@../../../../styles/styles.css" text="GESTIÓN DE USUARIOS" />
+   </children>
+</AnchorPane>

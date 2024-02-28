@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+body > header {
+    margin-bottom: 5px;
+    width: 100%;
+    background:linear-gradient(90deg, #FFFF00 0%, #D40000 0%, #D46B00 61%, #EEB182 100%);
+    color: black;
+    font-weight: bold;
+    font-style: oblique;
+    font-variant: small-caps;
+    letter-spacing: 0.5em;
+    text-indent: 1em;
+    height: 25px;
+}
+body > header > :nth-child(1) {
+    width: max-content;
+    float: left;
+}
+body > header > :nth-child(2) {
+    float: right;
+}
+body > header > * {
+    font-size: 20px;
+    margin: auto 10px auto 10px;
+}
+
+article {
+    width: auto;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-top: thin solid #e02b2b;
+    background-image: url("../img/flecha_mayor.jpg");
+    background-position: 161px 2px;
+    background-repeat: no-repeat;
+    color: #333333;
+    text-align: justify;
+    clear: both;
+    min-width: 350px;
+}
+
+article .imagen {
+    margin-right: 30px;
+    width: 150px;
+    height: 220px;
+    border: #e02b2b thick solid;
+    float: left;
+}
+
+article h1 {
+    color: #000000;
+    font-variant: small-caps;
+    letter-spacing: 0.5em;
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
+}
+
+article .precio {
+    margin-left: 190px;
+    font-size: small;
+    font-style: oblique;
+    text-transform: uppercase;
+    border-top: medium solid #00FF33 ;
+    border-bottom: medium solid #00FF33;
+}
+
+article p {
+    margin: 0;
+}

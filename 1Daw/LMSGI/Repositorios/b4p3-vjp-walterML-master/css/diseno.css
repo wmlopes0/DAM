@@ -1,0 +1,136 @@
+/* ESTILOS GENERALES */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+}
+
+img {
+    width: 250px;
+    margin: auto 10px;
+}
+
+main>div.Gallery>img:not(.pc){
+    box-shadow: 3px 5px 7px black;
+}
+
+header,
+main {
+    width: 80%;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* HEADER */
+h1 {
+    padding-top: 20px;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    font-size: 4em;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+h1:hover {
+    text-shadow: 1px 1px 3px black;
+}
+
+h2 {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-variant: small-caps;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+h3.autor {
+    cursor: pointer;
+    font-variant: small-caps;
+    width: max-content;
+    min-width: 100px;
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 1em;
+}
+
+h3.autor:hover {
+    text-shadow: 1px 1px 2px black;
+}
+
+h3.autor>span.datos {
+    margin-left: -600px;
+    transition: all 1s;
+}
+
+header:hover>h3.autor>span.datos {
+    margin-left: 0px;
+}
+
+/* DESCRIPCION PROBLEMA */
+div.problema {
+    opacity: 0;
+    height: 0;
+    width: 70%;
+    font-weight: lighter;
+    margin: auto;
+    font-size: 2em;
+    transition: all 1s;
+}
+
+header:hover~main>div.problema {
+    opacity: 1;
+    margin: 100px auto;
+    height: auto;
+}
+
+/* MOBILE */
+main>div.mobile {
+    width: max-content;
+    margin: 25px auto;
+}
+
+main>div.mobile>img {
+    width: 200px;
+}
+
+main>div.mobile,
+main>div.Gallery {
+    opacity: 0;
+    height: 0;
+    text-align: center;
+    transition: all 1s;
+}
+
+main:hover>div.mobile {
+    opacity: 1;
+    height: auto;
+}
+
+main>div.Gallery:hover {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+main>div.Gallery>img:hover {
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+
+/* PC */
+main>div.Gallery>img.pc {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    transform: scale(1);
+}
+
+main>div.Gallery>img:is(:nth-child(6), :nth-child(7), :nth-child(8)) {
+    width: 500px;
+    margin: 15px;
+}
+
+main>div.Gallery>img:last-child {
+    margin-top: 20px;
+}

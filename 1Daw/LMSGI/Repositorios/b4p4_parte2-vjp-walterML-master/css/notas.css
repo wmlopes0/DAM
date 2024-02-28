@@ -1,0 +1,59 @@
+body {
+    background-color: #666666;
+}
+
+/* ESTILOS GENERALES */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 95vh;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.container>div {
+    width: 250px;
+    height: 250px;
+    box-shadow: 1px 2px 20px 0px black;
+    margin: 25px;
+    transition: all 500ms;
+}
+
+.container h2 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container p {
+    font-size: 50px;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+/* COLORES */
+.amarillo {
+    background-color: #ffffcc;
+}
+
+.verde {
+    background-color: #ccffcc;
+}
+
+.morado {
+    background-color: #ccccff;
+}
+
+/* ROTACION */
+.izquierda {
+    transform: rotate(-5deg);
+}
+
+.derecha {
+    transform: rotate(5deg);
+}
+
+/* HOVER */
+.container>div:hover {
+    transform: scale(1.2) rotate(0deg);
+    cursor: pointer;
+}

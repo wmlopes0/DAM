@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_listarLibros">
+
+    <fragment
+        android:id="@+id/nav_listarLibros"
+        android:name="com.example.t09practicaentregable.ui.listarLibros.ListarLibrosFragment"
+        android:label="@string/menu_listarLibros"
+        tools:layout="@layout/fragment_listar_libros" />
+
+    <fragment
+        android:id="@+id/nav_consultarLibro"
+        android:name="com.example.t09practicaentregable.ui.consultarLibro.ConsultarLibroFragment"
+        android:label="@string/menu_consultarLibro"
+        tools:layout="@layout/fragment_consultar_libro" />
+    <fragment
+        android:id="@+id/nav_addLibro"
+        android:name="com.example.t09practicaentregable.ui.addLibro.AddLibro"
+        android:label="@string/menu_addLibro"
+        tools:layout="@layout/fragment_add_libro" />
+
+    <fragment
+        android:id="@+id/nav_eliminarLibro"
+        android:name="com.example.t09practicaentregable.ui.eliminarLibro.EliminarLibroFragment"
+        android:label="@string/menu_eliminarLibro"
+        tools:layout="@layout/fragment_eliminar_libro" />
+</navigation>

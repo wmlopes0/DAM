@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="400.0" styleClass="fondo" stylesheets="@../../../../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.administrador.FormularioAltaClaseController">
+   <children>
+      <Label layoutX="141.0" layoutY="141.0" text="Tipo de clase" />
+      <Label layoutX="175.0" layoutY="230.0" text="Fecha" />
+      <Label layoutX="179.0" layoutY="314.0" text="Hora" />
+      <DatePicker fx:id="datePickerFecha" layoutX="99.0" layoutY="263.0" styleClass="textField" />
+      <ComboBox fx:id="comboBoxHora" layoutX="119.0" layoutY="356.0" prefHeight="31.0" prefWidth="80.0" styleClass="textField" />
+      <ComboBox fx:id="comboBoxMinuto" layoutX="208.0" layoutY="356.0" prefHeight="31.0" prefWidth="80.0" styleClass="textField" />
+      <ComboBox fx:id="comboBoxTipoClase" layoutX="128.0" layoutY="179.0" prefWidth="150.0" styleClass="textField" />
+      <Button fx:id="botonAltaClase" layoutX="134.0" layoutY="445.0" mnemonicParsing="false" onAction="#alta" text="Alta clase" />
+      <Label layoutX="111.0" layoutY="53.0" styleClass="labelTitulo" stylesheets="@../../../../styles/styles.css" text="ALTA CLASE" />
+   </children>
+</AnchorPane>

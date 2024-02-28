@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<disney>
+	<franquicias>
+		<franquicia>Clásicos de Disney</franquicia>
+		<franquicia>Marvel</franquicia>
+		<franquicia>Star Wars</franquicia>
+		<franquicia>X-Men</franquicia>
+		<franquicia>Pixar</franquicia>
+	</franquicias>
+	<peliculas>
+		<clasicos>
+			<pelicula>Aladdin</pelicula>
+			<pelicula>La sirenita</pelicula>
+			<pelicula>101 dálmatas</pelicula>
+			<pelicula>Blancanieves y los siete enanitos</pelicula>
+			<pelicula>El libro de la selva</pelicula>
+		</clasicos>
+		<pixar>
+			<pelicula>Toy Story</pelicula>
+			<pelicula>Wall-e</pelicula>
+			<pelicula>Monstruo S.A.</pelicula>
+			<pelicula>Up</pelicula>
+			<pelicula>Buscando a nemo</pelicula>
+		</pixar>
+	</peliculas>
+	<parques>
+		<parque>
+			<nombre>Disneyland</nombre>
+			<ciudad>Anaheim</ciudad>
+		</parque>
+		<parque>
+			<nombre>Disney World</nombre>
+			<ciudad>Orlando</ciudad>
+		</parque>
+		<parque>
+			<nombre>Tokyo Disney Resort</nombre>
+			<ciudad>Tokyo</ciudad>
+		</parque>
+	</parques>
+</disney>

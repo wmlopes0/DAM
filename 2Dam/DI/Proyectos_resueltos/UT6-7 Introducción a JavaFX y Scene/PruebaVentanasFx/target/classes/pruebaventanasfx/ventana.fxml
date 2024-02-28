@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="pruebaventanasfx.VentanaController">
+   <children>
+      <Button layoutX="184.0" layoutY="29.0" mnemonicParsing="false" onAction="#cargarventana" prefHeight="90.0" prefWidth="233.0" text="Abrir ventana secundaria" />
+      <Button layoutX="178.0" layoutY="175.0" mnemonicParsing="false" onAction="#abrirAlerta" text="Abrir alerta" />
+      <Button layoutX="315.0" layoutY="175.0" mnemonicParsing="false" onAction="#pedirConfirmacion" text="Pedir confirmación" />
+      <Button layoutX="466.0" layoutY="169.0" mnemonicParsing="false" onAction="#pedirTexto" text="Pedir texto" />
+   </children>
+</AnchorPane>

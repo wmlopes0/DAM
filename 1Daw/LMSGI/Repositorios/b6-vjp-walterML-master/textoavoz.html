@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Walter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/textoavoz.css">
+    <title>Texto a voz</title>
+</head>
+
+<body>
+    <form action="http://api.voicerss.org/" method="get" class="w-50 mt-2 mx-auto" target="voz">
+        <!-- APY KEY Y IDIOMA -->
+        <input type="hidden" name="key" value="2b1f1a6c0aa54c7fb1f94bf39674060d">
+        <input type="hidden" name="hl" value="es-es">
+        <fieldset>
+            <legend>Convertir texto a voz</legend>
+            <!-- BASE64, SSML.. -->
+            <div class="row">
+                <div class="class=col-8 offset-2 w-auto input-group mb-3">
+                    <label for="b64" class="input-group-text">Base 64</label>
+                    <input class="mx-1" type="checkbox" name="b64" value="true" disabled>
+                    <label for="ssml" class="input-group-text">SSML</label>
+                    <input class="mx-1" type="checkbox" name="ssml" value="true" disabled>
+                </div>
+            </div>
+            <!-- TEXTO -->
+            <div class="row">
+                <div class="col-8 offset-2 input-group mb-3">
+                    <label for="src" class="input-group-text">Texto</label>
+                    <textarea name="src" id="src" cols="30" rows="10" minlength="23"></textarea>
+                </div>
+            </div>
+            <!-- SELECCION DE VOCES -->
+            <div class="row">
+                <div class="col-8 offset-2 w-auto input-group mb-3">
+                    <label for="v" class="input-group-text">Voces</label>
+                    <select name="v" id="v" class="form-select">
+                        <option value="Camila">Camila (Female)</option>
+                        <option value="Sofia">Sofia (Female)</option>
+                        <option value="Luna">Luna (Female)</option>
+                        <option value="Diego">Diego (Male)</option>
+                    </select>
+                </div>
+            </div>
+            <!-- FORMATO -->
+            <div class="row">
+                <div class="class=col-8 offset-2 w-auto input-group mb-3">
+                    <label for="f" class="input-group-text">Formatos</label>
+                    <input type="search" class="form-control" list="listaFormatos" id="c" placeholder="8 kHz, 8 Bit, Mono"
+                        name="f" autocomplete="off" required>
+                    <datalist id="listaFormatos">
+                        <option value="8khz_8bit_mono" label="8 kHz, 8 Bit, Mono">
+                        <option selected value="8khz_8bit_stereo" label="8 kHz, 8 Bit, Stereo">
+                        <option value="8khz_16bit_mono" label="8 kHz, 16 Bit, Mono">
+                        <option value="8khz_16bit_stereo" label="8 kHz, 16 Bit, Stereo">
+                        <option value="11khz_8bit_mono" label="11 kHz, 8 Bit, Mono">
+                        <option value="11khz_8bit_stereo" label="11 kHz, 8 Bit, Stereo">
+                        <option value="11khz_16bit_mono" label="11 kHz, 16 Bit, Mono">
+                        <option value="11khz_16bit_stereo" label="11 kHz, 16 Bit, Stereo">
+                        <option value="12khz_8bit_mono" label="12 kHz, 8 Bit, Mono">
+                        <option value="12khz_8bit_stereo" label="12 kHz, 8 Bit, Stereo">
+                        <option value="12khz_16bit_mono" label="12 kHz, 16 Bit, Mono">
+                        <option value="12khz_16bit_stereo" label="12 kHz, 16 Bit, Stereo">
+                        <option value="16khz_8bit_mono" label="16 kHz, 8 Bit, Mono">
+                        <option value="16khz_8bit_stereo" label="16 kHz, 8 Bit, Stereo">
+                        <option value="16khz_16bit_mono" label="16 kHz, 16 Bit, Mono">
+                        <option value="16khz_16bit_stereo" label="16 kHz, 16 Bit, Stereo">
+                        <option value="22khz_8bit_mono" label="22 kHz, 8 Bit, Mono">
+                        <option value="22khz_8bit_stereo" label="22 kHz, 8 Bit, Stereo">
+                        <option value="22khz_16bit_mono" label="22 kHz, 16 Bit, Mono">
+                        <option value="22khz_16bit_stereo" label="22 kHz, 16 Bit, Stereo">
+                        <option value="24khz_8bit_mono" label="24 kHz, 8 Bit, Mono">
+                        <option value="24khz_8bit_stereo" label="24 kHz, 8 Bit, Stereo">
+                        <option value="24khz_16bit_mono" label="24 kHz, 16 Bit, Mono">
+                        <option value="24khz_16bit_stereo" label="24 kHz, 16 Bit, Stereo">
+                        <option value="32khz_8bit_mono" label="32 kHz, 8 Bit, Mono">
+                        <option value="32khz_8bit_stereo" label="32 kHz, 8 Bit, Stereo">
+                        <option value="32khz_16bit_mono" label="32 kHz, 16 Bit, Mono">
+                        <option value="32khz_16bit_stereo" label="32 kHz, 16 Bit, Stereo">
+                        <option value="44khz_8bit_mono" label="44 kHz, 8 Bit, Mono">
+                        <option value="44khz_8bit_stereo" label="44 kHz, 8 Bit, Stereo">
+                        <option value="44khz_16bit_mono" label="44 kHz, 16 Bit, Mono">
+                        <option value="44khz_16bit_stereo" label="44 kHz, 16 Bit, Stereo">
+                        <option value="48khz_8bit_mono" label="48 kHz, 8 Bit, Mono">
+                        <option value="48khz_8bit_stereo" label="48 kHz, 8 Bit, Stereo">
+                        <option value="48khz_16bit_mono" label="48 kHz, 16 Bit, Mono">
+                        <option value="48khz_16bit_stereo" label="48 kHz, 16 Bit, Stereo">
+                        <option value="alaw_8khz_mono" label="ALaw, 8 kHz, Mono">
+                        <option value="alaw_8khz_stereo" label="ALaw, 8 kHz, Stereo">
+                        <option value="alaw_11khz_mono" label="ALaw, 11 kHz, Mono">
+                        <option value="alaw_11khz_stereo" label="ALaw, 11 kHz, Stereo">
+                        <option value="alaw_22khz_mono" label="ALaw, 22 kHz, Mono">
+                        <option value="alaw_22khz_stereo" label="ALaw, 22 kHz, Stereo">
+                        <option value="alaw_44khz_mono" label="ALaw, 44 kHz, Mono">
+                        <option value="alaw_44khz_stereo" label="ALaw, 44 kHz, Stereo">
+                        <option value="ulaw_8khz_mono" label="uLaw, 8 kHz, Mono">
+                        <option value="ulaw_8khz_stereo" label="uLaw, 8 kHz, Stereo">
+                        <option value="ulaw_11khz_mono" label="uLaw, 11 kHz, Mono">
+                        <option value="ulaw_11khz_stereo" label="uLaw, 11 kHz, Stereo">
+                        <option value="ulaw_22khz_mono" label="uLaw, 22 kHz, Mono">
+                        <option value="ulaw_22khz_stereo" label="uLaw, 22 kHz, Stereo">
+                        <option value="ulaw_44khz_mono" label="uLaw, 44 kHz, Mono">
+                    </datalist>
+                </div>
+            </div>
+            <!-- CODEC -->
+            <div class="row">
+                <div class="col-8 offset-2 w-auto input-group mb-3">
+                    <label for="c" class="input-group-text">Codec</label>
+                    <input type="search" class="form-control" list="listaCodec" id="c" placeholder="Mp3 …." name="c">
+                    <datalist id="listaCodec">
+                        <option value="MP3">
+                        <option selected value="WAV">
+                        <option value="AAC">
+                        <option value="OGG">
+                        <option value="CAF">
+                    </datalist>
+                </div>
+            </div>
+            <!-- VELOCIDAD -->
+            <div class="row">
+                <div class="class=col-8 offset-2 w-auto input-group mb-3">
+                    <label for="r" class="input-group-text">Velocidad</label>
+                    <input class="mx-2" type="range" name="r" id="r" value="0" min="-10" max="10" step="1">
+                </div>
+            </div>
+            <!-- ENVIAR -->
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <input type="submit" value="Convertir (iframe)" class="btn btn-warning">
+                    <input type="submit" value="Convertir (nueva vta)" class="btn btn-primary my-2" formtarget="nuevavta">
+                    <input type="reset" value="Limpiar" class="btn btn-danger my-2" formtarget="nuevavta">
+                </div>
+            </div>
+                </form>
+                <!-- IFRAME -->
+                <div class="row">
+            <div class="col-8 offset-2 d-flex justify-content-center">
+                <div><iframe src="" name="voz" frameborder="0"></iframe></div>
+            </div>
+                </div>
+        </fieldset>
+
+</body>
+
+</html>

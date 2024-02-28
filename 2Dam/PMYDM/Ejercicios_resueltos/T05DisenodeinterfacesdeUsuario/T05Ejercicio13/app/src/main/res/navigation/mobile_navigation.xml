@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_constraint_layout">
+
+    <fragment
+        android:id="@+id/nav_linear_layout"
+        android:name="com.example.t05ejercicio13.ui.linearLayout.LinearLayoutFragment"
+        android:label="@string/menu_linear_layout"
+        tools:layout="@layout/fragment_linear_layout" />
+
+    <fragment
+        android:id="@+id/nav_constraint_layout"
+        android:name="com.example.t05ejercicio13.ui.constraintLayout.ConstraintLayoutFragment"
+        android:label="@string/menu_constraint_layout"
+        tools:layout="@layout/fragment_constraint_layout" />
+
+    <fragment
+        android:id="@+id/nav_table_layout"
+        android:name="com.example.t05ejercicio13.ui.tableLayout.TableLayoutFragment"
+        android:label="@string/menu_table_layout"
+        tools:layout="@layout/fragment_table_layout" />
+</navigation>

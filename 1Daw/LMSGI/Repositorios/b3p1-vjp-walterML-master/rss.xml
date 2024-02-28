@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+   xmlns:media="http://search.yahoo.com/mrss/"
+   xmlns:atom="http://www.w3.org/2005/Atom">
+   <channel>
+       <title>Bloque 2 - Práctica 4 - Walter ML</title>
+       <link>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/</link>
+       <description>Introducción a HTML5, listas, tablas, vídeo y audio</description>
+       <atom:link href="https://lmsgi.iesvjp.es/b3p1-vjp-walterML/rss.xml" rel="self" type="application/rss+xml" />
+       <pubDate>Wed, 21 Dec 2022 16:33:32 +0000</pubDate>
+       <item>
+           <guid isPermaLink="true">https://lmsgi.iesvjp.es/b2p4-vjp-walterML/listas.html</guid>
+           <title>Ejercicio - Listas HTML</title>
+           <link>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/listas.html</link>
+           <description><![CDATA[Ejemplos de listas <dl></dl>, <ol></ol> y <ul></ul>]]></description>
+           <pubDate>Wed, 21 Dec 2022 16:33:32 +0000</pubDate>
+           <media:content url="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/listas.jpg" medium="image"></media:content>
+       </item>
+       <item>
+           <guid isPermaLink="true">https://lmsgi.iesvjp.es/b2p4-vjp-walterML/horario.html</guid>
+           <title>Ejercicio - Horario HTML</title>
+           <link>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/horario.html</link>
+           <description><![CDATA[Ejemplos de <table>]]></description>
+           <pubDate>Wed, 21 Dec 2022 16:33:32 +0000</pubDate>
+           <media:content url="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/horario.jpg" medium="image"></media:content>
+       </item>
+       <item>
+           <guid isPermaLink="true">https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tabla_imagenes.html</guid>
+           <title>Ejercicio - Tabla Imágenes HTML</title>
+           <link>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tabla_imagenes.html</link>
+           <description><![CDATA[Ejemplos de <table> con <ul> <ol> y <img>]]></description>
+           <pubDate>Wed, 21 Dec 2022 16:33:32 +0000</pubDate>
+           <media:content url="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/tabla_imagenes.jpg" medium="image"></media:content>
+       </item>
+       <item>
+           <guid isPermaLink="true">https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablas.html</guid>
+           <title>Ejercicio - Tablas HTML</title>
+           <link>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablas.html</link>
+           <description><![CDATA[Ejemplos de <table>]]></description>
+           <pubDate>Wed, 21 Dec 2022 16:33:32 +0000</pubDate>
+           <media:content url="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/tablas.jpg" medium="image"></media:content>
+       </item>
+       <item>
+           <guid isPermaLink="true">https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablaperiodica.html</guid>
+           <title>Ejercicio - Tabla Periódica HTML</title>
+           <link>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablaperiodica.html</link>
+           <description><![CDATA[Tabla Periódica con <table>]]></description>
+           <pubDate>Wed, 21 Dec 2022 16:33:32 +0000</pubDate>
+           <media:content url="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/tablaperiodica.jpg" medium="image"></media:content>
+       </item>
+       <item>
+           <guid isPermaLink="true">https://lmsgi.iesvjp.es/b2p4-vjp-walterML/multimedia.html</guid>
+           <title>Ejercicio - Multimedia HTML</title>
+           <link>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/multimedia.html</link>
+           <description><![CDATA[Probando elementos multimedia]]></description>
+           <pubDate>Wed, 21 Dec 2022 16:33:32 +0000</pubDate>
+           <media:content url="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/multimedia.jpg" medium="image"></media:content>
+       </item>
+       <item>
+           <guid isPermaLink="true">https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablas_V2.html</guid>
+           <title>Ejercicio - Tablas V2 HTML</title>
+           <link>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablas_V2.html</link>
+           <description><![CDATA[Ejemplos de <table> añadiendo <details> y <summary>]]></description>
+           <pubDate>Wed, 21 Dec 2022 16:33:32 +0000</pubDate>
+           <media:content url="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/tablas_V2.jpg" medium="image"></media:content>
+       </item>
+   </channel>
+</rss>

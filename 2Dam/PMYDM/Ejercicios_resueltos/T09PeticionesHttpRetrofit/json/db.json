@@ -1,0 +1,94 @@
+{
+  "libros": [
+    {
+      "id": "1",
+      "titulo": "El Misterio del Reloj",
+      "autor": "Carlos Ruiz",
+      "genero": "Misterio",
+      "publicacion": "2018",
+      "precio": "15.99",
+      "imagen": "https://images-eu.ssl-images-amazon.com/images/I/71qWFT7DLvL._AC_UL210_SR210,210_.jpg"
+    },
+    {
+      "id": "2",
+      "titulo": "Jardines de Cristal",
+      "autor": "Laura Esquivel",
+      "genero": "Romance",
+      "publicacion": "2019",
+      "precio": "18.50",
+      "imagen": "https://m.media-amazon.com/images/I/81E4CPyDcXL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "3",
+      "titulo": "Los Exploradores en Marte",
+      "autor": "Anna Miquel",
+      "genero": "Ciencia Ficción",
+      "publicacion": "2020",
+      "precio": "20.00",
+      "imagen": "https://m.media-amazon.com/images/I/71wCusuiSPL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "4",
+      "titulo": "Historia del Tiempo",
+      "autor": "Stephen Hawking",
+      "genero": "Historia",
+      "publicacion": "2017",
+      "precio": "22.99",
+      "imagen": "https://m.media-amazon.com/images/I/81v7lLCyJNL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "5",
+      "titulo": "Cocina Mediterránea",
+      "autor": "Juan Fernández",
+      "genero": "Cocina",
+      "publicacion": "2021",
+      "precio": "30.00",
+      "imagen": "https://m.media-amazon.com/images/I/51l-tAPTqzL.jpg"
+    },
+    {
+      "id": "6",
+      "titulo": "El Enigma de las Sombras",
+      "autor": "Oscar Bru",
+      "genero": "Misterio",
+      "publicacion": "2022",
+      "precio": "19.99",
+      "imagen": "https://m.media-amazon.com/images/I/513erCNh5+L.jpg"
+    },
+    {
+      "id": "7",
+      "titulo": "Los Jardines Secretos",
+      "autor": "Alberto Ruy Sánchez",
+      "genero": "Fantasía",
+      "publicacion": "2020",
+      "precio": "21.99",
+      "imagen": "https://m.media-amazon.com/images/I/91sQ+7Si00L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "8",
+      "titulo": "La Vida en Verso",
+      "autor": "Borja del Campo",
+      "genero": "Poesía",
+      "publicacion": "2018",
+      "precio": "12.00",
+      "imagen": "https://m.media-amazon.com/images/I/51s4h-LlykL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "9",
+      "titulo": "Lenguas de viaje submarino",
+      "autor": "Julio Verne",
+      "genero": "Aventura",
+      "publicacion": "2007",
+      "precio": "14.95",
+      "imagen": "https://m.media-amazon.com/images/I/81fz569sZvL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "10",
+      "titulo": "El Arte de la Guerra Digital",
+      "autor": "Ana López",
+      "genero": "Ensayo",
+      "publicacion": "2021",
+      "precio": "17.50",
+      "imagen": "https://m.media-amazon.com/images/I/61aTf+8b6qL._AC_UF1000,1000_QL80_.jpg"
+    }
+  ]
+}

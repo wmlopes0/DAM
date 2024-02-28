@@ -1,0 +1,15 @@
+td {
+    background-color: #cc99ff;
+}
+
+td>a {
+    color: black;
+}
+
+td:hover {
+    background-color: #7300e6;
+}
+
+td:hover>a {
+    color: white;
+}

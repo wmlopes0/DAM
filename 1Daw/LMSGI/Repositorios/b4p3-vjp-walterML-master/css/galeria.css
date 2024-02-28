@@ -1,0 +1,74 @@
+:root {
+    --sombra-imagen: #515151 1px 4px 4px 0px;
+}
+
+body {
+    background-color: #918c8c;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    width: 60vw;
+    gap: 1.5rem;
+
+    grid-auto-flow: row;
+    grid-template-areas:
+        "a a b b e e e e"
+        "a a b b e e e e"
+        "c c c c e e e e"
+        "c c c c e e e e"
+        "c c c c e e e e"
+        "d d d d f f f f"
+        "d d d d f f f f"
+        "d d d d f f f f";
+}
+
+.a {
+    grid-area: a;
+    background-image: url("https://picsum.photos/200/300?id=1");
+}
+
+.b {
+    grid-area: b;
+    background-image: url("https://picsum.photos/200/300?id=2");
+}
+
+.c {
+    grid-area: c;
+    background-image: url("https://picsum.photos/200/300?id=3");
+}
+
+.d {
+    grid-area: d;
+    background-image: url("https://picsum.photos/200/300?id=4");
+}
+
+.e {
+    grid-area: e;
+    background-image: url("https://picsum.photos/200/300?id=5");
+}
+
+.f {
+    grid-area: f;
+    background-image: url("https://picsum.photos/200/300?id=6");
+}
+
+/* ----------------------------------- */
+.container>div {
+    /* object-fit: cover; ES PARA CUANDO PONES LAS IMAGENES EN EL HTML*/
+    background-size: cover;
+    box-shadow: var(--sombra-imagen);
+}
+
+.wrapperFlex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+:is(header, footer) {
+    min-height: 10vh;
+    background-color: rgb(145, 214, 40);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header>h1 {
+    margin: 0;
+}
+
+footer {
+    margin-top: auto;
+
+}
+
+/* Flex */
+div.flex {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 80vh;
+}
+
+div.flex>:is(nav, aside, main) {
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+
+}
+
+div.flex>:is(nav, aside) {
+    background-color: blanchedalmond;
+    min-width: 100px;
+    flex-basis: 10vw;
+}
+
+div.flex>main {
+    background-color: pink;
+    flex-basis: 80vw;
+}

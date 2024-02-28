@@ -1,0 +1,21 @@
+ [
+      {
+        "referencia": "001",
+        "nombre": "zanahorias",
+        "precio": 0.90,
+        "existencias": 22
+      },
+      {
+        "referencia": "002",
+        "nombre": "patatas",
+        "precio": 1,
+        "existencias": 5
+      },
+      {
+        "referencia": "003",
+        "nombre": "lechugas",
+        "precio": 1.20,
+        "existencias": 10
+      }
+    ]
+  

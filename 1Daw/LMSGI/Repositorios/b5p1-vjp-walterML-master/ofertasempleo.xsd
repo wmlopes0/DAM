@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Antonio Sanchez (CIEMAT) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Denominacion" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Denominación de la oferta de empleo</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Descripcion" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Descripción de la oferta de empleo</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Convocatoria" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Código de la convocatoria</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Situacion" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Situación en la que está la convocatoria</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Estado" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Estado de la convocatoria (Nueva, En proceso, Resuelta, etc.)</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="TipoPlaza" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Tipo de convocatoria (Funcionario, Laboral, etc.)</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="SistemaAdjudicacion" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Sistema de adjudicación de la convocatoria (Promoción interna, Acceso libre, etc.)</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Titulacion" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Titulación mí­nima requerida en la convocatoria</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="FechaPublicacion" type="xs:date">
+		<xs:annotation>
+			<xs:documentation>Fecha de publicación de la convocatoria</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="FechaModificacion" type="xs:date">
+		<xs:annotation>
+			<xs:documentation>Fecha de última modificación del estado de la convocatoria</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="URL" type="xs:string"/>
+	<xs:element name="OfertaEmpleo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Denominacion"/>
+				<xs:element ref="Descripcion" minOccurs="0"/>
+				<xs:element ref="Convocatoria" minOccurs="0"/>
+				<xs:element ref="Situacion" minOccurs="0"/>
+				<xs:element ref="Estado" minOccurs="0"/>
+				<xs:element ref="TipoPlaza" minOccurs="0"/>
+				<xs:element ref="SistemaAdjudicacion" minOccurs="0"/>
+				<xs:element ref="Titulacion" minOccurs="0"/>
+				<xs:element ref="FechaPublicacion" minOccurs="0"/>
+				<xs:element ref="FechaModificacion" minOccurs="0"/>
+				<xs:element ref="URL" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="OfertasEmpleo">
+		<xs:annotation>
+			<xs:documentation>Ofertas de empleo del Ciemat</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="OfertaEmpleo" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="FechaCreacion" type="xs:date"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

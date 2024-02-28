@@ -1,0 +1,10 @@
+
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+N
+java:S1854"8Remove this useless assignment to local variable "hilo".(ß©‚
+E	java:S106"+Replace this use of System.out by a logger.(Ûÿ¨æøÿÿÿÿ
+t
+java:S2142
+"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+?
+java:S1481")Remove this unused "hilo" local variable.(ß©‚

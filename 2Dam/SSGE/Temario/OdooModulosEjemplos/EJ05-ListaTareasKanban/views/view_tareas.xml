@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Vista de las kanban usando las tareas de "project" (ya existente en Odoo)-->
+    <record id="tareas_kanban_view" model="ir.ui.view">
+        <field name="name">project.task.kanban</field>
+        <field name="model">project.task</field>
+        <field name="arch" type="xml">
+            <!-- Agrupamos por el atributo "stage id"-->
+            <kanban default_group_by="stage_id">
+                <field name="stage_id" />
+                <field name="name" />
+                <!-- Plantilla QWeb para indicar como es la tarjeta Kanban-->
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_card oe_kanban_global_click">
+                            <field name="name" />
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id='action_tareas_kanban' model='ir.actions.act_window'>
+        <field name="name">Mis tareas (Kanban)</field>
+        <field name="res_model">project.task</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <!-- Indicamos como contexto que la vista de referencia es la vista tareas_kanban_view.
+        mas información en https://www.odoo.com/documentation/15.0/developer/reference/backend/views.html 
+        -->
+        <field name="context">{'kanban_view_ref': 'my_project.tareas_kanban_view'}</field>
+    </record>
+
+    <!-- Definimos los "Menu Item"-->
+    <menuitem id="menu_custom_top_level" name="Mis tareas (Kanban)" web_icon="Lista Tareas (Kanban),static/description/icon.png"/>
+    <menuitem id="menu_tareas_kanban" parent="menu_custom_top_level" action="action_tareas_kanban" sequence="10" />
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.repaso2trimestre.CuentaController">
+   <children>
+      <Label alignment="CENTER" layoutX="2.0" layoutY="32.0" prefHeight="17.0" prefWidth="600.0" text="CUENTA" textFill="#a40000">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaPedido" layoutX="59.0" layoutY="89.0" prefHeight="283.0" prefWidth="503.0">
+         <columns>
+            <TableColumn fx:id="columnaHamburguesa" prefWidth="179.0" text="Hamburguesa" />
+            <TableColumn fx:id="columnaPan" prefWidth="101.0" text="Pan" />
+            <TableColumn fx:id="columnaExtras" prefWidth="142.0" text="Extras" />
+            <TableColumn fx:id="columnaPrecio" text="Precio" />
+         </columns>
+      </TableView>
+      <Label layoutX="252.0" layoutY="394.0" text="TOTAL: " textFill="#970000">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="precioTotal" layoutX="324.0" layoutY="394.0">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

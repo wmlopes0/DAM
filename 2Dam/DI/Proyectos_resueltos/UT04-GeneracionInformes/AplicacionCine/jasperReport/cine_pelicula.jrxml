@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cine_pelicula" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c6bd22fe-545c-4315-bc13-ce4b31c92bee">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="cine"/>
+	<parameter name="Pelicula" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `idPelicula`,
+	`Titulo`,
+	`Duracion`,
+	`Imagen`,
+	`Edad`
+FROM cine.peliculas
+WHERE `idPelicula` =  $P{Pelicula}]]>
+	</queryString>
+	<field name="idPelicula" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idPelicula"/>
+		<property name="com.jaspersoft.studio.field.label" value="idPelicula"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="peliculas"/>
+	</field>
+	<field name="Titulo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Titulo"/>
+		<property name="com.jaspersoft.studio.field.label" value="Titulo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="peliculas"/>
+	</field>
+	<field name="Duracion" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Duracion"/>
+		<property name="com.jaspersoft.studio.field.label" value="Duracion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="peliculas"/>
+	</field>
+	<field name="Imagen" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Imagen"/>
+		<property name="com.jaspersoft.studio.field.label" value="Imagen"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="peliculas"/>
+	</field>
+	<field name="Edad" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Edad"/>
+		<property name="com.jaspersoft.studio.field.label" value="Edad"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="peliculas"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="172" splitType="Stretch">
+			<textField>
+				<reportElement x="-13" y="14" width="323" height="30" forecolor="#3B3B3B" uuid="cdb4076e-ce2a-408f-97e2-cafa5861fd1e"/>
+				<textElement>
+					<font size="18" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Titulo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-13" y="62" width="43" height="30" uuid="3ad0b2a8-54d9-4ab1-8cfd-7eb471189cb7"/>
+				<textElement textAlignment="Left">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Duracion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="62" width="100" height="30" uuid="487ae4f0-c284-4c52-a66c-4bb012050082"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Minutos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-13" y="100" width="143" height="30" uuid="e7d696b2-7008-488c-b0cb-97e4452017f9"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Edad recomendada: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="100" width="100" height="30" uuid="0ce0b882-1e5d-4a03-9b4d-3f8769a2f711"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Edad}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="310" y="17" width="110" height="123" uuid="4e0853f6-2be4-431f-96c5-5a994e4c2bac"/>
+				<imageExpression><![CDATA[$F{Imagen}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

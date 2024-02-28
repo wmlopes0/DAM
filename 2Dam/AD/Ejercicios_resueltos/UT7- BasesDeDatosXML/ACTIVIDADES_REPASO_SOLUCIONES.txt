@@ -1,0 +1,44 @@
+1.A
+for $zona in distinct-values(productos/produc/cod_zona)
+let $precioCaro:= productos/max(produc[cod_zona=$zona]/precio)
+let $productos:= productos/produc[cod_zona=$zona and precio = $precioCaro]/denominacion/string()
+return element {concat('zona',$zona)}{$productos}
+
+1.B
+for $zona in distinct-values(productos/produc/cod_zona)
+let $precioBarato:= productos/min(produc[cod_zona=$zona]/precio)
+let $productos:= productos/count(produc[cod_zona=$zona and precio = $precioBarato])
+return element {concat('zona',$zona)}{$productos}
+
+=========================================================================================
+2.A
+sucursales/round(avg(sucursal/cuenta[@tipo='AHORRO']/saldohaber),2)
+
+2.B
+for $sucursal in (sucursales/sucursal)
+let $codigo:= $sucursal/@codigo
+let $saldoMin:= $sucursal/min(cuenta/saldohaber)
+let $cuentas:= $sucursal/cuenta[saldohaber=$saldoMin]
+return element {$codigo}{$cuentas}
+
+2.C
+let $minAportacion:= sucursales/min(sucursal/cuenta[@tipo='PENSIONES']/aportacion)
+for $cuenta in (sucursales/sucursal/cuenta[@tipo='PENSIONES'])
+let $cuentaPobre:= $cuenta[aportacion=$minAportacion]
+return $cuentaPobre
+
+=============================================================================================
+
+3.A
+for $producto in (productos/produc)
+let $denominacion:= $producto/denominacion/string()
+let $precio := $producto/precio
+let $nombreZona:= zonas/zona[cod_zona=$producto/cod_zona]/nombre/string()
+order by $nombreZona ascending
+return element {$nombreZona}{$denominacion}
+
+3.B
+for $zona in (zonas/zona)
+let $nombre:= $zona/nombre/string()
+let $mediaPrecio:= productos/round(avg(produc[cod_zona=$zona/cod_zona]/precio),2)
+return element {$nombre}{$mediaPrecio}

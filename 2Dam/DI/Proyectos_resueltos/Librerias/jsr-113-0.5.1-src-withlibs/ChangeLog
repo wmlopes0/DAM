@@ -1,0 +1,57 @@
+Version 0.5
+===========
+- Minor bugfixes
+- Supporting only Java SE: integration of se packages into base classes
+- bugfix: RecognizerEvent falsely reported an IllegalArgumentExcpetion for
+  CHANGES_REJECTED
+- new SynchronousSpeechEventExecutor
+- default encoding is determined from system property file.encoding (default: UTF-8)
+- refactoring: cleanup of how property change requests are handled
+- bugfix: RuleTag now throws an IllegalArgumentException if the tag evaluates
+  to null
+- bugfix: SpeakerProfile.DEFAULT has no name to indicate a don't care value
+- NORM_WEIGHT in RuleAternatives is not rendered in toString()
+- bugfix: corrected the way security checks are performed
+- refactoring of the audio format conversion
+
+
+Version 0.4
+===========
+- Reorganisation of the project structure
+- some code cleanup
+- restructured the way pending property changes are handled.
+- bugfix: tags in a rule grammar are of type Object rather than Strings
+- checking for audio stopped when calling the media locator.
+- grammar references must not be null
+- 64bit SAPI support 
+
+Version 0.3
+===========
+
+- some code cleanup
+- moved more classes to the CLDC base layer
+- fixed audio format conversion
+- bugfix: clip outputstream is able to play multiple audio outputs
+- bugfix: clip outputstream can be canceled
+- recognizer defines the engine's audio format
+- started to work on a SAPI layer
+- started to work on a mac layer
+- bugfix: root rule is set correctly after all other changes have been committed
+- bugfix: QUEUE_EMPTY was not set in synthesizer after an allocate
+- bugfix: state2String did not consider the FOCUSED and DEFOCUSED states
+
+Version 0.2
+============
+
+- new RTP demo
+- started separation of the core classes into a common CLDC jar
+- some code cleanup
+- enhanced javadoc
+- added protocol handlers for playback and capture
+
+
+Version 0.1
+===========
+
+- First release.
+

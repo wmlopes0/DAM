@@ -1,0 +1,61 @@
+body {
+    background-color: #eee;
+    color: #3c4858;
+    font-family: 'Pontano Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: white;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+    border-radius: 6px;
+    margin-top: 50px;
+    /* TEMPORAL BORRAR DESPUES*/
+    height: 400px;
+    /* ----------------- */
+}
+
+/* ------------------------ */
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .tarjeta {
+        width: 100%;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .tarjeta {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .tarjeta {
+        width: calc(33.333% - 20px);
+        margin-right: 20px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .tarjeta {
+        width: calc(25% - 20px);
+        margin-right: 20px;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .tarjeta {
+        width: calc(20% - 20px);
+        margin-right: 20px;
+    }
+}

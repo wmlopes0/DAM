@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: #7fffd4;
+}
+
+main {
+    grid-area: main;
+    background-color: #add8e6;
+    overflow: auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #f0f8ff;
+}

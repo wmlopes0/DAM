@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libros>
+	<libro>	
+		<ISBN>239-87-9964-088-4</ISBN>
+		<titulo>Acceso a Datos</titulo>
+		<autores>
+			<autor>Alicia Ramos Garcia</autor>
+			<autor>Maria Jesús Ramos Garcia</autor>
+		</autores>
+		<editorial>Garceta</editorial>
+	</libro>	
+	<libro>	
+		<ISBN>978-84-9964-239</ISBN>
+		<titulo>Acceso a Datos</titulo>
+		<autores>
+			<autor>José Eduardo Córcoles Tendero</autor>
+		</autores>
+		<editorial>Garceta</editorial>
+	</libro>	
+</libros>

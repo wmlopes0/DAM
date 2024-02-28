@@ -1,0 +1,76 @@
+public static void main(String[] args) {
+        CentralNuclear central = CentralNuclear.getInstancia();
+        
+        //PUERTA
+        Puerta puertaSalida = new Puerta(63);
+        central.insPuertaSalida(puertaSalida);
+        
+        //PERSONAJES
+        Personaje miPersonaje = new Cientifico("Legásov", 9, 10, 'L');
+        char[] vRuta = {'S', 'S', 'O', 'S', 'O', 'S', 'S', 'E', 'E', 'E', 'E', 'S', 'E', 'E', 'E'};
+        miPersonaje.cargarMovimientos(vRuta);
+        central.insPersonaje(miPersonaje);
+        
+        Personaje p2 = new Cientifico("Shcherbina", 19, 39, 'S');        
+        char[] vRuta2 = {'S', 'S', 'O', 'S', 'E'};
+        p2.cargarMovimientos(vRuta2);
+        central.insPersonaje(p2);
+        
+        Personaje p3 = new Minero("Glújov", 1, 0, 'G');
+        char[] vRuta3 = {'E', 'E', 'E', 'E', 'E', 'E', 'E', 'S', 'O', 'O', 'O', 'S', 'S', 'S', 'O', 'S', 'S', 'S', 'E', 'E', 'E', 'E', 'S'};
+        p3.cargarMovimientos(vRuta3);
+        central.insPersonaje(p3);
+        
+        Personaje p4 = new Oficial("Vladimir", 1, 11, 'V');
+        char[] vRuta4 = {'N', 'O', 'S', 'E', 'S', 'S', 'O', 'O', 'S', 'O', 'S', 'S', 'E', 'E', 'E', 'N', 'N', 'N', 'E', 'E', 'E', 'E', 'N'};
+        p4.cargarMovimientos(vRuta4);
+        central.insPersonaje(p4);
+        
+        Personaje p5 = new Bombero("Ignatenko", 5, 33, 'I');
+        char[] vRuta5 = {'E', 'N', 'O', 'S', 'S', 'S', 'E', 'E', 'E', 'S', 'S', 'O', 'E', 'E', 'E', 'E'};
+        p5.cargarMovimientos(vRuta5);
+        central.insPersonaje(p5);
+        
+        Personaje p6 = new Voluntario("Yuri", 1, 8, 'Y');
+        char[] vRuta6 = {'S', 'N', 'S', 'N','S', 'N','S', 'N','S', 'N','S', 'N','S', 'N','S', 'N','S', 'N','S', 'N','S', 'N','S'};
+        p6.cargarMovimientos(vRuta6);
+        central.insPersonaje(p6);
+        
+        Personaje p7 = new Voluntario("Vitali", 1, 7, 'T');
+        char[] vRuta7 = {'O', 'O', 'E', 'E', 'O', 'O', 'E', 'E', 'O', 'O', 'E', 'E', 'O', 'O', 'E', 'E', 'O', 'O', 'E', 'E', 'O', 'O', 'E'};
+        p7.cargarMovimientos(vRuta7);
+        central.insPersonaje(p7);
+        
+        //ESCOMBROS
+        central.inicializarEscombros();
+        
+        System.out.println(Constantes.TURNO+central.getTurno());
+        central.mostrarMatriz();
+        
+        //SIMULACIÖN
+        while((!((Cientifico) miPersonaje).comprobarPuertaSalida())||
+                (!((Cientifico) p2).comprobarPuertaSalida())||
+                (!((Minero) p3).comprobarPuertaSalida())||
+                (!((Bombero) p5).comprobarPuertaSalida())){
+            central.setTurno(central.getTurno()+1);
+            
+            System.out.println(Constantes.TURNO+central.getTurno());
+
+            //Realizar acciones de miPersonaje
+
+            //Realizar acciones de p2
+
+            //Realizar acciones de p3
+
+            //Realizar acciones de p4
+
+            //Realizar acciones de p5
+
+            //Realizar acciones de p6
+
+            //Realizar acciones de p7
+                        
+            central.mostrarMatriz();
+        }
+        //central.mostrarCeldasRefrigeradas();
+    }

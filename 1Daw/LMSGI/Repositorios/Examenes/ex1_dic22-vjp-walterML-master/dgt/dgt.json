@@ -1,0 +1,84 @@
+{
+	"Incidencias": {
+		"Incidencia": [
+			{
+				"Id": "1",
+				"Tipo": "Metorológica",
+				"Causa": "Niebla",
+				"Nivel": "Verde",
+				"Sentido": "Ambos sentidos",
+				"Localizacion": {
+					"Autonomia": "Castilla y León",
+					"Provincia": "Zamora",
+					"Poblacion": "Zamora",
+					"Coordenadas": {
+						"CoordenadaX": "41.51757",
+						"CoordenadaY": "-5.23385"
+					}
+				},
+				"Fecha": {
+					"Ano": "2017",
+					"Mes": "11",
+					"Dia": "27",
+					"Hora": "11:07"
+				},
+				"Pk": {
+					"Inicial": "412.0",
+					"Final": "455.0"
+				}
+			},
+			{
+				"Id": "2",
+				"Tipo": "Obras",
+				"Causa": "Obras en General",
+				"Nivel": "Negro",
+				"Sentido": "Ambos sentidos",
+				"Localizacion": {
+					"Autonomia": "Extremadura",
+					"Provincia": "Badajoz",
+					"Poblacion": "Valdivia",
+					"Coordenadas": {
+						"CoordenadaX": "39.0338029",
+						"CoordenadaY": "-5.7104669"
+					}
+				},
+				"Fecha": {
+					"Ano": "2017",
+					"Mes": "11",
+					"Dia": "17",
+					"Hora": "11:00"
+				},
+				"Pk": {
+					"Inicial": "0.0",
+					"Final": "5.0"
+				}
+			},
+			{
+				"Id": "3",
+				"Tipo": "Obras",
+				"Causa": "Trabajos de mantenimiento",
+				"Nivel": "Amarillo",
+				"Sentido": "Ambos sentidos",
+				"Localizacion": {
+					"Autonomia": "Extremadura",
+					"Provincia": "Badajoz",
+					"Poblacion": "Valverde de Leganés",
+					"Coordenadas": {
+						"CoordenadaX": "38.51993",
+						"CoordenadaY": "-6.85655"
+					}
+				},
+				"Fecha": {
+					"Ano": "2017",
+					"Mes": "11",
+					"Dia": "27",
+					"Hora": "08:00"
+				},
+				"Pk": {
+					"Inicial": "0.0",
+					"Final": "21.0"
+				}
+			}
+		]
+	}
+}

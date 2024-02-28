@@ -1,0 +1,81 @@
+<!DOCTYPE Incidencias SYSTEM "dgt.dtd">
+<Incidencias>
+    <Incidencia>
+        <Id>1</Id>
+        <Tipo>Metorológica</Tipo>
+        <Causa>Niebla</Causa>
+        <Nivel>Verde</Nivel>
+        <Sentido>Ambos sentidos</Sentido>
+        <Localizacion>
+            <Autonomia>Castilla y León</Autonomia>
+            <Provincia>Zamora</Provincia>
+            <Poblacion>Zamora</Poblacion>
+            <Coordenadas>
+                <CoordenadaX>41.51757</CoordenadaX>
+                <CoordenadaY>-5.23385</CoordenadaY>
+            </Coordenadas>
+        </Localizacion>
+        <Fecha>
+            <Ano>2017</Ano>
+            <Mes>11</Mes>
+            <Dia>27</Dia>
+            <Hora>11:07</Hora>
+        </Fecha>
+        <Pk>
+            <Inicial>412.0</Inicial>
+            <Final>455.0</Final>
+        </Pk>
+    </Incidencia>
+    <Incidencia>
+        <Id>2</Id>
+        <Tipo>Obras</Tipo>
+        <Causa>Obras en General</Causa>
+        <Nivel>Negro</Nivel>
+        <Sentido>Ambos sentidos</Sentido>
+        <Localizacion>
+            <Autonomia>Extremadura</Autonomia>
+            <Provincia>Badajoz</Provincia>
+            <Poblacion>Valdivia</Poblacion>
+            <Coordenadas>
+                <CoordenadaX>39.0338029</CoordenadaX>
+                <CoordenadaY>-5.7104669</CoordenadaY>
+            </Coordenadas>
+        </Localizacion>
+        <Fecha>
+            <Ano>2017</Ano>
+            <Mes>11</Mes>
+            <Dia>17</Dia>
+            <Hora>11:00</Hora>
+        </Fecha>
+        <Pk>
+            <Inicial>0.0</Inicial>
+            <Final>5.0</Final>
+        </Pk>
+    </Incidencia>
+    <Incidencia>
+        <Id>3</Id>
+        <Tipo>Obras</Tipo>
+        <Causa>Trabajos de mantenimiento</Causa>
+        <Nivel>Amarillo</Nivel>
+        <Sentido>Ambos sentidos</Sentido>
+        <Localizacion>
+            <Autonomia>Extremadura</Autonomia>
+            <Provincia>Badajoz</Provincia>
+            <Poblacion>Valverde de Leganés</Poblacion>
+            <Coordenadas>
+                <CoordenadaX>38.51993</CoordenadaX>
+                <CoordenadaY>-6.85655</CoordenadaY>
+            </Coordenadas>
+        </Localizacion>
+        <Fecha>
+            <Ano>2017</Ano>
+            <Mes>11</Mes>
+            <Dia>27</Dia>
+            <Hora>08:00</Hora>
+        </Fecha>
+        <Pk>
+            <Inicial>0.0</Inicial>
+            <Final>21.0</Final>
+        </Pk>
+    </Incidencia>
+</Incidencias>

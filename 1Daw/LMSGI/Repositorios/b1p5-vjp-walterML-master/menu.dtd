@@ -1,0 +1,6 @@
+<!ELEMENT menu_almuerzo (comida+)>
+<!ELEMENT comida (nombre,precio,descripcion)>
+<!ATTLIST comida calorias NMTOKEN #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<productos>
+<TITULO>DATOS DE LA TABLA PRODUCTOS</TITULO>
+<produc>
+    <cod_prod>1010</cod_prod>
+    <denominacion>Placa Base MSI G41M-P26</denominacion>
+    <precio>50</precio>
+    <stock_actual>10</stock_actual>
+    <stock_minimo>3</stock_minimo>
+    <cod_zona>10</cod_zona>
+  </produc>
+  <produc>
+    <cod_prod>1011</cod_prod>
+	<denominacion>Micro Intel Core i5-2320</denominacion>
+	<precio>120</precio>
+	<stock_actual>3</stock_actual>
+	<stock_minimo>5</stock_minimo>
+	<cod_zona>10</cod_zona>
+  </produc>
+  <produc>
+    <cod_prod>1012</cod_prod>
+    <denominacion>Micro Intel Core i5 2500</denominacion>
+    <precio>170</precio>
+    <stock_actual>5</stock_actual>
+    <stock_minimo>6</stock_minimo>
+    <cod_zona>20</cod_zona>
+  </produc>
+  <produc>
+    <cod_prod>1013</cod_prod>
+    <denominacion>HD Seagate Barracuda 250GB SATA</denominacion>
+    <precio>80</precio>
+    <stock_actual>10</stock_actual>
+    <stock_minimo>5</stock_minimo>
+    <cod_zona>20</cod_zona>
+  </produc>
+  <produc>
+    <cod_prod>1014</cod_prod>
+	<denominacion>HD Caviar Blue 500GB SATA3</denominacion>
+	<precio>150</precio>
+	<stock_actual>5</stock_actual>
+	<stock_minimo>6</stock_minimo>
+	<cod_zona>30</cod_zona>
+  </produc>
+  <produc>
+    <cod_prod>1015</cod_prod>
+	<denominacion>Tarjeta gráfica Asus GeForce EN210 Silent 1GB</denominacion>
+	<precio>40</precio>
+	<stock_actual>10</stock_actual>
+	<stock_minimo>5</stock_minimo>
+	<cod_zona>30</cod_zona>
+  </produc>
+  <produc>
+    <cod_prod>1016</cod_prod>
+	<denominacion>Tarjeta gráfica Gigabyte GeForce 1GB</denominacion>
+	<precio>50</precio>
+	<stock_actual>5</stock_actual>
+	<stock_minimo>6</stock_minimo>
+	<cod_zona>40</cod_zona>
+  </produc>
+  <produc>
+    <cod_prod>1017</cod_prod>
+    <denominacion>Tarjeta gráfica Nvidia Express 1GB</denominacion>
+	<precio>45</precio>
+	<stock_actual>10</stock_actual>
+	<stock_minimo>5</stock_minimo>
+	<cod_zona>30</cod_zona>
+  </produc>
+  <produc>
+    <cod_prod>1018</cod_prod>
+	<denominacion>Micro Intel Dual Core G620</denominacion>
+	<precio>60</precio>
+    <stock_actual>15</stock_actual>
+	<stock_minimo>5</stock_minimo>
+	<cod_zona>40</cod_zona>
+  </produc>
+  <produc>
+    <cod_prod>1019</cod_prod>
+	<denominacion>Memoria DDR3 G.Skill 2GB</denominacion>
+	<precio>10</precio>
+	<stock_actual>5</stock_actual>
+	<stock_minimo>3</stock_minimo>
+	<cod_zona>10</cod_zona>
+  </produc>
+  <produc>
+      <cod_prod>1020</cod_prod>
+	  <denominacion>Memoria DDR3 G.Skill 4GB</denominacion>
+	  <precio>30</precio>
+	  <stock_actual>30</stock_actual>
+	  <stock_minimo>10</stock_minimo>
+	  <cod_zona>10</cod_zona>
+  </produc>
+  <produc>
+    <cod_prod>1021</cod_prod>
+	<denominacion>Memoria DDR3 Kingston HyperX 4GB</denominacion>
+	<precio>16</precio>
+	<stock_actual>15</stock_actual>
+	<stock_minimo>4</stock_minimo>
+	<cod_zona>20</cod_zona>
+  </produc>
+  <produc>
+  <cod_prod>1022</cod_prod>
+    <denominacion>Placa Base ASRock G41M-S3 </denominacion>
+    <precio>52</precio>
+    <stock_actual>0</stock_actual>
+    <stock_minimo>0</stock_minimo>
+    <cod_zona>30</cod_zona>
+  </produc>
+</productos>

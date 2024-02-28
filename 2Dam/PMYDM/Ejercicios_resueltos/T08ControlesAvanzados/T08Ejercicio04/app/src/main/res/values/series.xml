@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="series">
+        <item>Hermanos de sangre</item>
+        <item>Breaking bad</item>
+        <item>Friends</item>
+        <item>Patria</item>
+        <item>El patrón del mal</item>
+    </string-array>
+</resources>

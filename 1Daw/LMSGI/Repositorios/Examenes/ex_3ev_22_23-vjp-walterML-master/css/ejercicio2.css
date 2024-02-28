@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap');
+
+:root {
+    --color-elementos-menu: #aaa;
+    --ancho-menu: 70px;
+    --ancho-menu-hover: 200px;
+    --margen-laterales-texto: 8px;
+}
+
+/* ESTILOS GENERALES */
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+a {
+    scroll-behavior: auto;
+    text-decoration: none;
+    color: var(--color-elementos-menu);
+    font-weight: 100;
+    transition: all 0.3s;
+}
+
+article {
+    margin-left: var(--margen-laterales-texto);
+    margin-right: calc(var(--ancho-menu) + var(--margen-laterales-texto));
+}
+
+/* SOMBRA TITULOS */
+article>h2 {
+    padding: 10px;
+    box-shadow: 4px 3px 9px #9c9b9b;
+}
+
+/* MENU */
+nav.menu {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    background-color: #efefef;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    width: var(--ancho-menu);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+/* TITULO MENU */
+nav.menu>.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 800;
+    width: 70px;
+}
+
+nav.menu>.title>p {
+    text-orientation: sideways-right;
+    margin: 0 35px;
+}
+
+/* LISTA MENU */
+nav.menu>.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    line-height: 50px;
+}
+
+
+nav.menu>.nav>li>i {
+    color: var(--color-elementos-menu);
+    margin-right: 20px;
+}
+
+/* HOVER */
+nav.menu>.nav>li:hover> :is(a, i) {
+    color: black;
+    animation: rotacion 0.3s;
+}
+
+nav.menu:hover {
+    width: var(--ancho-menu-hover);
+}
+
+/* ANIMACION */
+@keyframes rotacion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

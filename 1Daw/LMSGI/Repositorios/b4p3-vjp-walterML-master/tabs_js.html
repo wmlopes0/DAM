@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Walter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tabs.css">
+    <title>Tabs JS</title>
+    <script>
+        function mostrar(nombreCapa) {
+            // Código simplificado de ejemplo, no es óptimo (todavía no hemos empezado JavaScript)
+            // Pongo todas las capas a display:none (debería ser más general)
+            document.getElementById('capa1').style.display = "none";
+            document.getElementById('capa2').style.display = "none";
+            document.getElementById('capa3').style.display = "none";
+            document.getElementById('capa4').style.display = "none";
+            document.getElementById('capa5').style.display = "none";
+            document.getElementById('capa6').style.display = "none";
+            document.getElementById('capa7').style.display = "none";
+ 
+            // La capa que tengo que mostrar la pongo a display:block;
+            document.getElementById(nombreCapa).style.display = "block";
+            document.getElementById(nombreCapa).style.backgroundColor = "pink";
+        }
+    </script>
+ 
+</head>
+
+<body>
+    <div class="tab">
+        <ul>
+            <li>
+                <div onclick="mostrar('capa1')">Capa 1</div>
+                <div id="capa1">Contenido de la CAPA 1</div>
+            </li>
+            <li>
+                <div  onclick="mostrar('capa2')">Capa 2</div>
+                <div id="capa2">Contenido de la CAPA 2</div>
+            </li>
+            <li>
+                <div  onclick="mostrar('capa3')">Capa 3</div>
+                <div id="capa3">Contenido de la CAPA 3</div>
+            </li>
+            <li>
+                <div  onclick="mostrar('capa4')">Capa 4</div>
+                <div id="capa4">Contenido de la CAPA 4</div>
+            </li>
+            <li>
+                <div  onclick="mostrar('capa5')">Capa 5</div>
+                <div id="capa5">Contenido de la CAPA 5</div>
+            </li>
+            <li>
+                <div  onclick="mostrar('capa6')">Capa 6</div>
+                <div id="capa6">Contenido de la CAPA 6</div>
+            </li>
+            <li>
+                <div  onclick="mostrar('capa7')">Capa 7</div>
+                <div id="capa7">Contenido de la CAPA 7</div>
+        </ul>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+
+</html>

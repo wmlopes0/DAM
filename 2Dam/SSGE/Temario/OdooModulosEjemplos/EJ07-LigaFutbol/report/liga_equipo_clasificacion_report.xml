@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Ejemplo de informe asociado a equipo (se genera al darle  aimprimir 
+        desde la vista Form de un equipo) -->
+    <template id="report_clasificacion_view">
+        <!-- Aqui la estructura a seguir -->
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <!-- Cabecera con el nombre de equipo -->
+                        <h2 t-field="doc.nombre" />
+                        <!-- Datos de los partidos jugados por el equipo -->
+                        <p>
+                            Partidos jugados:
+                            <span t-field="doc.jugados" />
+                        </p><p>
+                            Partidos ganados:
+                            <span t-field="doc.victorias" />
+                        </p><p>
+                            Partidos empatados:
+                            <span t-field="doc.empates" />
+                        </p><p>
+                            Partidos perdidos:
+                            <span t-field="doc.derrotas" />
+                        </p><p>
+                            Puntos obtenidos:
+                            <span t-field="doc.puntos" />
+                        </p>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!-- Realmente, este es el informe, lo de arriba es la plantilla que utilizara el informe -->
+    <report id="report_clasificacion" model="liga.equipo" string="Informe clasificacion de cada equipo" name="EJ07-LigaFutbol.report_clasificacion_view" file="EJ07-LigaFutbol.report_clasificacion_view" report_type="qweb-pdf" />
+
+
+</odoo>

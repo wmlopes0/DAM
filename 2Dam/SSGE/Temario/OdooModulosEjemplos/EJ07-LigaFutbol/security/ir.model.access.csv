@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acl_equipo,liga.equipo_default,model_liga_equipo,,1,1,1,1
+acl_partido,liga.partido_default,model_liga_partido,,1,1,1,1
+acl_liga_equipo_wizard,liga.equipo_wizard,model_liga_equipo_wizard,,1,1,1,1

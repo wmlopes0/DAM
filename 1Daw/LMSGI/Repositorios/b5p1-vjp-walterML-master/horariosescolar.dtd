@@ -1,0 +1,13 @@
+<!ELEMENT HorarioEscolar (IES,Grupo+)>
+<!ATTLIST HorarioEscolar curso NMTOKEN #REQUIRED>
+<!ATTLIST HorarioEscolar fechaCreacion NMTOKEN #REQUIRED>
+<!ELEMENT IES (Nombre,Url)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Url (#PCDATA)>
+<!ELEMENT Grupo (Tutoria,Modulos,Horario)>
+<!ATTLIST Grupo nombre CDATA #REQUIRED>
+<!ELEMENT Tutoria (Dia,Profesor)>
+<!ELEMENT Dia (Periodo+)>
+<!ATTLIST Dia nombre NMTOKEN #REQUIRED>
+<!ELEMENT Periodo EMPTY>
+<!ATTLIST Periodo desde (15.20|15:20|16:15|17:10|18:05|18:25|19:20|20:15) #REQUIRED><!ATTLIST Periodo hasta (16:15|17:10|18:05|18:25|19:20|20:15|21:10) #REQUIRED><!ATTLIST Periodo abbr (BD|ED|FHW|FOL|GBD|ISO|LMSGI|PARE|PGRMC|Recreo|SI) #IMPLIED><!ATTLIST Periodo tipo (modulo|módulo) #IMPLIED><!ATTLIST Periodo descripcion CDATA #IMPLIED><!ELEMENT Profesor (#PCDATA)><!ELEMENT Modulos (Modulo+)><!ELEMENT Modulo (Profesor)><!ATTLIST Modulo abbr NMTOKEN #REQUIRED><!ATTLIST Modulo nombre CDATA #REQUIRED><!ATTLIST Modulo horas (128|192|224|96) #REQUIRED><!ELEMENT Horario (Dia+)>

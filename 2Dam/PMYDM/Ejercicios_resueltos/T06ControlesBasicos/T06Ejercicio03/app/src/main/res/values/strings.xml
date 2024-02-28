@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">T06 Ejercicio 03</string>
+    <string name="texto_boton">¿Qué tengo seleccionado?</string>
+    <string name="radio_button_masculino">Masculino</string>
+    <string name="radio_button_femenino">Femenino</string>
+    <string name="toast_masculino">Ha seleccionado masculino</string>
+    <string name="toast_femenino">Ha seleccionado femenino</string>
+    <string name="toast_sinSeleccion">¡No ha seleccionado ninguna opción!</string>
+
+</resources>

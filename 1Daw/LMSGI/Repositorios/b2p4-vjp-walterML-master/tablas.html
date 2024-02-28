@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Walter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <!-- TABLA1 -->
+    <table border="1">
+        <caption>Tabla 1</caption>
+        <tbody>
+            <tr>
+                <td></td>
+                <th scope="col">Columna 1</th>
+            </tr>
+            <tr>
+                <th scope="row">Fila 1</th>
+                <td>Lorem ipsum</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- -------------------------------------------------------- -->
+    <!-- TABLA2 -->
+    <table border="1">
+        <caption>Tabla 2</caption>
+        <thead>
+            <tr>
+                <td colspan="2" rowspan="2"></td>
+                <th scope="col" rowspan="2">Column 1</th>
+                <th scope="col" colspan="2">Column 2</th>
+            </tr>
+            <tr>
+                <th scope="col">Columna 2a</th>
+                <th scope="col">Columna 2b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="2">Fila 1</th>
+                <th scope="row">Fila 1a</th>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+            </tr>
+            <tr>
+                <th scope="row">Fila 1b</th>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">Fila 2</th>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- -------------------------------------------------------- -->
+    <!-- TABLA3 -->
+    <table border="1">
+        <caption>Tabla 3</caption>
+        <thead>
+            <tr>
+                <th scope="col">col a</th>
+                <th scope="col">col b</th>
+                <th scope="col">col c</th>
+                <th scope="col">col d</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Fila 1</th>
+                <td>celda b1</td>
+                <td>celda c1</td>
+                <td>celda d1</td>
+            </tr>
+            <tr>
+                <th scope="row">Fila 2</th>
+                <td>celda b2</td>
+                <td>celda c2</td>
+                <td>celda d2</td>
+            </tr>
+            <tr>
+                <th scope="row">Fila 3</th>
+                <td>celda b3</td>
+                <td>celda c3</td>
+                <td>celda d3</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- -------------------------------------------------------- -->
+    <!-- TABLA4 -->
+    <table border="1">
+        <caption>Tabla 4</caption>
+        <thead>
+            <tr>
+                <th scope="col" colspan="2" rowspan="2">Col a</th>
+                <th scope="col" colspan="2">Col b</th>
+                <th scope="col" colspan="2">Col c</th>
+            </tr>
+            <tr>
+                <th scope="col">Col b-a</th>
+                <th scope="col">Col b-b</th>
+                <th scope="col">Col c-a</th>
+                <th scope="col">Col c-b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="2">Fila 1</th>
+                <th scope="row">Fila 1-1</th>
+                <td>Celda b-a-1</td>
+                <td>Celda b-b-1</td>
+                <td>Celda c-a-1</td>
+                <td>Celda c-b-1</td>
+            </tr>
+            <tr>
+                <th scope="row">Fila 1-2</th>
+                <td>Celda b-a-1-2</td>
+                <td>Celda b-b-1-2</td>
+                <td>Celda c-a-1-2</td>
+                <td>Celda c-b-1-2</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">Fila 2</th>
+                <th scope="row">Fila 2-1</th>
+                <td>Celda b-a-2-1</td>
+                <td>Celda b-b-2-1</td>
+                <td>Celda c-a-2-1</td>
+                <td>Celda c-b-2-1</td>
+            </tr>
+            <tr>
+                <th scope="row">Fila 2-2</th>
+                <td>Celda b-a-2-2</td>
+                <td>Celda b-b-2-2</td>
+                <td>Celda c-a-2-2</td>
+                <td>Celda c-b-2-2</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- -------------------------------------------------------- -->
+    <!-- TABLA5 -->
+    <table border="1">
+        <caption>Tabla 5</caption>
+        <thead>
+            <tr>
+                <th scope="col">Col a</th>
+                <th scope="col">Col b</th>
+                <th scope="col">Col c</th>
+                <th scope="col">Col d</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="col" colspan="4">Primer grupo</th>
+            </tr>
+            <tr>
+                <th scope="row">Fila 1</th>
+                <td>Cell b1</td>
+                <td>Cell c1</td>
+                <td>Cell d1</td>
+            </tr>
+            <tr>
+                <th scope="row">Fila 2</th>
+                <td>Cell b2</td>
+                <td>Cell c2</td>
+                <td>Cell d2</td>
+            </tr>
+            <tr>
+                <th scope="row">Fila 3</th>
+                <td>Cell b2</td>
+                <td>Cell c2</td>
+                <td>Cell d2</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th scope="col" colspan="4">Segundo grupo</th>
+            </tr>
+            <tr>
+                <th scope="row">Fila 1</th>
+                <td>Cell b1</td>
+                <td>Cell c1</td>
+                <td>Cell d1</td>
+            </tr>
+            <tr>
+                <th scope="row">Fila 2</th>
+                <td>Cell b2</td>
+                <td>Cell c2</td>
+                <td>Cell d2</td>
+            </tr>
+            <tr>
+                <th scope="row">Fila 3</th>
+                <td>Cell b2</td>
+                <td>Cell c2</td>
+                <td>Cell d2</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- -------------------------------------------------------- -->
+    <!-- TABLA6 -->
+    <table border="1">
+        <caption>Tabla 6</caption>
+        <thead>
+            <tr>
+                <th scope="col" colspan="4">
+                    <p>A simple table with description WCAG 2.0 using row grouping</p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Description example for a simple table</p>
+                    </details>
+                </th>
+            </tr>
+            <tr>
+               <th scope="col">Col a</th>
+               <th scope="col">Col b</th>
+               <th scope="col">Col c</th>
+               <th scope="col">Col d</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Row 1</th>
+                <td>Cell b1</td>
+                <td>Cell c1</td>
+                <td>Cell d1</td>
+            </tr>
+            <tr>
+                <th scope="row">Row 2</th>
+                <td>Cell b2</td>
+                <td>Cell c2</td>
+                <td>Cell d2</td>
+            </tr>
+            <tr>
+                <th scope="row">Row 3</th>
+                <td>Cell b3</td>
+                <td>Cell c3</td>
+                <td>Cell d3</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- -------------------------------------------------------- -->
+    <!-- TABLA7 -->
+    <table border="1">
+        <caption>Tabla 7</caption>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Name</th>
+                <th scope="col" colspan="2">HR Information</th>
+                <th scope="col" colspan="3">Contact</th>
+            </tr>
+            <tr>
+                <th scope="col">Position</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Office</th>
+                <th scope="col">Extn.</th>
+                <th scope="col">E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>$162,700</td>
+                <td>Tokyo</td>
+                <td>5407</td>
+                <td>a.satou@databases.net</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>$162,700</td>
+                <td>Tokyo</td>
+                <td>5407</td>
+                <td>a.satou@databases.net</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>$162,700</td>
+                <td>Tokyo</td>
+                <td>5407</td>
+                <td>a.satou@databases.net</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>$162,700</td>
+                <td>Tokyo</td>
+                <td>5407</td>
+                <td>a.satou@databases.net</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>$162,700</td>
+                <td>Tokyo</td>
+                <td>5407</td>
+                <td>a.satou@databases.net</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>$162,700</td>
+                <td>Tokyo</td>
+                <td>5407</td>
+                <td>a.satou@databases.net</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>$162,700</td>
+                <td>Tokyo</td>
+                <td>5407</td>
+                <td>a.satou@databases.net</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>$162,700</td>
+                <td>Tokyo</td>
+                <td>5407</td>
+                <td>a.satou@databases.net</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>$162,700</td>
+                <td>Tokyo</td>
+                <td>5407</td>
+                <td>a.satou@databases.net</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>$162,700</td>
+                <td>Tokyo</td>
+                <td>5407</td>
+                <td>a.satou@databases.net</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Position</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Office</th>
+                <th scope="col">Extn.</th>
+                <th scope="col">E-mail</th>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- -------------------------------------------------------- -->
+    <!-- TABLA8 -->
+    <table border="1">
+        <caption>Tabla 8</caption>
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Position</th>
+                <th scope="col">Office</th>
+                <th scope="col">Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="img/icon.png" alt="Icon" width="25px" height="25px"></td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Tokyo</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td><img src="img/icon.png" alt="Icon" width="25px" height="25px"></td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Tokyo</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td><img src="img/icon.png" alt="Icon" width="25px" height="25px"></td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Tokyo</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td><img src="img/icon.png" alt="Icon" width="25px" height="25px"></td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Tokyo</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td><img src="img/icon.png" alt="Icon" width="25px" height="25px"></td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Tokyo</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td><img src="img/icon.png" alt="Icon" width="25px" height="25px"></td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Tokyo</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td><img src="img/icon.png" alt="Icon" width="25px" height="25px"></td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Tokyo</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td><img src="img/icon.png" alt="Icon" width="25px" height="25px"></td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Tokyo</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td><img src="img/icon.png" alt="Icon" width="25px" height="25px"></td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Tokyo</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td><img src="img/icon.png" alt="Icon" width="25px" height="25px"></td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Tokyo</td>
+                <td>$162,700</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Position</th>
+                <th scope="col">Office</th>
+                <th scope="col">Salary</th>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- -------------------------------------------------------- -->
+    <!-- TABLA9 -->
+    <table border="1">
+        <caption>Tabla 9</caption>
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <ol start="10">
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                        <li>Eum doloremque repellendus est tempore obcaecati nesciunt. Velit.</li>
+                    </ol>
+                </td>
+                <td colspan="2">
+                    <ol type="I" start="10">
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Corrupti sapiente eligendi laboriosam itaque!</li>
+                        <li>Suscipit sequi amet quod repellat.</li>
+                        <li>Porro obcaecati assumenda illum recusandae?</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus soluta nostrum fugiat assumenda quaerat nobis?</td>
+                <td rowspan="2"><pre>           </pre></td>
+                <td><img src="https://picsum.photos/50/50" alt="Imagen1"></td>
+                <td rowspan="2">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col"><mark>sku</mark></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Producto 1</td>
+                                <td>Producto 2</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>234</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol type="a">
+                        <li><a href=""><mark>iesvjp</mark></a></li>
+                        <li><a href="">Tríptico ASIR en PDF</a></li>
+                        <li><a href="">Tríptico DAM en PDF</a></li>
+                    </ol>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Inventore ea voluptatem assumenda.</li>
+                        <li>Est sed quidem dicta.</li>
+                        <li>In eveniet hic similique.</li>
+                        <li>&lt;&lt;Jóvenes y Deporte&gt;&gt;</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+
+</html>

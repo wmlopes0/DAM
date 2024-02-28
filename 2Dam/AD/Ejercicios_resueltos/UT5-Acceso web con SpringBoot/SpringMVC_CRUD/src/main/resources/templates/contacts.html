@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8" />
+
+	<title>Backend Ninja - Signin</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+	<!-- Custom styles for this template -->
+	<link href="#" th:href="@{/css/style.css}" rel="stylesheet" />
+
+	<link href="#" th:href="@{/css/contacts.css}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h1>Contactos</h1>
+		<br />
+		<div class="panel panel-default">
+			<div class="panel-heading"></div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Telephone</th>
+						<th>City</th>
+						<th>Actions</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="contact : ${contactsModel}">
+						<td th:text="${contact.firstname}">Mark</td>
+						<td th:text="${contact.lastname}">Otto</td>
+						<td th:text="${contact.telephone}">656765678</td>
+						<td th:text="${contact.email}">Berlin</td>
+						<td>
+							<a href="#" th:href="@{/contacts/contactform?(id=${contact.id})}">
+								<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"
+										aria-hidden="true"></span></button>
+							</a>
+							<a href="#" th:href="@{/contacts/removecontact?(id=${contact.id})}">
+								<button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"
+										aria-hidden="true"></span></button>
+							</a>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+		<div th:if="${result==1}" class="alert alert-success" role="alert">Added successfully!</div>
+		<div th:if="${result==0}" class="alert alert-danger" role="alert">Error adding contact!</div>
+		<a href="#" th:href="@{/contacts/contactform?id=0}">
+			<button class="btn btn-lg btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-user"
+					aria-hidden="true"></span> Add contact</button>
+		</a>
+
+
+	</div>
+
+
+</body>
+
+</html>

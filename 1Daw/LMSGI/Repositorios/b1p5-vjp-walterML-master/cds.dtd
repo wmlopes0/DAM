@@ -1,0 +1,8 @@
+<!ELEMENT cds (cd+)>
+<!ELEMENT cd (titulo,artista,numeroCanciones,precio,año)>
+<!ATTLIST cd numero NMTOKEN #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT numeroCanciones (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT anno (#PCDATA)>

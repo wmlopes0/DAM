@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.iesvjp.hibernate.ACADT_UT4_P2.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in com.iesvjp.hibernate.ACADT_UT4_P2.AppTest

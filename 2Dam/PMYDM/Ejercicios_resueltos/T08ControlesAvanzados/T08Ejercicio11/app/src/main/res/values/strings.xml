@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">T08Ejercicio11</string>
+    <string name="botonTodo">AÑADIR TASK</string>
+    <string name="opcion1">Borrar Tasks</string>
+    <string name="multiLineVacia">¡Debes escribir algo!</string>
+    <string name="capacidadMaxima">¡No se pueden añadir mas Tasks, elimina alguno!</string>
+    <string name="taskEliminada">¡Task eliminada correctamente!</string>
+    <string name="tasksEliminadas">¡Todas los Tasks han sido eliminadas correctamente!</string>
+    <string name="taskAniadida">¡Task añadida correctamente!</string>
+
+</resources>

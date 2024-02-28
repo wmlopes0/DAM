@@ -1,0 +1,99 @@
+/* VARIABLES Y ESTILOS GENERALES--------------------- */
+:root {
+    --ancho-galeria: 600px;
+    /* --------------------- */
+    --alto-container: calc((var(--ancho-miniaturas) * 2) + var(--ancho-galeria));
+    --alto-imagen: var(--ancho-galeria);
+    --alto-barras: var(--ancho-galeria);
+    --ancho-barras: min(50px, calc(var(--ancho-galeria) / 5));
+    --ancho-miniaturas: calc(var(--ancho-galeria) / 5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--ancho-galeria);
+    height: var(--alto-container);
+    margin: 0px auto;
+}
+
+h2 {
+    color: blueviolet;
+    text-shadow: 1px 1px 17px blue;
+    text-align: center;
+    margin-bottom: 0px;
+}
+p{
+    margin-top: 10px;
+}
+
+/* ------------------------------------------------ */
+/* GALERIA Y BARRAS LATERALES ---------------------*/
+.galeria {
+    width: var(--ancho-galeria);
+    height: var(--alto-imagen);
+    overflow: hidden;
+}
+
+.imagen>div {
+    position: relative;
+}
+
+.imagen .izquierda a,
+.imagen .derecha a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.imagen .izquierda,
+.imagen .derecha {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: var(--ancho-barras);
+    height: var(--alto-barras);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 50px;
+}
+
+.imagen .izquierda {
+    left: 0px;
+}
+
+.imagen .derecha {
+    right: 0px;
+}
+
+/* MINIATURAS --------------------------------*/
+.container>.miniaturas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container>.miniaturas>a {
+    width: var(--ancho-miniaturas);
+    height: var(--ancho-miniaturas);
+}
+
+.container>.miniaturas>a>img {
+    width: var(--ancho-miniaturas);
+    height: var(--ancho-miniaturas);
+    object-fit: cover;
+    cursor: pointer;
+}

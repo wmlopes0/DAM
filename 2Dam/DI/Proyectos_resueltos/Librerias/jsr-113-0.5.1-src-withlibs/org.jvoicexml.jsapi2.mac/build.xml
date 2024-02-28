@@ -1,0 +1,115 @@
+<project name="org.jvoicexml.jsapi2.mac" default="jar" basedir=".">
+  <description>
+This file builds the JSR 113.jar.
+    </description>
+
+  <property name="base-project" value ="../org.jvoicexml.jsapi2" />
+  
+  <!-- allow the user to override setting in an own propertiesfile. -->
+  <property file="${base-project}/personal-props/ant.properties" />
+  <property file="${base-project}/config-props/ant.properties" />
+
+  <!-- directory structure -->
+  <property name="src" value="src" />
+  <property name="build" value="classes" />
+  <property name="apidoc" value="doc/api" />
+  <property name="dist" value="${base-project}/dist" />
+  
+  <!-- distribution files -->
+  <property name="component" value="org.jvoicexml.jsapi2.mac" />
+  <property name="dist.jar" value="${dist}/${component}.jar" />
+
+  <target name="-init">
+    <condition property="isMac">
+      <os family="mac"/>
+    </condition>
+    <mkdir dir="${build}" />
+    <mkdir dir="${dist}" />
+  </target>
+
+  <path id="classpath">
+    <pathelement location="${base-project}/dist/jsr113.jar"/>
+    <pathelement location="${base-project}/dist/org.jvoicexml.jsapi2.jar"/>
+    <pathelement location="${base-project}/dist/org.jvoicexml.jsapi2.jse.jar"/>
+  </path>
+
+  <target name="clean" description="Remove all compiled and distribution files">
+    <delete dir="${build}" />
+    <delete file="${dist.jar}" />
+    <delete dir="cpp/Jsapi2MacBridge/include">
+      <include name="org_jvoicexml_jsapi2*.h"/>
+    </delete>
+  </target>
+
+  <target name="-compile-cpp" if="isMac">
+    <!-- Build the whole cpp shebang -->
+    <delete dir="cpp/build"/>
+    <mkdir dir="cpp/build"/>
+    <exec executable="pwd" dir="cpp/Jsapi2MacBridge" />
+    <exec executable="g++" dir="cpp/Jsapi2MacBridge">
+      <arg line="-c -Wno-write-strings -IPublicUtility -I/System/Library/Frameworks/JavaVM.framework/Headers JNIUtils.cpp -o ../build/JNIUtils.o" />
+    </exec>
+    <exec executable="g++" dir="cpp/Jsapi2MacBridge">
+      <arg line="-c -Wno-write-strings -IPublicUtility -I/System/Library/Frameworks/JavaVM.framework/Headers -I/System/Library/Frameworks/ApplicationServices.framework/Headers MacEngineListFactory.cpp -o ../build/MacEngineListFactory.o" />
+    </exec>
+    <exec executable="g++" dir="cpp/Jsapi2MacBridge">
+      <arg line="-c -Wno-write-strings -IPublicUtility -I/System/Library/Frameworks/JavaVM.framework/Headers -I/Developer/Extras/CoreAudio/PublicUtility -I/System/Library/Frameworks/ApplicationServices.framework/Headers MacSynthesizer.cpp -o ../build/MacSynthesizer.o" />
+    </exec>
+    <exec executable="g++" dir="cpp/Jsapi2MacBridge">
+      <arg line="-c -Wno-write-strings -IPublicUtility -I/System/Library/Frameworks/JavaVM.framework/Headers -I/System/Library/Frameworks/ApplicationServices.framework/Headers MacRecognizer.cpp -o ../build/MacRecognizer.o" />
+    </exec>
+  	
+    <!-- Bind it together -->
+    <exec executable="g++" dir="cpp/build">
+      <arg line="-dynamiclib -o libJsapi2MacBridge.jnilib MacEngineListFactory.o MacRecognizer.o MacSynthesizer.o JNIUtils.o -framework JavaVM -framework ApplicationServices -framework AudioToolbox" />
+    </exec>
+  </target>
+
+  <target name="compile" depends="-init" description="Compile the JAVA sources">
+    <echo message="compiling with debug=${debug}, optimize=${optimize}" />
+    <javac destdir="${build}" source="1.6" target="1.6"
+      optimize="${optimize}" debug="${debug}" deprecation="on"
+      includeantruntime="false">
+      <src path="${src}" />
+      <classpath refid="classpath" />
+      <compilerarg value="-Xlint:unchecked" />
+    </javac>
+    <copy todir="${build}">
+      <fileset dir="${src}">
+        <include name="**/*.xsl" />
+      </fileset>
+    </copy>
+    <javah destdir="cpp/Jsapi2MacBridge/include">
+      <class name="${component}.MacEngineListFactory"/>
+      <class name="${component}.recognition.MacRecognizer"/>
+      <class name="${component}.synthesis.MacSynthesizer"/>
+      <classpath refid="classpath"/>
+      <classpath location="${build}"/>
+    </javah>
+    <antcall target="-compile-cpp"/>
+  </target>
+
+  <target name="-copyjnilib" if="isMac">
+    <copy todir="${dist}">
+      <fileset dir="cpp/build">
+        <include name="*.jnilib"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="jar" depends="compile, -copyjnilib"
+      description="Pack all compiled files into jar files">
+    <jar jarfile="${dist.jar}" compress="false">
+      <fileset dir="${build}">
+        <include name="org/jvoicexml/**/*.class" />
+      </fileset>
+      <manifest>
+        <attribute name="Built-By" value="${user.name}" />
+        <section name="common">
+          <attribute name="Implementation-Vendor" value="JVoiceXML group" />
+          <attribute name="Implementation-Title" value="Mac implementation for JSR113" />
+        </section>
+      </manifest>
+    </jar>
+  </target>
+</project>

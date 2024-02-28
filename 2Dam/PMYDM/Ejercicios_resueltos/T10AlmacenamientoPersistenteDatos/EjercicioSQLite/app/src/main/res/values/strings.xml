@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EjercicioSQLite</string>
+    <string name="botonAlta">ALTA</string>
+    <string name="botonBaja">BAJA</string>
+    <string name="botonModificacion">MODIFICACIÓN</string>
+    <string name="botonConsultaPorCodigo">CONSULTA POR CÓDIGO</string>
+    <string name="botonConsultaPorDescripcion">CONSULTA POR DESCRIPCIÓN</string>
+    <string name="botonConsultas">CONSULTAS</string>
+
+
+    <string name="codigoArticulo">CÓDIGO DEL ARTÍCULO</string>
+    <string name="descripcionArticulo">DESCRIPCIÓN DEL ARTÍCULO</string>
+    <string name="stockArticulo">STOCK</string>
+    <string name="precioArticulo">PRECIO</string>
+
+    <string name="toast_no_datos">¡Debes introducir todos los datos!</string>
+</resources>

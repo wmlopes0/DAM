@@ -1,0 +1,339 @@
+/* CODIGO GENERADO */
+.container_tablero {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.container_tablero>.a {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.container_tablero>.d {
+    grid-area: 4 / 4 / 6 / 6;
+}
+
+.container_tablero>.g {
+    grid-area: 7 / 7 / 9 / 9;
+}
+
+.container_tablero>.h {
+    grid-area: 7 / 10 / 9 / 12;
+}
+
+.container_tablero>.i {
+    grid-area: 7 / 13 / 9 / 15;
+}
+
+.container_tablero>.l {
+    grid-area: 10 / 7 / 12 / 9;
+}
+
+.container_tablero>.p {
+    grid-area: 13 / 7 / 15 / 9;
+}
+
+.container_tablero>.q {
+    grid-area: 13 / 10 / 15 / 12;
+}
+
+.container_tablero>.r {
+    grid-area: 13 / 13 / 15 / 15;
+}
+
+.container_tablero>.m {
+    grid-area: 10 / 13 / 12 / 15;
+}
+
+.container_tablero>.n {
+    grid-area: 10 / 16 / 12 / 18;
+}
+
+.container_tablero>.o {
+    grid-area: 10 / 19 / 12 / 21;
+}
+
+.container_tablero>.k {
+    grid-area: 10 / 4 / 12 / 6;
+}
+
+.container_tablero>.j {
+    grid-area: 10 / 1 / 12 / 3;
+}
+
+.container_tablero>.e {
+    grid-area: 4 / 10 / 6 / 12;
+}
+
+.container_tablero>.f {
+    grid-area: 4 / 16 / 6 / 18;
+}
+
+.container_tablero>.b {
+    grid-area: 1 / 10 / 3 / 12;
+}
+
+.container_tablero>.c {
+    grid-area: 1 / 19 / 3 / 21;
+}
+
+.container_tablero>.s {
+    grid-area: 16 / 4 / 18 / 6;
+}
+
+.container_tablero>.v {
+    grid-area: 19 / 1 / 21 / 3;
+}
+
+.container_tablero>.t {
+    grid-area: 16 / 10 / 18 / 12;
+}
+
+.container_tablero>.u {
+    grid-area: 16 / 16 / 18 / 18;
+}
+
+.container_tablero>.w {
+    grid-area: 19 / 10 / 21 / 12;
+}
+
+.container_tablero>.x {
+    grid-area: 19 / 19 / 21 / 21;
+}
+
+.container_tablero>.c_1 {
+    grid-area: 8 / 8 / 14 / 14;
+}
+
+.container_tablero>.c_2 {
+    grid-area: 5 / 5 / 17 / 17;
+}
+
+.container_tablero>.c_3 {
+    grid-area: 2 / 2 / 20 / 20;
+}
+
+.container_tablero>.bl_1 {
+    grid-area: 2 / 11 / 8 / 12;
+}
+
+.container_tablero>.br_1 {
+    grid-area: 2 / 10 / 8 / 11;
+}
+
+.container_tablero>.bl_2 {
+    grid-area: 14 / 11 / 20 / 12;
+}
+
+.container_tablero>.br_2 {
+    grid-area: 14 / 10 / 20 / 11;
+}
+
+.container_tablero>.bb_1 {
+    grid-area: 10 / 2 / 11 / 8;
+}
+
+.container_tablero>.bt_1 {
+    grid-area: 11 / 2 / 12 / 8;
+}
+
+.container_tablero>.bb_2 {
+    grid-area: 10 / 14 / 11 / 20;
+}
+
+.container_tablero>.bt_2 {
+    grid-area: 11 / 14 / 12 / 20;
+}
+
+/* MI CODIGO */
+:root {
+    --bg-casilla: #f4b183;
+    --bg-ficha-jugador-rojo: #760300;
+    --bg-ficha-jugador-azul: #345ba2;
+    --color-lineas-union-casillas: #c56629;
+    --color-border-exterior: #ae8879;
+    --ancho-border: 6px;
+    --dimensiones-tablero-juego: 500px;
+    --color-texto: #fbe5d6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container_tablero {
+    min-width: var(--dimensiones-tablero-juego);
+    min-height: var(--dimensiones-tablero-juego);
+}
+
+.container_tablero>div:nth-child(n):not(:nth-child(n+25)) {
+    z-index: 10;
+}
+
+.container_tablero>div[class^="c_"] {
+    border: 3px solid var(--color-lineas-union-casillas);
+    outline: 3px solid var(--color-lineas-union-casillas);
+}
+
+.container_tablero>div[class^="bl"] {
+    border-left: 3px solid var(--color-lineas-union-casillas);
+}
+
+.container_tablero>div[class^="br"] {
+    border-right: 3px solid var(--color-lineas-union-casillas);
+}
+
+.container_tablero>div[class^="bb"] {
+    border-bottom: 3px solid var(--color-lineas-union-casillas);
+}
+
+.container_tablero>div[class^="bt"] {
+    border-top: 3px solid var(--color-lineas-union-casillas);
+}
+
+/* CIRCULO DENTRO DE LAS CASILLAS CON AFTER */
+.container_tablero>div:nth-child(n):not(:nth-child(n+25)) {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_tablero>div:nth-child(n):not(:nth-child(n+25))::after {
+    content: "";
+    display: block;
+    width: calc(var(--dimensiones-tablero-juego)/20);
+    height: calc(var(--dimensiones-tablero-juego)/20);
+    border: 2px solid var(--color-border-exterior);
+    border-radius: calc((var(--dimensiones-tablero-juego)/20)*0.4);
+    background-color: var(--bg-casilla);
+}
+
+/* BORDE EXTERIOR */
+body {
+    background-image: url(../img/fondo_tablero.png);
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-texto);
+}
+
+.container_tablero {
+    border: 2px solid var(--color-border-exterior);
+}
+
+/* CONTAINER JUGADOR */
+.container_jugador {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "a b c"
+        "d e f"
+        "g h i";
+}
+
+.container_jugador>.a {
+    grid-area: a;
+}
+
+.container_jugador>.b {
+    grid-area: b;
+}
+
+.container_jugador>.c {
+    grid-area: c;
+}
+
+.container_jugador>.d {
+    grid-area: d;
+}
+
+.container_jugador>.e {
+    grid-area: e;
+}
+
+.container_jugador>.f {
+    grid-area: f;
+}
+
+.container_jugador>.g {
+    grid-area: g;
+}
+
+.container_jugador>.h {
+    grid-area: h;
+}
+
+.container_jugador>.i {
+    grid-area: i;
+}
+
+.container_jugador>div {
+    width: calc(var(--dimensiones-tablero-juego)/20);
+    height: calc(var(--dimensiones-tablero-juego)/20);
+    border-radius: 50%;
+}
+
+.container_jugador.azul>div {
+    background-color: var(--bg-ficha-jugador-azul)
+}
+
+.container_jugador.rojo>div {
+    background-color: var(--bg-ficha-jugador-rojo)
+}
+
+/* CENTRAR ELEMENTOS */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container>.container_jugador.azul {
+    order: 1;
+}
+
+.container>.container_tablero {
+    order: 2;
+}
+
+.container>.container_jugador.rojo {
+    order: 3;
+}
+
+
+@media print {
+    :root{
+        --dimensiones-tablero-juego: 100vmin;
+    }
+
+    h1 {
+        color: black;
+    }
+
+    body {
+        background-image: none;
+    }
+
+    .container>.container_jugador.rojo {
+        order: 1;
+    }
+
+    .container>.container_jugador.azul {
+        order: 2;
+    }
+
+    .container>.container_tablero {
+        order: 3;
+        border-style: dashed;
+    }
+
+
+}

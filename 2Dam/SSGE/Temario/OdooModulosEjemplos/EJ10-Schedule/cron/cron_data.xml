@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+  <record id="ir_cron_actualizar_fecha_publicacion_a_hoy" model="ir.cron">
+    <field name="name">Cada minuto actualiza fecha publicacion registros a hoy</field>
+    <field name="interval_number">1</field>
+    <field name="interval_type">minutes</field>
+    <field name="numbercall">-1</field>
+    <field name="user_id" ref="base.user_root"/>
+    <field name="doall" eval="False"/>
+    <field name="model_id" ref="model_biblioteca_comic"/>
+    <field name="state">code</field>
+    <field name="code">model.actualizar()</field>
+  </record>
+
+</odoo>

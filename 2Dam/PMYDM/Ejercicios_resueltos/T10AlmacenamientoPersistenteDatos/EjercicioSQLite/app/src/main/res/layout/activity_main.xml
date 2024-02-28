@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/codigoArticulo" />
+
+    <EditText
+        android:id="@+id/inputCodigo"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:ems="10"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/descripcionArticulo" />
+
+    <EditText
+        android:id="@+id/inputDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:ems="10"
+        android:inputType="text"
+        android:gravity="center"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/stockArticulo" />
+
+    <EditText
+        android:id="@+id/inputStock"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:ems="10"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/precioArticulo" />
+
+    <EditText
+        android:id="@+id/inputPrecio"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:ems="10"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/botonAlta"
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/botonAlta" />
+
+        <Button
+            android:id="@+id/botonBaja"
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/botonBaja" />
+
+        <Button
+            android:id="@+id/botonModificacion"
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="@string/botonModificacion" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/botonConsultaPorCodigo"
+            android:layout_width="0dp"
+            android:layout_weight="45"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/botonConsultaPorCodigo" />
+
+        <Button
+            android:id="@+id/botonConsultaPorDescripcion"
+            android:layout_width="0dp"
+            android:layout_weight="55"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/botonConsultaPorDescripcion" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_weight="5"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/botonConsultas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/botonConsultas" />
+    </LinearLayout>
+
+</LinearLayout>

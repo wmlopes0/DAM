@@ -1,0 +1,188 @@
+:root{
+    --altoMapa:450px;
+    --anchoMapa:500px;
+    --centrarY:calc((100vh - var(--altoMapa))/2);
+    --centrarX:calc((100vw - var(--anchoMapa))/2);
+}
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+a:not(.mapa a) {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px 30px 15px 30px;
+}
+
+/* FONDO */
+.container>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container>.transparencia {
+    position: absolute;
+    background-color: rgba(222, 184, 135);
+    opacity: 0.6;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* TÍTULO */
+.container>.titulo {
+    position: absolute;
+    z-index: 2;
+    margin-top: 80px;
+    margin-left: 100px;
+    transform: skewX(-8deg);
+    text-align: center;
+    width: max-content;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 2px 6px 0px white;
+}
+
+.container>.titulo>h1 {
+    position: relative;
+    font-size: 70px;
+    background-color: #05a830;
+    border-bottom: 10px solid white;
+    padding: 0px 30px;
+    animation: animacionh1 2s forwards;
+}
+
+.container>.titulo>p {
+    position: relative;
+    font-size: 35px;
+    animation: animacionP 1.5s forwards;
+}
+
+/* HOVER CORTINA */
+.container>.titulo:hover~.transparencia {
+    left: 100%;
+    opacity: 0.1;
+    transition: opacity 2s, left 3s ease-out;
+}
+
+/* MAPA */
+.container>.mapa {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 30;
+    background-color: black;
+    box-shadow: -1px -1px 8px 0px rgba(255, 255, 255, 0.748);
+    border: 2px dashed #fcfffb;
+    width: var(--anchoMapa);
+    height: var(--altoMapa);
+    /* Rotación */
+    transform: rotate(-48deg) translateX(-190px) translateY(515px);
+    /* Transicion */
+    transition: all 100ms;
+}
+
+.container>.mapa .iconoMapa {
+    position: absolute;
+    top: 11px;
+    right: 50px;
+    transform: rotate(48deg);
+    color: grey;
+    display: block;
+}
+
+.container>.mapa>p {
+    font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 20px 40px 20px 40px;
+}
+
+.container>.mapa>div.iframe {
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    align-content: center;
+}
+
+.container>.mapa iframe {
+    width: 450px;
+    height: 310px;
+    box-shadow: -1px -1px 8px 0px rgba(0, 0, 0, 0.628);
+    border: none;
+    border-radius: 10px;
+}
+/* CLICK MAPA */
+#centrar:target > .mapa {
+    background-color: #fcfffb;
+    border: none;
+    transform: none;
+    top:var(--centrarY);
+    left:var(--centrarX);
+}
+
+#centrar:target > .mapa .iconoMapa{
+    display: none;
+}
+
+#centrar:target > .mapa .iconoExit{
+    position: absolute;
+    right: 0;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+}
+
+/* ANIMACIONES*/
+@keyframes animacionh1 {
+    0% {
+        left: -500px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animacionP {
+    0% {
+        right: -1000px;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 575.98px) {
+    .container>.titulo {
+        width: 80%;
+        min-width: 375px;
+        margin: 30px auto auto 50px;
+    }
+
+    .container>.titulo>h1 {
+        font-size: 50px;
+    }
+}

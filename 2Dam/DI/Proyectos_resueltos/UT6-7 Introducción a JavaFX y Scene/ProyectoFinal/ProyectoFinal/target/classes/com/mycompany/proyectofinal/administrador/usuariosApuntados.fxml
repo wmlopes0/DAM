@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="624.0" styleClass="fondo" stylesheets="@../../../../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.administrador.UsuariosApuntadosController">
+   <children>
+      <TableView fx:id="tablaUsuarios" layoutX="117.0" layoutY="101.0" prefHeight="272.0" prefWidth="391.0" styleClass="tabla" stylesheets="@../../../../styles/styles.css">
+        <columns>
+          <TableColumn fx:id="columnaId" prefWidth="104.0" text="ID" />
+          <TableColumn fx:id="columnaNombre" prefWidth="281.0" text="Nombre" />
+        </columns>
+      </TableView>
+      <Label layoutX="141.0" layoutY="32.0" styleClass="labelTitulo" stylesheets="@../../../../styles/styles.css" text="USUARIOS APUNTADOS" />
+   </children>
+</AnchorPane>

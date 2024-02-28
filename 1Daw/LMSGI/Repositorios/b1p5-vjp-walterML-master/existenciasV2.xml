@@ -1,0 +1,24 @@
+<!DOCTYPE ListaDeProductos SYSTEM "existenciasV2.dtd">
+<ListaDeProductos hora="17:01" dia="14" mes="10" anno="2022">
+    <Producto codigoId="1">
+        <Nombre>Producto1</Nombre>
+        <Stock actual="3">
+            <Minimo>1</Minimo>
+            <Maximo>10</Maximo>
+        </Stock>
+    </Producto>
+    <Producto codigoId="2">
+        <Nombre>Producto2</Nombre>
+        <Stock actual="5">
+            <Minimo>1</Minimo>
+            <Maximo>10</Maximo>
+        </Stock>
+    </Producto>
+    <Producto codigoId="3">
+        <Nombre>Producto3</Nombre>
+        <Stock actual="3">
+            <Minimo>1</Minimo>
+            <Maximo>10</Maximo>
+        </Stock>
+    </Producto>
+</ListaDeProductos>

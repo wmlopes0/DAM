@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.tab{
+   margin: 20px;
+}
+
+div.tab li div:nth-child(2) {
+    width: 800px;
+    height: 400px;
+    border: 15px solid orange;
+    box-sizing: border-box;
+    font-size: 2em;
+    position: absolute;
+    text-align: left;
+    top: 70px;
+    left: 20px;
+}
+
+div.tab ul li {
+    display: inline-block;
+    background-color: orange;
+    color: black;
+    text-align: center;
+    width: 130px;
+    padding: 20px 0;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+}
+
+div.tab ul {
+    padding: 0;
+    width: 800px;
+    height: 455px;
+}
+
+div.tab li:hover div:nth-child(2){
+    z-index: 100;
+}
+
+div.tab li:nth-child(1) div:nth-child(2) {
+    background-color: aqua;
+    z-index: 50;
+}
+
+div.tab li:nth-child(2) div:nth-child(2) {
+    background-color: yellow;
+}
+
+div.tab li:nth-child(3) div:nth-child(2) {
+    background-color: antiquewhite;
+}
+
+div.tab li:nth-child(4) div:nth-child(2) {
+    background-color: brown;
+}
+
+div.tab li:nth-child(5) div:nth-child(2) {
+    background-color: purple;
+}
+
+div.tab li:nth-child(6) div:nth-child(2) {
+    background-color: green;
+}
+
+div.tab li:nth-child(7) div:nth-child(2) {
+    background-color: pink;
+}
+/* --------------------- */
+div.tab li:nth-child(1):hover div:nth-child(1){
+    color: aqua;
+}
+
+div.tab li:nth-child(2):hover div:nth-child(1) {
+    color: yellow;
+}
+
+div.tab li:nth-child(3):hover div:nth-child(1) {
+    color: antiquewhite;
+}
+
+div.tab li:nth-child(4):hover div:nth-child(1) {
+    color: brown;
+}
+
+div.tab li:nth-child(5):hover div:nth-child(1) {
+    color: purple;
+}
+
+div.tab li:nth-child(6):hover div:nth-child(1) {
+    color: green;
+}
+
+div.tab li:nth-child(7):hover div:nth-child(1) {
+    color: pink;
+}

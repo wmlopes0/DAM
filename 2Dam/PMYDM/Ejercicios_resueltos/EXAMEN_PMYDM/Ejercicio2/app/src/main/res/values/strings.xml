@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ejercicio2</string>
+    <string name="textView_nombre">Nombre:</string>
+    <string name="textView_telefono">Teléfono:</string>
+    <string name="textView_buscar">Buscar contacto:</string>
+    <string name="button_guardar">GUARDAR</string>
+    <string name="button_mostrar">MOSTRAR</string>
+    <string name="toast_camposVacios">Por favor, introduzca nombre y teléfono</string>
+    <string name="toast_buscarNombreVacio">Por favor, debe introducir un contacto</string>
+    <string name="toast_noHayContactos">No hay contactos en la agenda</string>
+    <string name="toast_contactoNoEncontrado">El contacto no existe en la agenda</string>
+    <string name="toast_contactoGuardado">Contacto guardado</string>
+    <string name="toast_noExistenExtras">ERROR: No existen datos</string>
+    <string name="toast_noTienePermiso">No tienes permisos</string>
+</resources>

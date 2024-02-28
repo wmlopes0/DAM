@@ -1,0 +1,83 @@
+:root {
+    --ancho-img: 200px;
+    --alto-img: 254px;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titulo titulo imagen1 imagen1"
+      "imagen2 imagen3 imagen1 imagen1"
+      "imagen4 imagen5 imagen6 imagen7"
+      "imagen8 imagen8 imagen9 imagen10"
+      "imagen8 imagen8 imagen11 imagen12";
+  }
+  
+  .titulo { grid-area: titulo; }
+  
+  .imagen1 { grid-area: imagen1; }
+  
+  .imagen2 { grid-area: imagen2; }
+  
+  .imagen3 { grid-area: imagen3; }
+  
+  .imagen4 { grid-area: imagen4; }
+  
+  .imagen5 { grid-area: imagen5; }
+  
+  .imagen6 { grid-area: imagen6; }
+  
+  .imagen7 { grid-area: imagen7; }
+  
+  .imagen8 { grid-area: imagen8; }
+  
+  .imagen9 { grid-area: imagen9; }
+  
+  .imagen10 { grid-area: imagen10; }
+  
+  .imagen11 { grid-area: imagen11; }
+  
+  .imagen12 { grid-area: imagen12; }
+  
+.container>div{
+    width: var(--ancho-img);
+    height: var(--alto-img);
+}
+
+.container>div>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* TITULO */
+.titulo>h1{
+    font-size: 2.5em;
+}
+.titulo>h1>abbr{
+    text-decoration: none;
+}
+
+/* Imagen texto */
+div.imagen4{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #777;
+    color: white;
+    padding: 10px;
+}
+div.imagen4>hr{
+    margin-right: 130px;
+    width: 50px;
+}
+div.imagen4>p{
+    font-size: 1.4rem;
+    font-weight: bolder;
+}

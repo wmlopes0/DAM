@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_listarLibros"
+            android:title="@string/menu_listarLibros" />
+        <item
+            android:id="@+id/nav_consultarLibro"
+            android:title="@string/menu_consultarLibro" />
+        <item
+            android:id="@+id/nav_addLibro"
+            android:title="@string/menu_addLibro" />
+        <item
+            android:id="@+id/nav_eliminarLibro"
+            android:title="@string/menu_eliminarLibro" />
+    </group>
+</menu>

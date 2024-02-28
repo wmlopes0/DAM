@@ -1,0 +1,26 @@
+{
+    "name": "Unity.2D.Animation.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "Unity.2D.Common.Runtime",
+        "Unity.InternalAPIEngineBridge.001",
+        "Unity.Mathematics",
+        "Unity.Burst",
+        "Unity.Collections"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.collections",
+            "expression": "2.0.0-exp",
+            "define": "COLLECTIONS_2_0_OR_ABOVE"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">T06Ejercicio07</string>
+    <string name="introduzcaValor">Cantidad a convertir: </string>
+    <string name="toastNumeroVacio">¡Debes introducir dos valores antes de operar!</string>
+    <string name="toastCheckVacio">¡Debes seleccionar alguna de las opciones!</string>
+    <string name="euros">Euros</string>
+    <string name="dolares">Dólares</string>
+    <string name="libras">Libras</string>
+    <string name="en_euros">en Euros</string>
+    <string name="en_dolares">en Dólares</string>
+    <string name="en_libras">en Libras</string>
+    <string name="convertir">CONVERTIR</string>
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Ejercicio1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_batman">Batman</string>
+    <string name="radioButton_joker">JOKER</string>
+    <string name="radioButton_espantapajaros">ESPANTAPÁJAROS</string>
+    <string name="elige_un_villano">Elige un villano</string>
+    <string name="cuidado_joker">¡¡¡Cuidado, el Joker!!!</string>
+    <string name="cuidado_espantapajaros">¡¡¡Cuidado, el Espantapájaros!!!</string>
+    <string name="toast_noSeleccionado">Por favor, debe elegir un villano</string>
+
+
+    <string name="menu_vengadores">Vengadores</string>
+    <string name="checkBox_hulk">HULK</string>
+    <string name="checkBox_thor">THOR</string>
+    <string name="toggleButton_off">ENVIAR A MISIÓN</string>
+    <string name="toggleButton_on">RETIRADA</string>
+    <string name="toast_vengadoresSeleccionados">¡¡¡Vengadores a la misión!!!</string>
+    <string name="toast_hulk">¡¡¡Hulk a la misión!!!</string>
+    <string name="toast_thor">¡¡¡Thor a la misión!!!</string>
+    <string name="toast_vengadoresSinSeleccionar">¡¡¡Por favor, debe elegir un vengador!!!</string>
+    <string name="toast_retirada">¡¡¡Retirada!!!</string>
+</resources>

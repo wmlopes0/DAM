@@ -1,0 +1,83 @@
+body {
+    color: black;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: green;
+}
+
+h3 {
+    color: yellow;
+}
+
+p {
+    color: orangered;
+}
+
+abbr {
+    color: purple;
+}
+
+cite {
+    color: blue;
+}
+
+code {
+    color: rgb(88, 11, 34);
+}
+
+q {
+    color: lightblue;
+}
+
+blockquote {
+    color: lightsalmon;
+}
+
+pre {
+    color: lightgreen;
+}
+
+strong {
+    color: aqua;
+}
+
+samp {
+    color: royalblue;
+}
+
+div {
+    color: beige;
+}
+
+dfn {
+    color: greenyellow;
+}
+
+address {
+    color: bisque;
+}
+
+kbd {
+    color: grey;
+}
+
+em {
+    color: salmon;
+}
+
+sub {
+    color: blueviolet;
+}
+
+sup {
+    color: darkkhaki;
+}
+
+var {
+    color: khaki;
+}

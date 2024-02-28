@@ -1,0 +1,26 @@
+insert into deportes values('tenis','Ana Lopez','lunes',20);
+ insert into deportes values('natacion','Ana Lopez','martes',15);
+ insert into deportes values('futbol','Carlos Fuentes','miercoles',10);
+ insert into deportes values('basquet','Gaston Garcia','jueves',15);
+ insert into deportes values('padel','Juan Huerta','lunes',15);
+ insert into deportes values('handball','Juan Huerta','martes',10);
+
+ 
+ insert into socios values(1,'23333333','Alberto Paredes','Colon 111');
+ insert into socios values(2,'24444444','Carlos Conte','Sarmiento 755');
+ insert into socios values(3,'25555555','Fabian Fuentes','Caseros 987');
+ insert into socios values(4,'26666666','Hector Lopez','Sucre 344');
+
+ insert into inscripciones values(1,'tenis',1);
+ insert into inscripciones values(1,'basquet',2);
+ insert into inscripciones values(1,'natacion',1);
+ insert into inscripciones values(2,'tenis',9);
+ insert into inscripciones values(2,'natacion',1);
+ insert into inscripciones values(2,'basquet',default);
+ insert into inscripciones values(2,'futbol',2);
+ insert into inscripciones values(3,'tenis',8);
+ insert into inscripciones values(3,'basquet',9);
+ insert into inscripciones values(3,'natacion',0);
+ insert into inscripciones values(4,'basquet',10);
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Walter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Título de la página</title>
+</head>
+</html>
+<body>
+    <script type="text/javascript">
+  
+  function mostrarsubmenu(id) {
+  var d = document.getElementById(id);
+  for (var i = 1; i<=10; i++) {
+  if (document.getElementById('smenu'+i)) {document.getElementById('smenu'+i).style.display='none';}
+  }
+  if (d) {d.style.display='block';}
+  }
+  
+    </script>
+  
+  <div class="menu" id="menucontenidos">
+  <dl>
+      <dt onmouseover="javascript:mostrarsubmenu('smenu1');"><a target="cuerpo" href="http://port2w2/html_introduccion.html" title="HTML">HTML</a> </dt>
+      <dd style="display: block;" id="smenu1">
+      <ul>
+        <li><a target="cuerpo" href="http://port2w2/html_introduccion.html">Introducción</a></li>
+        <li><a href="http://port2w2/html_formato.html">Formato, listas y tablas</a></li>
+        <li><a href="http://port2w2/html_hipervinculos_imagenes.html">Hipervínculos e Imágenes</a></li>
+        <li><a href="http://port2w2/html_applet_audio_video_flash.html">Applet, audio, vídeo y otros objetos</a></li>
+        <li><a href="http://port2w2/html_formularios.html">Formularios</a></li>
+        <li><a href="http://port2w2/html_marcos.html">Marcos - Frames</a></li>
+      </ul>
+      </dd>
+  </dl>
+  
+  <dl>
+        <dt onmouseover="javascript:mostrarsubmenu('smenu2');"><a target="cuerpo" href="http://port2w2/css_introduccion.html" title="CSS">CSS</a></dt>
+      <dd style="display: none;" id="smenu2">
+      <ul>
+        <li><a target="cuerpo" href="http://port2w2/css_introduccion.html">Introducción</a></li>
+        <li><a target="cuerpo" href="#%22">Modelo de cajas, fuentes, colores y tablas</a></li>
+      </ul>
+      </dd>
+  
+  </dl>
+  <dl><dt onmouseover="javascript:mostrarsubmenu();">JavaScript</dt></dl>
+  <dl><dt onmouseover="javascript:mostrarsubmenu();">PHP</dt></dl>
+  </div>
+  
+  <div class="textoinferior">.:: Sección  &lt; Contenidos &gt; ::.</div>
+  
+  
+  
+  
+  
+  <br>
+  
+  </body>
+  

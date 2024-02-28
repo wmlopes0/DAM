@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_listarModulos">
+
+    <fragment
+        android:id="@+id/nav_consultarModulo"
+        android:name="com.example.t09ejercicio2.ui.consultarModulo.ConsultarModuloFragment"
+        android:label="@string/menu_consultarModulo"
+        tools:layout="@layout/fragment_consultar_modulo" />
+
+    <fragment
+        android:id="@+id/nav_listarModulos"
+        android:name="com.example.t09ejercicio2.ui.listarModulos.ListarModulosFragment"
+        android:label="@string/menu_listarModulos"
+        tools:layout="@layout/fragment_listar_modulos" />
+
+    <fragment
+        android:id="@+id/nav_addModulo"
+        android:name="com.example.t09ejercicio2.ui.addModulo.addModuloFragment"
+        android:label="@string/menu_addModulo"
+        tools:layout="@layout/fragment_addmodulo" />
+
+    <fragment
+        android:id="@+id/nav_eliminarModulo"
+        android:name="com.example.t09ejercicio2.ui.eliminarModulo.EliminarModuloFragment"
+        android:label="@string/menu_eliminarModulo"
+        tools:layout="@layout/fragment_eliminar_modulo" />
+</navigation>

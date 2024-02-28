@@ -1,0 +1,48 @@
+body>div {
+    border: 5px solid black;
+    position: relative;
+
+}
+
+div>div {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+}
+
+div>div:nth-child(1) {
+    background-color: aquamarine;
+    top: 10px;
+    left: 100px;
+}
+
+div>div:nth-child(2) {
+    background-color: green;
+    z-index: 101;
+}
+
+div>div:nth-child(3) {
+    background-color: blue;
+}
+
+div>div:nth-child(4) {
+    background-color: yellow;
+    z-index: 100;
+}
+
+div>div:nth-child(5) {
+    background-color: pink;
+}
+
+div>div:nth-child(6) {
+    background-color: red;
+}
+
+h1{
+    background-color: gray;
+}

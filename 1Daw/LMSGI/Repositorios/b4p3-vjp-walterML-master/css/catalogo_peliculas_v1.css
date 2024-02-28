@@ -1,0 +1,77 @@
+/* ESTILOS GENERALES */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER ---------------------------------------------------------------------------*/
+body>header {
+    background: linear-gradient(90deg, #FFFF00 0%, #D40000 0%, #D46B00 61%, #EEB182 100%);
+}
+
+body>header>* {
+    display: inline-block;
+    width: 48%;
+    margin: 0px;
+    font-variant: small-caps;
+    font-style: oblique;
+    letter-spacing: 5px;
+}
+
+body>header>h1 {
+    margin-left: 30px;
+}
+
+body>header>p {
+    text-align: right;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+/* MAIN------------------------------------------------------------------------------ */
+main {
+    width: 93%;
+    margin: 7px auto;
+}
+
+/* PELICULA------------------------------------------------------------------------------ */
+article.pelicula {
+    min-width: 350px;
+    border-top: 1px solid red;
+    margin-bottom: 30px;
+}
+
+article.pelicula>header>div.imagen {
+    float: left;
+    width: max-content;
+    margin: 0px;
+}
+
+article.pelicula>header>div.imagen>img {
+    border: 5px solid red;
+}
+
+article.pelicula>header>div.flecha {
+    float: left;
+    height: 225px;
+    margin-top: 5px;
+}
+
+article.pelicula>header>h2 {
+    margin: 0;
+    font-variant: small-caps;
+    letter-spacing: 10px;
+}
+
+article.pelicula>div>div.precio {
+    border-top: 5px solid rgb(0, 255, 0);
+    border-bottom: 5px solid rgb(0, 255, 0);
+    margin-left: 185px;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-size: 1.1em;
+}
+
+article.pelicula>div>p {
+    margin-top: 0;
+}

@@ -1,0 +1,11 @@
+<!ELEMENT sparql (head,results)>
+<!ELEMENT head (variable)>
+<!ELEMENT variable EMPTY>
+<!ATTLIST variable name NMTOKEN #REQUIRED>
+<!ELEMENT results (result+)>
+<!ATTLIST results distinct NMTOKEN #REQUIRED>
+<!ATTLIST results ordered NMTOKEN #REQUIRED>
+<!ELEMENT result (binding)>
+<!ELEMENT binding (uri)>
+<!ATTLIST binding name NMTOKEN #FIXED "Concept">
+<!ELEMENT uri (#PCDATA)>

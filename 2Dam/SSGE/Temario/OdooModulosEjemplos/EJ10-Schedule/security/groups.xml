@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Aqui definimos como se forma el grupo de seguridad "grupo_bibliotecario"
+        basado en "res.groups", que es el modelo de los grupos de Odoo -->
+    <record id="grupo_bibliotecario" model="res.groups">
+        <!-- El field "name" indica como se mostrara en la interfaz. 
+            En este caso se verá como "Bibliotecario" -->
+        <field name="name">Biblotecario</field>
+        <!-- El field "users" indica que los usuarios de este grupo se incluyan en este
+            grupo de seguirdad. 
+            En este caso con "base.user_admin" estamos incluyendo a los administradores --> 
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+        <!-- Para otros casos, podriamos incluir a un grupo creado en Odoo que nos interese
+            (jefes, encargados, empleados, etc.) -->
+    </record>
+</odoo>

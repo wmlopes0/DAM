@@ -1,0 +1,64 @@
+div.caja {
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 0px 6px black;
+    margin: auto;
+    overflow: hidden;
+}
+
+div.caja img {
+    animation: animar 10s infinite;
+}
+
+@keyframes animar {
+    0% {
+        transform: rotate(180deg) translate(205px, 450px);
+    }
+    20% {
+        transform: rotate(270deg) translate(334px, 80px);
+    }
+    40% {
+        transform: rotate(180deg) translate(90px, 270px);
+    }
+    60% {
+        transform: rotate(360deg) translate(-247px, -265px);
+    }
+    80% {
+        transform: rotate(0deg) translate(-20px, -355px);
+    }
+    100% {
+        transform: rotate(270deg) translate(140px, -380px);
+    }
+}
+
+
+/*
+Iphone 4
+    transform: rotate(180deg) translate(205px, 450px);
+*/
+
+/*
+IOS
+transform: rotate(270deg) translate(334px, 80px);
+*/
+
+/*
+ICLOUD
+transform: rotate(180deg) translate(90px, 270px);
+*/
+
+/*
+SIRI
+transform: rotate(360deg) translate(-247px, -265px);
+*/
+
+/*
+CÁMARA
+transform: rotate(0deg) translate(-20px, -355px);
+*/
+
+/*
+transform: rotate(270deg) translate(140px, -380px);
+
+*/
+

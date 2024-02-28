@@ -1,0 +1,308 @@
+<!DOCTYPE sparql SYSTEM "farmacias.dtd">
+<sparql>
+ <head>
+  <variable name="Concept"/>
+ </head>
+ <results distinct="false" ordered="true">
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#QuadStorage</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#QuadMap</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#QuadMapValue</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapColumn</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapATable</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#QuadMapATable</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#QuadMapFText</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#array-of-string</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMap</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2002/07/owl#Class</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2002/07/owl#Ontology</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2000/01/rdf-schema#Class</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2002/07/owl#OntologyProperty</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2002/07/owl#AnnotationProperty</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2002/07/owl#Restriction</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2002/07/owl#DatatypeProperty</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#FuentePublica</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/PoliceStation</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#AreaPotencialSolar</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#SalonJuego</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/ns/sparql-service-description#Service</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#ActividadDeportiva</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/OpeningHoursSpecification</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/PostalAddress</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/ns/prov#Activity</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://purl.org/NET/c4dm/event.owl#Event</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2006/time#Interval</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Evento</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/Event</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/ExhibitionEvent</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/Festival</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/LiteraryEvent</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/MusicEvent</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/SportEvent</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://dbpedia.org/ontology/Plant</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Arbol</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2003/01/geo/wgs84_pos#Feature</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#InstalacionDeportiva</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#CentroDeDia</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#BuzonCorreos</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Tanatorio</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Cementerio</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#OficinaCorreos</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/recurso/demografia/padron/2018#padron</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#CajeroAutomatico</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/AutomatedTeller</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Linea</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Cine</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/MovieTheater</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Contenedor</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Desfibrilador</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#HogarMayores</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Ludoteca</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/place</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#MedicionRuido</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Monumento</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/TouristAttraction</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Teatro</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://dbpedia.org/ontology/Theatre</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Via</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#AparcamientoCiudadMonumental</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/recurso/data/salud/desfibriladores/Desfibrilador#Desfibrilador</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#AsociacionVecinos</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/Place</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#BarCopas</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/BarOrPub</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Barrio</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Poligono</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/GeoShape</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/2003/01/geo/wgs84_pos#Point</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#CentroExposiciones</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#CentroReligioso</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://schema.org/PlaceOfWorship</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#Distrito</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#EjecucionCapituloPresupuestoEntidadLocalGasto</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#EjecucionPresupuestoEntidadLocal</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#EjecucionCapituloPresupuestoEntidadLocalIngreso</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://www.w3.org/ns/org#Organization</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://purl.org/procurement/public-contracts#Tender</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://contsem.unizar.es/def/sector-publico/pproc#AceptedTender</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://contsem.unizar.es/def/sector-publico/pproc#AwardedTender</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://contsem.unizar.es/def/sector-publico/pproc#BundlePriceSpecification</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://contsem.unizar.es/def/sector-publico/pproc#ContractEconomicConditions</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://contsem.unizar.es/def/sector-publico/pproc#ContractObject</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://contsem.unizar.es/def/sector-publico/pproc#ContractProcedureSpecifications</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://contsem.unizar.es/def/sector-publico/pproc#ExcludedTender</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://contsem.unizar.es/def/sector-publico/pproc#FormalizedTender</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://contsem.unizar.es/def/sector-publico/pproc#ServicesContract</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://contsem.unizar.es/def/sector-publico/pproc#SuppliesContract</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://contsem.unizar.es/def/sector-publico/pproc#WorksContract</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/def/ontomunicipio#SubProgramaPresupuestoEntidadLocal</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://opendata.caceres.es/recurso/turismo/visitantes#Origen</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://vocab.gtfs.org/terms#CalendarDateRule</uri></binding>
+  </result>
+  <result>
+   <binding name="Concept"><uri>http://vocab.gtfs.org/terms#CalendarRule</uri></binding>
+  </result>
+ </results>
+</sparql>

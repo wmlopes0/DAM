@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="inmobiliaria" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b31ad952-99da-4d6e-ab80-6d876b299229">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="inmobiliaria"/>
+	<parameter name="idInmueble" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `idInmueble`,
+	titulo,
+	descripcion,
+	foto,
+	`ventaAlquiler`,
+	precio,
+	telefono
+FROM inmobiliaria.inmuebles
+WHERE   inmobiliaria.inmuebles.`idInmueble` = $P{idInmueble}]]>
+	</queryString>
+	<field name="idInmueble" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idInmueble"/>
+		<property name="com.jaspersoft.studio.field.label" value="idInmueble"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inmuebles"/>
+	</field>
+	<field name="titulo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inmuebles"/>
+	</field>
+	<field name="descripcion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descripcion"/>
+		<property name="com.jaspersoft.studio.field.label" value="descripcion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inmuebles"/>
+	</field>
+	<field name="foto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="foto"/>
+		<property name="com.jaspersoft.studio.field.label" value="foto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inmuebles"/>
+	</field>
+	<field name="ventaAlquiler" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ventaAlquiler"/>
+		<property name="com.jaspersoft.studio.field.label" value="ventaAlquiler"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inmuebles"/>
+	</field>
+	<field name="precio" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="precio"/>
+		<property name="com.jaspersoft.studio.field.label" value="precio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inmuebles"/>
+	</field>
+	<field name="telefono" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="telefono"/>
+		<property name="com.jaspersoft.studio.field.label" value="telefono"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inmuebles"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="123" splitType="Stretch">
+			<image>
+				<reportElement x="120" y="0" width="320" height="123" uuid="60a7b791-b30e-4af8-9750-9b4b68d371f1"/>
+				<imageExpression><![CDATA["https://www.camaltec.es/wp-content/uploads/2016/11/URBAN-LOGO-FINAL-1-1024x412.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="52" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="556" height="48" forecolor="#C59942" uuid="2b77930f-8c64-463d-b17d-334db827b3cf"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="422" y="0" width="41" height="48" forecolor="#595E72" uuid="91bbd6dd-7985-49ab-a8f6-956e864d55aa"/>
+				<textElement verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telf: ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="-4" y="10" width="560" height="39" uuid="3ef53ee0-9f53-4000-b76a-5126b5b87ace"/>
+				<box>
+					<pen lineColor="#C59942"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C59942"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C59942"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C59942"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C59942"/>
+				</box>
+				<textElement textAlignment="Center" markup="none">
+					<font size="24"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{titulo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="500" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="156" y="7" width="235" height="230" uuid="bf09fb9a-da68-44fe-b948-b92d83353605"/>
+				<imageExpression><![CDATA[$F{foto}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="80" y="222" width="400" height="150" forecolor="#595E72" uuid="8f2029a1-7083-44bd-9401-e0726244257f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="52a8ace3-5a56-4e5d-9678-3d3fca86148f"/>
+				</reportElement>
+				<box topPadding="10" leftPadding="10" bottomPadding="10" rightPadding="10">
+					<pen lineColor="#C59942"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#C59942"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#C59942"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#C59942"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#C59942"/>
+				</box>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="10" width="100" height="30" uuid="6ae96632-47fe-4a9c-adab-1c312221a452">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="974745d5-038d-492d-af2d-254a5c4227d2"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#595E72"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#595E72"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#595E72"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#595E72"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#595E72"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ID: "+$F{idInmueble}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="391" width="120" height="40" uuid="8e9e8d7e-341b-40d2-9191-7215aaae7a59">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ea5d44f8-4eaf-4177-8d43-478030ec039a"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Double" lineColor="#C59942"/>
+					<topPen lineWidth="1.0" lineStyle="Double" lineColor="#C59942"/>
+					<leftPen lineWidth="1.0" lineStyle="Double" lineColor="#C59942"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double" lineColor="#C59942"/>
+					<rightPen lineWidth="1.0" lineStyle="Double" lineColor="#C59942"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ventaAlquiler}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="153" y="451" width="247" height="40" backcolor="rgba(197, 153, 66, 0.25490198)" uuid="52a81c8b-f7d2-462a-b811-5c9ad140ee0d"/>
+				<box>
+					<pen lineWidth="2.0" lineColor="#3A7A02"/>
+					<topPen lineWidth="2.0" lineStyle="Solid" lineColor="#3A7A02"/>
+					<leftPen lineWidth="2.0" lineStyle="Solid" lineColor="#3A7A02"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid" lineColor="#3A7A02"/>
+					<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#3A7A02"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["PRECIO: "+$F{precio}+" €"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="5" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,150 @@
+/* ESTILOS GENERALES */
+.cursor div {
+    display: inline-block;
+    border: 2px solid grey;
+    text-align: center;
+    margin: 10px;
+    padding: 15px 0px;
+    border-radius: 12px;
+    height: 50px;
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.cursor>div:hover {
+    background-color: #eee;
+}
+
+/* -------------------------------------- */
+.cursor>div:first {
+    cursor: auto;
+}
+
+.cursor>div:nth-child(2) {
+    cursor: default;
+}
+
+.cursor>div:nth-child(3) {
+    cursor: none;
+}
+
+.cursor>div:nth-child(4) {
+    cursor: context-menu;
+}
+
+.cursor>div:nth-child(5) {
+    cursor: help;
+}
+
+.cursor>div:nth-child(6) {
+    cursor: pointer;
+}
+
+.cursor>div:nth-child(7) {
+    cursor: progress;
+}
+
+.cursor>div:nth-child(8) {
+    cursor: wait;
+}
+
+.cursor>div:nth-child(9) {
+    cursor: cell;
+}
+
+.cursor>div:nth-child(10) {
+    cursor: crosshair;
+}
+
+.cursor>div:nth-child(11) {
+    cursor: text;
+}
+
+.cursor>div:nth-child(12) {
+    cursor: vertical-text;
+}
+
+.cursor>div:nth-child(13) {
+    cursor: alias;
+}
+
+.cursor>div:nth-child(14) {
+    cursor: copy;
+}
+
+.cursor>div:nth-child(15) {
+    cursor: move;
+}
+
+.cursor>div:nth-child(16) {
+    cursor: no-drop;
+}
+
+.cursor>div:nth-child(17) {
+    cursor: not-allowed;
+}
+
+.cursor>div:nth-child(18) {
+    cursor: all-scroll;
+}
+
+.cursor>div:nth-child(19) {
+    cursor: col-resize;
+}
+
+.cursor>div:nth-child(20) {
+    cursor: row-resize;
+}
+
+.cursor>div:nth-child(21) {
+    cursor: n-resize;
+}
+
+.cursor>div:nth-child(22) {
+    cursor: s-resize;
+}
+
+.cursor>div:nth-child(23) {
+    cursor: e-resize;
+}
+
+.cursor>div:nth-child(24) {
+    cursor: w-resize;
+}
+
+.cursor>div:nth-child(25) {
+    cursor: ns-resize;
+}
+
+.cursor>div:nth-child(26) {
+    cursor: ew-resize;
+}
+
+.cursor>div:nth-child(27) {
+    cursor: ne-resize;
+}
+
+.cursor>div:nth-child(28) {
+    cursor: nw-resize;
+}
+
+.cursor>div:nth-child(29) {
+    cursor: se-resize;
+}
+
+.cursor>div:nth-child(30) {
+    cursor: sw-resize;
+}
+
+.cursor>div:nth-child(31) {
+    cursor: nesw-resize;
+}
+
+.cursor>div:nth-child(32) {
+    cursor: nwse-resize;
+}
+
+.cursor>div:last-child {
+    cursor: url(../img/icono.png), pointer;
+}

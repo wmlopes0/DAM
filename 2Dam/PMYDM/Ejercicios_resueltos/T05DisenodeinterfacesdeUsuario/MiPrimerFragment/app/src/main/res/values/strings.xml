@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MiPrimerFragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Walter">I LOVE ANDROID</string>
+    <string name="mail">Email:</string>
+    <string name="pass">Contraseña:</string>
+</resources>

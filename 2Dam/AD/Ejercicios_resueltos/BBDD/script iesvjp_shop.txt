@@ -1,0 +1,28 @@
+iesvjp_shop
+
+
+CREATE TABLE Categoria (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(512) NOT NULL,
+    destacada BOOLEAN NOT NULL,
+    imagen VARCHAR(512)
+);
+
+CREATE TABLE Producto (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(512) NOT NULL,
+    descripcion VARCHAR(512) NOT NULL,
+    pvp FLOAT NOT NULL,
+    descuento FLOAT,
+    imagen VARCHAR(512),
+    categoria_id BIGINT,
+    FOREIGN KEY (categoria_id) REFERENCES Categoria(id) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE Puntuacion (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    fecha DATE NOT NULL,
+    puntuacion INT NOT NULL DEFAULT 3 CHECK (puntuacion BETWEEN 1 AND 5),
+    producto_id BIGINT,
+    FOREIGN KEY (producto_id) REFERENCES Producto(id) ON UPDATE CASCADE ON DELETE CASCADE
+);

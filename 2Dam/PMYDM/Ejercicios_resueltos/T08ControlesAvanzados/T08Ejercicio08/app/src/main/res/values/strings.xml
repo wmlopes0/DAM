@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">T08Ejercicio08</string>
+    <string name="msg">Hola mundo!</string>
+    <string name="msg1">Me han cambiado con la opción 1</string>
+    <string name="msg2">Me han cambiado con la opción 2</string>
+
+</resources>

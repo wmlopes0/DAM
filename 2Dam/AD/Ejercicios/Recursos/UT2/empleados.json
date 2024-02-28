@@ -1,0 +1,19 @@
+[
+  {
+    "nombre": "Pepe",
+    "apellidos": "Lopez",
+    "edad": 20,
+    "puestos": [
+      "Gerente",
+      "Jefe de zona"
+    ]
+  },
+  {
+    "nombre": "Maria",
+    "apellidos": "Gutierrez",
+    "edad": 30,
+    "puestos": [
+      "Jefa de RR.HH"
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+/* LIBRERIA */
+div.icon {
+    background-image: url(../img/ui-icons_444444_256x240.png);
+    border: 1px solid black;
+    height: 16px;
+    width: 16px;
+    margin: 10px;
+}
+
+div.icon.lupaMas {
+    background-position: -128px -112px;
+}
+
+div.icon.lupaMenos {
+    background-position: -144px -112px;
+}
+div.icon.tijeras{
+    background-position: -144px -128px;
+}
+div.icon.bombilla{
+    background-position: -128px -128px;
+}
+div.icon.casa{
+    background-position: 0px -112px;
+}
+div.icon.maleta{
+    background-position: -112px -96px;
+}
+
+/* ---------------------------------------- */
+h1{
+    text-align: center;
+    font-variant: small-caps;
+}
+div.iconos{
+    width: 300px;
+    margin: auto;
+}
+div.iconos>div{
+    display: inline-block;
+    cursor: pointer;
+    transition: all 500ms;
+}
+div.iconos>div:hover{
+    transform: scale(1.2);
+}

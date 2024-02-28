@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">T06Ejercicio09</string>
+    <string name="sup">SUP</string>
+    <string name="med">MED</string>
+    <string name="inf">INF</string>
+    <string name="botonToast">TOAST</string>
+    <string name="toast">¡Has pulsado el Toast!</string>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="informeEntregas" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fa5bf43d-625d-40e0-9291-923cf8be8f84">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[ZW50cmVnYXMuZW50cmVnYXMgQVMgLDE1MiwxMjUsYjUyZDk2MmUtNzY2NS00ZWJmLWE0ZmItNDRi
+YTQ0Y2NkZDM0Ow==]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="entregas"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT num_envio,
+	dni,
+	firma
+FROM entregas.entregas]]>
+	</queryString>
+	<field name="num_envio" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="num_envio"/>
+		<property name="com.jaspersoft.studio.field.label" value="num_envio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="entregas"/>
+	</field>
+	<field name="dni" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dni"/>
+		<property name="com.jaspersoft.studio.field.label" value="dni"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="entregas"/>
+	</field>
+	<field name="firma" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="firma"/>
+		<property name="com.jaspersoft.studio.field.label" value="firma"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="entregas"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="595" height="60" uuid="6e11e65b-36c2-4c48-b25b-f008a0b4d2c4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INFORME GENERAL DE ENTREGAS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<rectangle>
+				<reportElement x="80" y="10" width="410" height="100" backcolor="rgba(3, 3, 3, 0.09019608)" uuid="9f49788c-1585-42cc-bd5b-a87eaac464cb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="110" y="20" width="170" height="20" uuid="9e44bc2b-f985-4756-8a26-728b5e2e96e6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Número de envío]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="60" width="170" height="20" uuid="e34dcd6d-d23d-434f-92c6-ecc9b491942e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Documento de Identidad]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="40" width="170" height="20" uuid="39125666-7e7a-45a3-b8da-d65a6f0c0d56">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f80487eb-7910-43f2-9101-609a9b99ab51"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{num_envio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="80" width="170" height="20" uuid="e43e3d54-1365-43e2-bd50-087e8c35d629">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="02a56fae-6fbd-45a3-8761-86b38994fb8e"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dni}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="300" y="20" width="160" height="80" uuid="74c2a39f-c2c1-45c6-8ba6-cb7441c0cdd2"/>
+				<imageExpression><![CDATA[$F{firma}
+]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="595" height="30" uuid="269709ee-edd9-4f1a-a495-3dd21d59ef2d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Informe generado por Walter Martín Lopes. Todos los derechos reservados.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

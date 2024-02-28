@@ -1,0 +1,9 @@
+hola
+esto
+estaba
+escrito
+en
+un
+fichero
+llamado
+origen.txt

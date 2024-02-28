@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">T06Ejercicio05</string>
+    <string name="sombrero">Sombrero</string>
+    <string name="gafas">Gafas</string>
+    <string name="poner">Poner</string>
+    <string name="puestas">Puestas</string>
+    <string name="quitadas">Quitadas</string>
+</resources>

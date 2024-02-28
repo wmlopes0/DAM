@@ -1,0 +1,12 @@
+<!ELEMENT ListaDeProductos (Producto+)>
+<!ATTLIST ListaDeProductos hora NMTOKEN #REQUIRED>
+<!ATTLIST ListaDeProductos dia NMTOKEN #REQUIRED>
+<!ATTLIST ListaDeProductos mes NMTOKEN #REQUIRED>
+<!ATTLIST ListaDeProductos anno NMTOKEN #REQUIRED>
+<!ELEMENT Producto (Nombre,Stock)>
+<!ATTLIST Producto codigoId NMTOKEN #REQUIRED>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Stock (Minimo,Maximo)>
+<!ATTLIST Stock actual NMTOKEN #REQUIRED>
+<!ELEMENT Minimo (#PCDATA)>
+<!ELEMENT Maximo (#PCDATA)>

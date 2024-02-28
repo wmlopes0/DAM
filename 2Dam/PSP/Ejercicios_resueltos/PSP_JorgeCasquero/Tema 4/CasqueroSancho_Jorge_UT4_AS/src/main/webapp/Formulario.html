@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Ejercicio Entregable Tema 4</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f8f8f8;
+}
+
+h1 {
+	color: #333;
+	text-align: center;
+	margin-top: 20px;
+}
+
+form {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px 0px #ddd;
+	max-width: 500px;
+	margin: auto;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+input[type="number"] {
+	padding: 10px;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+</style>
+
+</head>
+<body>
+	<h1>Calcular Fibonacci</h1>
+	<form action="/CasqueroSancho_Jorge_UT4_AS/Fibonacci" method="post">
+		<p>
+			Posicion inicial: <input type="number" name="posicion" min="1"
+				max="30">
+		</p>
+		<p>
+			Rango: <input type="number" name="rango" min="1" max="10">
+		</p>
+		<input type="submit" value="Enviar">
+
+
+	</form>
+</body>
+</html>

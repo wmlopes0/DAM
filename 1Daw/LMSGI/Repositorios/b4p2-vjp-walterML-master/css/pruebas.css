@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #e5e5e5;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Box Shadow */
+.shadow {
+    box-shadow: 10px 10px 5px #888888;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Transition */
+.transition {
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    cursor: pointer;
+    line-height: 50px;
+    background-color: #c0c0c0;
+    color: black;
+    border-radius: 10px;
+    transition: width 2s, height 2s, line-height 2s, background-color 2s, color 2s;
+}
+
+.transition:hover {
+    width: 500px;
+    height: 100px;
+    line-height: 100px;
+    background-color: rgb(110, 17, 176);
+    color: white;
+}
+
+/* Resize */
+.resize {
+    resize: both;
+    overflow: auto;
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+/* Content */
+@media print {
+    a::after {
+        content: " (" attr(href) ")";
+    }
+}

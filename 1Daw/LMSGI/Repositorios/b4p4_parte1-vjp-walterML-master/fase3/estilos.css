@@ -1,0 +1,111 @@
+/* FASE 1 ==================================================== */
+body {
+    background-color: #eee;
+    color: #3c4858;
+    font-family: 'Pontano Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: white;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+    border-radius: 6px;
+    margin-top: 50px;
+}
+
+/* ------------------------ */
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .tarjeta {
+        width: 100%;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .tarjeta {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .tarjeta {
+        width: calc(33.333% - 20px);
+        margin-right: 20px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .tarjeta {
+        width: calc(25% - 20px);
+        margin-right: 20px;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .tarjeta {
+        width: calc(20% - 20px);
+        margin-right: 20px;
+    }
+}
+
+/* FASE 2 ==================================================== */
+img{
+    width: 100%;
+    margin-top: -30px;
+    border-radius: 6px;
+    box-shadow:  0 5px 15px -8px rgba(0,0,0,.24), 0 8px 10px -5px rgba(0,0,0,.2);
+    transition: all 1s cubic-bezier(.34,1.61,.7,1);
+}
+.tarjeta>header{
+    padding: 15px;
+}
+
+.tarjeta:hover img{
+    transform:translate3d(0,-50px,0) ;
+}
+
+/* FASE 3==================================================== */
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.tarjeta>header{
+    z-index: 1;
+}
+
+.tarjeta>.cuerpo{
+    flex-grow: 1;
+    margin-top: -70px;
+}
+
+.tarjeta .cuerpo a{
+    text-decoration: none;
+    color: #3c4858;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.tarjeta .descripcion{
+    color: #999;
+    padding: 10px;
+}
+
+.tarjeta .precio{
+    font-size: 1.125rem;
+    line-height: 1.4em;
+    color: #9a9a9a;
+    margin: 10px;
+    border-top: 1px solid #eeee;
+}

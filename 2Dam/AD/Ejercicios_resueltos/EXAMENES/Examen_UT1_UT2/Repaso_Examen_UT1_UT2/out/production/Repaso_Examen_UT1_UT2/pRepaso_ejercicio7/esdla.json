@@ -1,0 +1,68 @@
+{
+  "esdla": {
+    "autor": "John Ronald Reuel Tolkien",
+    "ciudades": {
+      "ciudad": [
+        {
+          "nombre": "Hobbiton",
+          "faccion": "Hobbits"
+        },
+        {
+          "nombre": "Edoras",
+          "faccion": "Rohan"
+        },
+        {
+          "nombre": "Minas Morgul",
+          "faccion": "Mordor"
+        },
+        {
+          "nombre": "Minas Tirith",
+          "faccion": "Gondor"
+        },
+        {
+          "nombre": "Rivendel",
+          "faccion": "Elfos"
+        },
+        {
+          "nombre": "WALTER",
+          "faccion": "Gondor"
+        }
+      ]
+    },
+    "personajes": {
+      "hobbits": [
+        "Bilbo",
+        "Frodo",
+        "Sam",
+        "Merry"
+      ],
+      "elfos": [
+        "Legolas",
+        "Elrond",
+        "Arwen",
+        "Galadriel"
+      ],
+      "enanos": [
+        "Gimli",
+        "Durin",
+        "Gloin"
+      ],
+      "hombres": [
+        "Aragorn",
+        "Arwen",
+        "Boromir",
+        "Faramir",
+        "Denethor",
+        "Theoden"
+      ],
+      "magos": [
+        "Gandalf",
+        "Saruman"
+      ],
+      "villanos": [
+        "Sauron",
+        "Gothmog"
+      ]
+    }
+  }
+}

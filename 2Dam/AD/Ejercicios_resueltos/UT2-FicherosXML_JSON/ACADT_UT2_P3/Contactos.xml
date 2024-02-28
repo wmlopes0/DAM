@@ -1,0 +1,17 @@
+<Contactos>
+  <DatosContacto>
+    <nombre>pablo</nombre>
+    <apellidos>lucas</apellidos>
+    <email>plucas517@gmail.com</email>
+  </DatosContacto>
+  <DatosContacto>
+    <nombre>jorge</nombre>
+    <apellidos>perez</apellidos>
+    <email>plucas517@gmail.com</email>
+  </DatosContacto>
+  <DatosContacto>
+    <nombre>david</nombre>
+    <apellidos>gonzalez</apellidos>
+    <email>plucas517@gmail.com</email>
+  </DatosContacto>
+</Contactos>

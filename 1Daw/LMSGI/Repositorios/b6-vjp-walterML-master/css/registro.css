@@ -1,0 +1,17 @@
+body {
+    background-color: #f5f5f5;
+  }
+  input {
+    border-radius: 6px;
+    border-color: #8080803d;
+  }
+  input:focus {
+    background-color: #ffffcb !important;
+  }
+  input:valid {
+    background-color: rgba(0, 128, 0, 0.586);
+  }
+  input:invalid {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+  

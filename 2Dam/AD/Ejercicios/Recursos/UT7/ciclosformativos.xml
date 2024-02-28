@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fp>
+<ciclos>
+<ciclo siglas="SMR">
+<nombre>Sistemas microinformáticos y redes</nombre>
+<familiaProfesional>Informática y comunicaciones</familiaProfesional>
+<duracion unidad="horas">2000</duracion>
+<grado>Medio</grado>
+</ciclo>
+<ciclo siglas="DAM">
+ <nombre>Desarrollo de aplicaciones multiplataforma</nombre>
+<familiaProfesional>Informática y comunicaciones</familiaProfesional>
+<duracion unidad="horas">2000</duracion>
+<grado>Superior</grado>
+</ciclo>
+<ciclo siglas="DAW">
+<nombre>Desarrollo de aplicaciones web</nombre>
+<familiaProfesional>Informática y comunicaciones</familiaProfesional>
+<duracion unidad="horas">2000</duracion>
+<grado>Superior</grado>
+</ciclo>
+<ciclo siglas="ASIR">
+<nombre>Administrador de sistemas informaticos en red</nombre>
+<familiaProfesional>Informática y comunicaciones</familiaProfesional>
+<duracion unidad="horas">2000</duracion>
+<grado>Superior</grado>
+</ciclo>
+</ciclos>
+<modulos>
+<modulo codigo="0373">
+<nombre>Lenguajes de marcas y sistemas de gestión de información</nombre>
+<duracion unidad="horas">133</duracion>
+<curso>1</curso>
+<ciclos>
+<ciclo siglas="ASIR"/>
+<ciclo siglas="DAM"/>
+<ciclo siglas="DAW"/>
+</ciclos>
+</modulo>
+<modulo codigo="0222">
+<nombre>Sistemas operativos monopuesto</nombre>
+<duracion unidad="horas">140</duracion>
+<curso>1</curso>
+<ciclos>
+<ciclo siglas="SMR"/>
+</ciclos>
+</modulo>
+</modulos>
+</fp>

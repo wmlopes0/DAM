@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">T09PracticaEntregable</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">El Rincon de Walter</string>
+    <string name="nav_header_subtitle">rincondewalter@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Opciones</string>
+
+    <string name="menu_listarLibros">Listado de libros</string>
+    <string name="menu_addLibro">Añadir libro</string>
+    <string name="menu_consultarLibro">Consultar libro</string>
+    <string name="menu_eliminarLibro">Eliminar libro</string>
+
+    <!--Consultar libro-->
+    <string name="text_idLibro">Introduce el ID</string>
+    <string name="boton_consultar">CONSULTAR</string>
+    <!--Eliminar libro-->
+    <string name="boton_eliminar">ELIMINAR</string>
+    <!--Añadir libro-->
+    <string name="text_introduceDatos">Introduce los datos</string>
+    <string name="text_id">ID:</string>
+    <string name="text_titulo">Título:</string>
+    <string name="text_autor">Autor:</string>
+    <string name="text_genero">Género:</string>
+    <string name="text_publicacion">Publicación:</string>
+    <string name="text_precio">Precio:</string>
+    <string name="text_imagen">Imagen:</string>
+    <string name="boton_añadir">AÑADIR</string>
+    <!--TOAST-->
+    <string name="toastInsertCorrecto">¡Libro insertado correctamente!</string>
+    <string name="toastCamposVaciosImagen">¡Todos los campos son obligatorios excepto la imagen!</string>
+    <string name="toastDeleteCorrecto">¡Libro eliminado correctamente!</string>
+    <string name="toastIdNulo">¡Debes introducir un ID!</string>
+    <!--Errores-->
+    <string name="notFound">No existe ningún libro con el ID especificado</string>
+    <string name="internalServerError">Error: Internal Server Error</string>
+    <string name="errorGeneral">Error: no se que pasa</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ejercicio1</string>
+    <string name="nombre">Nombre:</string>
+    <string name="telefono">Teléfono:</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="toastDatosNulosGuardar">¡Debes introducir todos los datos!</string>
+    <string name="toastSoloNombre">¡Debes introducir solo el nombre para buscar!</string>
+    <string name="toastAddContacto">¡Contacto guardado correctamente!</string>
+</resources>

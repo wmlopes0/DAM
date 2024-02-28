@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/ejercicio4.css">
+    <title>Alta de clientes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <fieldset class="col-md-6 offset-md-3">
+                <legend>Alta cliente</legend>
+                <form method="get" action="https://httpbin.org/get">
+                    <!-- NOMBRE -->
+                    <div class="form-group d-flex ">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" name="nombre" minlength="4" required class="form-control">
+                    </div>
+                    <!-- CONTRASEÑA -->
+                    <div class="form-group d-flex mt-3">
+                        <label for="psw" class="form-label">Contraseña</label>
+                        <input type="password" name="psw" required
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                            title="Debes introducir mínimo 8 carácteres, incluido 1 mayúscula, 1 minúscula, 1 número o carácter especial." class="form-control">
+                    </div>
+                    <!-- FECHA NACIMIENTO -->
+                    <div class="form-group d-flex mt-3">
+                        <label for="fecha">Fecha de nacimiento</label>
+                        <input type="date" name="fecha" class="form-control">
+                    </div>
+                    <!-- DIRECCION -->
+                    <div class="form-group mt-3">
+                        <input type="text" name="direccion" placeholder="Dirección" minlength="10" class="form-control">
+                    </div>
+                    <!-- PROVINCIA -->
+                    <div class="form-group mt-3">
+                        <input type="search" list="provincias" name="provincia" placeholder="Provincia" class="form-control" autocomplete="on">
+                        <datalist id="provincias">
+                            <option label="Cáceres" value="Cáceres">
+                            <option label="Badajoz" value="Badajoz">
+                            <option label="La Coruña" value="La Coruña">
+                            <option label="Lugo" value="Lugo">
+                            <option label="Orense" value="Orense">
+                            <option label="Pontevedra" value="Pontevedra">
+                            <option label="Huesca" value="Huesca">
+                            <option label="Teruel" value="Teruel">
+                            <option label="Zaragoza" value="Zaragoza">
+                        </datalist>
+                    </div>
+        
+                    <!-- OBSERVACIONES -->
+                    <div class="form-group mt-3">
+                        <textarea name="observaciones" id="observaciones" cols="30" rows="10" placeholder="Observaciones" class="form-control"></textarea>
+                    </div>
+                    <!-- BOTONES -->
+                    <div class="d-flex justify-content-between">
+                        <input type="reset" value="Limpiar" class="btn btn-danger mt-3 mx-1 flex-grow-1">
+                        <input type="submit" value="Enviar" class="btn btn-primary mt-3 mx-1 flex-grow-1">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>

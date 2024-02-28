@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">T08Ejercicio03</string>
+    <string name="test_hardware">Test de HardWare</string>
+    <string name="comenzar">Pulsa comenzar cuando estés preparado para hacer el test</string>
+    <string name="botonComenzar">COMENZAR</string>
+    <string name="botonSalir">SALIR</string>
+    <string name="botonInicio">VOLVER AL INICIO</string>
+    <string name="botonSiguientePregunta">SIGUIENTE PREGUNTA</string>
+    <string name="tituloPregunta1">Pregunta Nº1</string>
+    <string name="tituloPregunta2">Pregunta Nº2</string>
+    <string name="tituloPregunta3">Pregunta Nº3</string>
+    <string name="tituloPregunta4">Pregunta Nº4</string>
+    <string name="tituloResultados">RESULTADOS DEL TEST</string>
+    <string name="pregunta">Elige el nombre del hardware de la figura</string>
+    <string name="toastExtraNulo">Error en el paso de valores entre intents</string>
+    <string name="calificacion">calificacion</string>
+    <string name="preguntasCorrectas">Preguntas correctas:</string>
+    <string name="preguntasErroneas">Preguntas erroneas:</string>
+    <string name="preguntasSinContestar">Preguntas sin contestar:</string>
+    <string name="nota">NOTA:</string>
+
+</resources>

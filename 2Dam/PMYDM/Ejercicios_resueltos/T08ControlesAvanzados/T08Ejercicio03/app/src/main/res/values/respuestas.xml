@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="respuestas">
+        <item>No Contesta</item>
+        <item>Tarjeta de Sonido</item>
+        <item>Memoria Ram</item>
+        <item>Placa Base</item>
+        <item>Procesador</item>
+    </string-array>
+
+</resources>

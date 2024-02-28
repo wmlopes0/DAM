@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">T09Ejercicio1</string>
+    <string name="idPlayer">ID Player:</string>
+    <string name="consultar">CONSULTAR</string>
+    <string name="firstName">First Name:</string>
+    <string name="lastName">Last Name:</string>
+    <string name="team">Team:</string>
+    <string name="inputVacio">¡Debes introducir un ID!</string>
+    <string name="notFound">No existe ningún jugador con el ID especificado</string>
+    <string name="internalServerError">Error: Internal Server Error</string>
+    <string name="errorGeneral">Error: no se que pasa</string>
+    <string name="flecha">-></string>
+    <string name="atras">Atrás</string>
+    <string name="listarJugadores">Listar todos los jugadores</string>
+</resources>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    android:orientation="vertical"
+    tools:context=".ui.addLibro.AddLibro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/colorFondo"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewEncabezado"
+            android:background="@color/colorPrincipal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:text="@string/text_introduceDatos"
+            android:textColor="@color/white"
+            android:textSize="@dimen/encabezados"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/colorFondo"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:text="@string/text_id"
+            android:textColor="@color/colorPrincipal"
+            android:textSize="@dimen/campos"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/colorSecundario"
+            android:textSize="@dimen/texto" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/colorFondo"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:text="@string/text_titulo"
+            android:textColor="@color/colorPrincipal"
+            android:textSize="@dimen/campos"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/colorSecundario"
+            android:textSize="@dimen/texto" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/colorFondo"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewAutor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:text="@string/text_autor"
+            android:textColor="@color/colorPrincipal"
+            android:textSize="@dimen/campos"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputAutor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/colorSecundario"
+            android:textSize="@dimen/texto" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/colorFondo"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewGenero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:text="@string/text_genero"
+            android:textColor="@color/colorPrincipal"
+            android:textSize="@dimen/campos"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputGenero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/colorSecundario"
+            android:textSize="@dimen/texto" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/colorFondo"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewPublicacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:text="@string/text_publicacion"
+            android:textColor="@color/colorPrincipal"
+            android:textSize="@dimen/campos"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputPublicacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/colorSecundario"
+            android:textSize="@dimen/texto" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/colorFondo"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewPrecio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:text="@string/text_precio"
+            android:textColor="@color/colorPrincipal"
+            android:textSize="@dimen/campos"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputPrecio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/colorSecundario"
+            android:textSize="@dimen/texto" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/colorFondo"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewImagen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:text="@string/text_imagen"
+            android:textColor="@color/colorPrincipal"
+            android:textSize="@dimen/campos"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputImagen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:textColor="@color/colorSecundario"
+            android:textSize="@dimen/texto" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/colorFondo"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/botonAdd"
+            android:gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/botones"
+            android:text="@string/boton_añadir" />
+    </LinearLayout>
+</LinearLayout>

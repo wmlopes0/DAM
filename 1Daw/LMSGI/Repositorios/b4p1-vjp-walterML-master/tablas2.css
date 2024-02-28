@@ -1,0 +1,32 @@
+table {
+    margin-bottom: 35px;
+    text-align: center;
+    border-spacing: 0px;
+}
+
+td {
+    padding: 7px;
+}
+
+tbody {
+    background-color: #f6f5f574;
+}
+
+tbody tr:nth-child(2n+1) {
+    background-color: #e8e8e87e;
+}
+
+table:nth-of-type(1) tbody tr:nth-child(2n) td:nth-of-type(1),
+table:nth-of-type(2) tbody tr:nth-child(2n) td:nth-of-type(2) {
+    background-color: #e8e8e87e;
+}
+
+table:nth-of-type(1) tbody tr:nth-child(2n+1) td:nth-of-type(1),
+table:nth-of-type(2) tbody tr:nth-child(2n+1) td:nth-of-type(2) {
+    background-color: #d7d7d77e;
+}
+
+table:nth-of-type(3) tr > :nth-child(2n),
+table:nth-of-type(3) tr > :nth-child(3n){
+    background-color: rgba(117, 120, 121, 0.713);
+}

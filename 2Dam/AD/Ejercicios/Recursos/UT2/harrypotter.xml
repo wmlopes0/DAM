@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<harrypotter>
+	<autor>J. K. Rowling</autor>
+	<asignaturas>
+		<asignatura>Astronomía</asignatura>
+		<asignatura>Encantamientos</asignatura>
+		<asignatura>Vuelo</asignatura>
+		<asignatura>Defensa contra las artes oscuras</asignatura>
+		<asignatura>Pociones</asignatura>
+	</asignaturas>
+	<casas>
+		<casa>
+			<nombre>Gryffindor</nombre>
+			<fundador>Godric Gryffindor</fundador>
+		</casa>
+		<casa>
+			<nombre>Hufflepuff</nombre>
+			<fundador>Helga Hufflepuff</fundador>
+		</casa>
+		<casa>
+			<nombre>Ravenclaw</nombre>
+			<fundador>Rowena Ravenclaw</fundador>
+		</casa>
+		<casa>
+			<nombre>Slytherin</nombre>
+			<fundador>Salazar Slytherin</fundador>
+		</casa>
+	</casas>
+	<personajes>
+		<profesores>
+			<personaje>Albus Dumbledore</personaje>
+			<personaje>Minerva McGonagall</personaje>
+			<personaje>Quirinus Quirrell</personaje>
+			<personaje>Remus Lupin</personaje>
+			<personaje>Severus Snape</personaje>
+		</profesores>
+		<alumnos>
+			<personaje>Harry Potter</personaje>
+			<personaje>Draco Malfoy</personaje>
+			<personaje>Luna Lovegood</personaje>
+			<personaje>Hermione Granger</personaje>
+			<personaje>Ron Weasly</personaje>
+			<personaje>Neville Longbottom</personaje>
+		</alumnos>
+		<villanos>
+			<personaje>Dolores Umbridge</personaje>
+			<personaje>Lucius Malfoy</personaje>
+			<personaje>Bellatrix Lestrange</personaje>
+			<personaje>Voldemort</personaje>
+		</villanos>
+	</personajes>
+</harrypotter>

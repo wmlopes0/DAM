@@ -1,0 +1,156 @@
+ATAQUE,Coletazo,NORMAL,15,30,8
+ATAQUE,Golpe Cabeza,NORMAL,30,60,15
+ATAQUE,Cabezazo,NORMAL,35,70,18
+ATAQUE,Empujón,NORMAL,10,20,5
+ATAQUE,Impacto,NORMAL,45,90,22
+ATAQUE,Revés,NORMAL,50,100,25
+ATAQUE,Tacleada,NORMAL,28,56,14
+ATAQUE,Cachetada,NORMAL,8,16,4
+ATAQUE,Golpe Bajo,NORMAL,38,76,19
+ATAQUE,Cuerpo Pesado,NORMAL,55,100,27
+ATAQUE,Embestida,NORMAL,20,40,10
+ATAQUE,Gruñido,NORMAL,5,10,2
+ATAQUE,Placaje,NORMAL,25,50,12
+ATAQUE,Derribo,NORMAL,40,80,20
+ATAQUE,Ascuas,FUEGO,30,60,15
+ATAQUE,Lanzallamas,FUEGO,50,100,25
+ATAQUE,Giro Fuego,FUEGO,35,70,17
+ATAQUE,Pistola Agua,AGUA,30,60,15
+ATAQUE,Hidrobomba,AGUA,50,100,25
+ATAQUE,Burbuja,AGUA,20,40,10
+ATAQUE,Hojas Afiladas,PLANTA,35,70,17
+ATAQUE,Latigo Cepa,PLANTA,30,60,15
+ATAQUE,Lluevehojas,PLANTA,45,90,22
+ATAQUE,Ataque Rápido,NORMAL,25,50,12
+ATAQUE,Terremoto,TIERRA,50,100,25
+ATAQUE,Magnitud,TIERRA,40,80,20
+ATAQUE,Excavar,TIERRA,35,70,17
+ATAQUE,Golpe Roca,TIERRA,30,60,15
+ATAQUE,Rugido,NORMAL,5,10,2
+ATAQUE,Rayo Solar,PLANTA,50,100,25
+ATAQUE,Puño Dinámico,NORMAL,30,60,15
+ATAQUE,Golpe Bajo,NORMAL,35,70,17
+ATAQUE,Colisión,NORMAL,40,80,20
+ATAQUE,Desgaste,NORMAL,25,50,12
+ATAQUE,Represión,NORMAL,45,90,22
+ATAQUE,Ataque Rápido,NORMAL,20,40,10
+ATAQUE,Ataque Furia,NORMAL,35,70,17
+ATAQUE,Ataque Arena,NORMAL,30,60,15
+ATAQUE,Represalia,NORMAL,40,80,20
+ATAQUE,Cuerpo Pesado,NORMAL,45,90,22
+ATAQUE,Infierno,FUEGO,50,100,25
+ATAQUE,Llama Azul,FUEGO,45,90,22
+ATAQUE,Llamarada,FUEGO,40,80,20
+ATAQUE,Incendio,FUEGO,35,70,17
+ATAQUE,Rueda Fuego,FUEGO,30,60,15
+ATAQUE,Anillo Ígneo,FUEGO,40,80,20
+ATAQUE,Flama Mortal,FUEGO,45,90,22
+ATAQUE,Combustión Espontánea,FUEGO,50,100,25
+ATAQUE,Llama Final,FUEGO,40,80,20
+ATAQUE,Fuego Fatuo,FUEGO,30,60,15
+ATAQUE,Oleada Pulso,AGUA,45,90,22
+ATAQUE,Acua Jet,AGUA,35,70,17
+ATAQUE,Acua Cola,AGUA,40,80,20
+ATAQUE,Acua Anillo,AGUA,25,50,12
+ATAQUE,Hidroimpulso,AGUA,50,100,25
+ATAQUE,Acua Bala,AGUA,40,80,20
+ATAQUE,Acua Cortina,AGUA,30,60,15
+ATAQUE,Acua Turbo,AGUA,35,70,17
+ATAQUE,Chapoteo Lodo,AGUA,40,80,20
+ATAQUE,Gota Ácida,AGUA,45,90,22
+ATAQUE,Enredadera,PLANTA,40,80,20
+ATAQUE,Tallo Verde,PLANTA,35,70,17
+ATAQUE,Hoja Afilada,PLANTA,45,90,22
+ATAQUE,Hoja Aguda,PLANTA,40,80,20
+ATAQUE,Hoja Mágica,PLANTA,35,70,17
+ATAQUE,Danza Hojas,PLANTA,30,60,15
+ATAQUE,Golpe Hoja,PLANTA,45,90,22
+ATAQUE,Defensa Hoja,PLANTA,40,80,20
+ATAQUE,Impulso Floral,PLANTA,35,70,17
+ATAQUE,Rayo Vegetal,PLANTA,50,100,25
+ATAQUE,Terremoto Doble,TIERRA,50,100,25
+ATAQUE,Deslizamiento Roca,TIERRA,45,90,22
+ATAQUE,Impacto Tierra,TIERRA,40,80,20
+ATAQUE,Avalancha,TIERRA,35,70,17
+ATAQUE,Deslizamiento Arena,TIERRA,30,60,15
+ATAQUE,Choque Tierra,TIERRA,40,80,20
+ATAQUE,Quiebra Tierras,TIERRA,45,90,22
+ATAQUE,Revolución Arena,TIERRA,50,100,25
+ATAQUE,Roca Ígnea,TIERRA,40,80,20
+ATAQUE,Roca Afilada,TIERRA,45,90,22
+ATAQUE,Bola Sombra,NORMAL,40,80,20
+ATAQUE,Onda Trueno,NORMAL,30,60,15
+ATAQUE,Trueno,NORMAL,45,90,22
+ATAQUE,Látigo,FUEGO,20,40,10
+ATAQUE,Vendaval,NORMAL,40,80,20
+ATAQUE,Canto,NORMAL,5,10,2
+ATAQUE,Puño Fuego,FUEGO,35,70,17
+ATAQUE,Puño Hielo,AGUA,35,70,17
+ATAQUE,Mordisco,NORMAL,30,60,15
+ATAQUE,Tijera X,NORMAL,40,80,20
+ATAQUE,Resplandor,AGUA,45,90,22
+ATAQUE,Erupción,FUEGO,50,100,25
+ATAQUE,Cabezazo,NORMAL,35,70,17
+ATAQUE,Chorro Arena,TIERRA,20,40,10
+ATAQUE,Pisotón,NORMAL,40,80,20
+ATAQUE,Patada Baja,NORMAL,30,60,15
+ATAQUE,Patada Alta,NORMAL,45,90,22
+ATAQUE,Polvo Veneno,PLANTA,25,50,12
+ATAQUE,Danza Pétalo,PLANTA,40,80,20
+ATAQUE,Vuelo,NORMAL,35,70,17
+ATAQUE,Carga Tóxica,PLANTA,35,70,17
+ATAQUE,Corte Llama,FUEGO,40,80,20
+ATAQUE,Tsunami,AGUA,50,100,25
+ATAQUE,Puñetazo,NORMAL,30,60,15
+ATAQUE,Palmeo,AGUA,25,50,12
+ATAQUE,Quemaforestal,FUEGO,45,90,22
+ATAQUE,Salpicar,AGUA,5,10,2
+ATAQUE,Hoja Mágica,PLANTA,40,80,20
+ATAQUE,Chispazo,FUEGO,30,60,15
+ATAQUE,Chorro Vapor,AGUA,35,70,17
+ATAQUE,Rayo Lunar,PLANTA,45,90,22
+ATAQUE,Resplandor Cálido,FUEGO,25,50,12
+ATAQUE,Torbellino,AGUA,40,80,20
+ATAQUE,Aplastar,NORMAL,35,70,17
+ATAQUE,Soplido,AGUA,20,40,10
+ATAQUE,Combustión,FUEGO,30,60,15
+ATAQUE,Resaca,AGUA,25,50,12
+ATAQUE,Espinazo,PLANTA,40,80,20
+ATAQUE,Aliento Fuego,FUEGO,35,70,17
+ATAQUE,Torrente,AGUA,45,90,22
+ATAQUE,Bofetón,PLANTA,25,50,12
+ATAQUE,Aliento Dragón,FUEGO,40,80,20
+ATAQUE,Salto Agua,AGUA,30,60,15
+ATAQUE,Golpe Planta,PLANTA,35,70,17
+ATAQUE,Eructo,FUEGO,20,40,10
+ATAQUE,Borboteo,AGUA,40,80,20
+ATAQUE,Zarpa Verde,PLANTA,30,60,15
+ATAQUE,Llama Oscura,FUEGO,45,90,22
+ATAQUE,Salpicón,AGUA,35,70,17
+ATAQUE,Cabezazo Floral,PLANTA,40,80,20
+POKEMON,Bulbasaur,100,PLANTA,    /\\_/\\\n   ( o.o )\n    > ^ <
+POKEMON,Ivysaur,100,PLANTA,    /\\_/\\\n   ( @.@ )\n    > ^ <
+POKEMON,Venusaur,100,PLANTA,    /\\_/\\\n'' ( -.- )\n    > ^ <
+POKEMON,Charmander,100,FUEGO,   _/\\_/\\_\n'  ( >o< )\n'' > ^ <
+POKEMON,Charmeleon,100,FUEGO,  _/\\_/\\_\n  ( >.< )\n   > ^ <
+POKEMON,Charizard,100,FUEGO,  _/\\_/\\_\n' ( >^< )\n'' > ^ <
+POKEMON,Squirtle,100,AGUA,    ~\\_/~\n   ( o.o )\n    > ^ <
+POKEMON,Wartortle,100,AGUA,    ~\\_/~\n   ( @.@ )\n    > ^ <
+POKEMON,Blastoise,100,AGUA,    ~\\_/~\n   ( -.- )\n    > ^ <
+POKEMON,Pikachu,100,NORMAL,   /\\_/\\\n' ( ^_^ )\n'' > ^ <
+POKEMON,Raichu,100,NORMAL,    /\\_/\\\n   ( o_o )\n    > ^ <
+POKEMON,Jigglypuff,100,NORMAL,    -\\_/-\n   ( o.o )\n    > ^ <
+POKEMON,Wigglytuff,100,NORMAL,    -\\_/-\n   ( @.@ )\n    > ^ <
+POKEMON,Meowth,100,NORMAL,    ~\\_/~\n   ( ^_^ )\n    > ^ <
+POKEMON,Persian,100,NORMAL,    ~\\_/~\n   ( -_- )\n    > ^ <
+POKEMON,Psyduck,100,AGUA,    /\\_/\\\n   ( o_O )\n    > ^ <
+POKEMON,Golduck,100,AGUA,    /\\_/\\\n   ( O_o )\n    > ^ <
+POKEMON,Geodude,100,TIERRA,   _\\_/_\n  ( >o< )\n   > ^ <
+POKEMON,Graveler,100,TIERRA,   _\\_/_\n  ( >.< )\n   > ^ <
+POKEMON,Golem,100,TIERRA,   _\\_/_\n  ( >^< )\n   > ^ <
+POKEMON,Eevee,100,NORMAL,    ~\\_/~\n   ( o.o )\n    > ^ <
+POKEMON,Vaporeon,100,AGUA,    ~\\_/~\n   ( @.@ )\n    > ^ <
+POKEMON,Jolteon,100,NORMAL,    ~\\_/~\n   ( ^_^ )\n    > ^ <
+ENTRENADOR,Ash
+ENTRENADOR,Misty
+ENTRENADOR,Brock

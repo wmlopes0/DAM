@@ -1,0 +1,21 @@
+{
+  "libros": [
+    {
+      "isbn": "239-87-9964-088-4",
+      "titulo": "Acceso a Datos",
+      "autores": [
+        "Alicia Ramos Garcia",
+        "Maria Jesús Ramos Garcia"
+      ],
+      "editorial": "Garceta"
+    },
+    {
+      "isbn": "978-84-9964-239",
+      "titulo": "Acceso a Datos",
+      "autores": [
+        "José Eduardo Córcoles Tendero"
+      ],
+      "editorial": "Garceta"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+/* estilos generales */
+h2,
+h1 {
+    background-color: grey;
+    color: white;
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+
+/* lista 1 */
+
+.lista1 {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.lista1>li:nth-child(1) {
+    list-style-type: georgian;
+}
+
+.lista1>li:nth-child(2) {
+    list-style-type: armenian;
+}
+
+.lista1>li:nth-child(3) {
+    list-style-type: lower-greek;
+}
+
+.lista1>li:nth-child(4) {
+    list-style-type: upper-roman;
+}
+
+/* lista 2 */
+
+.lista2 {
+    border: 3px solid red;
+    background-color: rgb(183, 227, 117);
+    list-style-position: inside;
+    list-style-type: decimal-leading-zero;
+    font-style: italic;
+    width: 150px;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.lista2>li {
+    border: 2px inset white;
+    background-color: rgb(159, 217, 73);
+}
+
+/* lista 4 */
+
+.lista4 {
+    list-style: square;
+}
+
+.list5 {
+    list-style: circle;
+    border: 3px dashed greenyellow;
+
+}
+
+/* menu----------- */
+ol.menu {
+    padding-left: 0px;
+}
+
+ol.menu>li {
+    list-style-type: none;
+    border-top: 3px solid rgb(169, 169, 169);
+    border-left: 3px solid rgb(169, 169, 169);
+    margin-bottom: 10px;
+    background-image: url(../img/flecha_abajo.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+ol.menu>li>div {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: large;
+}
+
+ol.menu>li>ol>li {
+    list-style-type: lower-latin;
+    font-style: italic;
+
+}
+
+ol.menu>li>ol>li>ol>li {
+    list-style-type: lower-roman;
+}
+
+/* lista 6 */
+
+ol.lista6 {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+/* lista de definicion */
+
+dl>dd>ul {
+    background-color: red;
+    padding: 10px 0px 10px 30px;
+    width: 31%;
+}
+
+dl>dd>ul>li {
+    list-style-image: url(../img/vineta_cuadrada1.gif);
+}

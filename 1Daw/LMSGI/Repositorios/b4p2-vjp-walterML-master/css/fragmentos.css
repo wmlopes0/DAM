@@ -1,0 +1,301 @@
+/* MENU A */
+.menuA {
+    background-color: rgb(12, 78, 164);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 200px;
+    margin: auto;
+}
+
+.menuA a {
+    color: white;
+    text-decoration: none;
+}
+
+.menuA>h2 {
+    padding: 7px 0px 5px 17px;
+    margin-bottom: 0px;
+}
+
+.menuA>ul {
+    display: none;
+}
+
+.menuA:hover>ul {
+    display: block;
+}
+
+.menuA:hover {
+    padding-bottom: 10px;
+}
+
+.menuA>ul {
+    border-left: 1px solid grey;
+    margin: 0px 0px 0px 7px;
+    padding: 5px 0px 5px 25px;
+}
+
+.menuA>ul>li {
+    list-style-image: url(../img/arrow-menu.png);
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+/* MENU B */
+div.menuB {
+    background-image: url(../img/banner_skills_2016.jpg);
+    background-position: -50px;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    padding-top: 160px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+div.menuB>p {
+    background-color: white;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px 1px;
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+}
+
+div.menuB>p>a {
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+}
+
+/*MENU C*/
+div.menuC {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/descarga.png);
+    background-repeat: no-repeat;
+    background-position: 0px -150px;
+    height: 100px;
+    width: 600px;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+div.menuC>h2 {
+    font-size: 15px;
+    color: rgb(0, 163, 0);
+    font-style: italic;
+    margin: 0px;
+}
+
+div.menuC>p {
+    font-size: 30px;
+    color: #303030;
+    margin: 10px 0px;
+}
+
+/*MENU D*/
+nav.menuD {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: 50px auto;
+    border-top: 1px solid gray;
+}
+
+nav.menuD>p {
+    width: max-content;
+    background-color: #588ab1;
+    margin: 0px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+nav.menuD>p>a {
+    text-decoration: none;
+    color: white;
+}
+
+/*MENU E*/
+nav.menuE {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid #3a76a3;
+    width: 80%;
+    margin: 20px auto;
+    padding-bottom: 5px;
+}
+
+nav.menuE>span:first-child {
+    font-weight: bolder;
+    font-size: 20px;
+    color: #0c3048;
+}
+
+nav.menuE>span:last-child>a {
+    text-decoration: none;
+    color: #2e73af;
+    font-size: 10px;
+    font-weight: bolder;
+    border-left: 1px solid #3a76a3;
+    padding-left: 5px;
+}
+
+
+/* MENU G */
+nav.menuG {
+    width: 300px;
+    color: white;
+    font-weight: bolder;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav.menuG:hover>ul {
+    opacity: 1;
+}
+
+nav.menuG>h2 {
+    background-color: #48666e;
+    border-bottom: 4px solid #1b2c2d;
+    margin-bottom: 0px;
+    font-size: 18px;
+    padding: 8px 4px;
+}
+
+nav.menuG>ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0px;
+    opacity: 0;
+}
+
+nav.menuG>ul>li {
+    background-color: #106f83;
+    border-bottom: 1px solid white;
+    padding: 8px 4px;
+    font-size: 16px;
+    background-image: url(../img/arrow-menu.png);
+    background-repeat: no-repeat;
+    background-position: 290px;
+    cursor: pointer;
+}
+
+nav.menuG>ul>li:hover {
+    background-color: #107083c6;
+}
+
+/* MENU F */
+nav.menuF {
+    background-color: #f9f9f9;
+    width: max-content;
+    margin: 30px auto;
+    text-align: center;
+    padding: 5px;
+}
+
+nav.menuF>ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav.menuF>ul>li {
+    display: inline-block;
+    list-style-type: none;
+    cursor: pointer;
+    margin: 5px;
+    width: 110px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    background-color: #848e95;
+}
+
+nav.menuF>ul>li:hover {
+    background-color: #848e957d;
+}
+
+nav.menuF>ul>li:first-child {
+    background-color: #958e84;
+}
+
+nav.menuF>ul>li:first-child:hover {
+    background-color: #958e847e;
+}
+
+nav.menuF>ul>li:last-child {
+    background-color: #958484;
+}
+
+nav.menuF>ul>li:last-child:hover {
+    background-color: #9584848f;
+}
+
+
+/* MENU H */
+nav.menuH {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: max-content;
+    cursor: pointer;
+    margin-bottom: 150px;
+}
+
+nav.menuH>h2 {
+    color: rgb(86, 86, 86);
+    font-size: 20px;
+    border-bottom: 2px solid #ccc;
+    width: max-content;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+nav.menuH:hover>h2 {
+    color: rgb(0, 161, 0);
+    border-bottom: 2px solid rgb(0, 161, 0);
+}
+
+nav.menuH>h2>span {
+    font-size: 7px;
+    color: rgb(86, 86, 86);
+}
+
+nav.menuH:hover>h2>span {
+    color: rgb(0, 161, 0);
+}
+
+nav.menuH>ul {
+    display: none;
+    list-style: none;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+nav.menuH:hover>ul {
+    display: block;
+}
+
+nav.menuH>ul>li {
+    padding: 7px 7px;
+    border-bottom: 1px solid gray;
+}
+
+nav.menuH>ul>li:last-child {
+    border-bottom: 2px solid rgb(86, 86, 86);
+}
+
+nav.menuH a {
+    text-decoration: none;
+    color: rgb(111, 111, 111);
+}
+
+nav.menuH>ul>li:hover {
+    background-color: #737373;
+}
+
+nav.menuH>ul>li:hover>a {
+    color: white;
+}

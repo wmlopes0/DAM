@@ -1,0 +1,23 @@
+<cds>
+    <cd numero="1">
+        <titulo>Sinónimo</titulo>
+        <artista>Rayden</artista>
+        <numeroCanciones>10</numeroCanciones>
+        <precio>6,89€</precio>
+        <anno>2019</anno>
+    </cd>
+    <cd numero="2">
+        <titulo>Curso básico de poesía</titulo>
+        <artista>Shariff</artista>
+        <numeroCanciones>15</numeroCanciones>
+        <precio>5,99€</precio>
+        <anno>2014</anno>
+    </cd>
+    <cd numero="3">
+        <titulo>Para todos los públicos</titulo>
+        <artista>Extremoduro</artista>
+        <numeroCanciones>12</numeroCanciones>
+        <precio>10,17€</precio>
+        <anno>2013</anno>
+    </cd>
+</cds>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<aulas> 
+<aula codigo="TI1">
+<nombre>Aula Apolo</nombre>
+<edificio>Norte I</edificio>
+<planta>1</planta>
+</aula>
+<aula codigo="TI2">
+<nombre>Aula Venus</nombre>
+<edificio>Norte I</edificio>
+<planta>2</planta>
+</aula>
+<aula codigo="TI3">
+<nombre>Aula Mercurio</nombre>
+<edificio>Sur I</edificio>
+<planta>1</planta>
+</aula>
+
+</aulas>

@@ -1,0 +1,9 @@
+1;12345678A;2020;3;15;Calle Falsa 123, Ciudad Real;612345678;/interfazGrafica/IMG/personaH1.jpg
+2;23456789B;2021;7;22;Avenida de la Constitución 45, Sevilla;623456789;/interfazGrafica/IMG/personaM1.jpg
+3;34567890C;2019;11;5;Paseo de la Castellana 100, Madrid;634567890;/interfazGrafica/IMG/personaH2.jpg
+4;45678901D;2021;2;10;Gran Vía 28, Barcelona;645678901;/interfazGrafica/IMG/personaM2.jpg
+5;56789012E;2022;1;18;Calle Princesa 32, Málaga;656789012;/interfazGrafica/IMG/personaH3.jpg
+6;67890123F;2020;6;20;Ronda de Toledo 19, Toledo;667890123;/interfazGrafica/IMG/personaM3.jpg
+7;78901234G;2021;9;14;Calle Mayor 56, Zaragoza;678901234;/interfazGrafica/IMG/personaH4.jpg
+8;45132337N;2021;6;11;Calle Menor 5, Zaragoza;636542689;/interfazGrafica/IMG/personaM4.jpg
+9;45134320V;2023;11;15;Madrid;722748406;/interfazGrafica/IMG/user.png

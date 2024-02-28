@@ -1,0 +1,155 @@
+<project name="javax.speech" default="jar" basedir=".">
+    <description>
+This file builds the JSR 113.jar.
+    </description>
+
+    <!-- allow the user to override setting in an own properties file. -->
+    <property name="jsapi2.base" value="../org.jvoicexml.jsapi2" />
+    <property file="${jsapi2.base}/personal-props/ant.properties" />
+    <property file="${jsapi2.base}/config-props/ant.properties" />
+
+
+    <target name="-init">
+        <!-- directory structure -->
+        <property name="src" value="${basedir}/src" />
+        <property name="build" value="${basedir}/classes" />
+        <property name="preverify" value="${basedir}/preverify" />
+        <property name="dist" value="${jsapi2.base}/dist" />
+        <property name="apidoc" value="doc/api" />
+
+        <!-- unit tests -->
+        <property name="test" value="${basedir}/unittests" />
+
+        <property name="test.src" value="${test}/src" />
+        <property name="test.results" value="${dist}/unittests" />
+        <property name="test.build" value="${test}/classes" />
+        
+        <!-- distribution files -->
+        <property name="component" value="javax.speech" />
+        <property name="dist.jar" value="${dist}/jsr113.jar" />
+
+        <path id="midp.lib">
+            <pathelement location="${midp.home}/lib/${cldcapi.jar}" />
+            <pathelement location="${midp.home}/lib/${midpapi.jar}" />
+        </path>
+        <property name="debug" value="on" />
+        <property name="optimize" value="off" />
+
+        <mkdir dir="${build}" />
+        <mkdir dir="${dist}" />
+        <mkdir dir="preverify" />
+        <available file="${midp.home}" property="midp.available" />
+    </target>
+
+    <target name="clean" description="Remove all compiled and distribution files">
+        <delete dir="${build}" />
+        <delete file="${dist.jar}" />
+        <ant dir="../javax.speech.security" target="clean"
+            inheritall="false" inheritrefs="false"/>
+    </target>
+
+    <target name="compileJ2ME" depends="-init" if="midp.available" description="Compile the JAVA sources for J2ME">
+        <ant dir="../javax.speech.security" target="compileJ2ME"
+            inheritall="false" inheritrefs="false"/>
+        <echo message="compiling ${component} for J2ME with debug=${debug}, optimize=${optimize}" />
+        <javac bootclasspathref="midp.lib" destdir="${build}"
+            source="1.2" target="1.1" includeantruntime="false"
+            optimize="${optimize}" debug="${debug}" deprecation="on">
+            <src path="${src}" />
+            <compilerarg value="-Xlint:unchecked" />
+            <classpath location="../javax.speech.security/preverify"/>
+        </javac>
+    </target>
+
+    <target name="compileJSE" depends="-init" unless="midp.available" description="Compile the JAVA sources">
+        <ant dir="../javax.speech.security" target="compileJSE"
+            inheritall="false" inheritrefs="false"/>
+        <echo message="compiling ${component} for JSE with debug=${debug}, optimize=${optimize}" />
+        <javac destdir="${preverify}" includeantruntime="false" optimize="${optimize}" debug="${debug}" deprecation="on" encoding="iso-8859-1">
+            <src path="${src}" />
+            <compilerarg value="-Xlint:unchecked" />
+            <classpath location="../javax.speech.security/preverify"/>
+        </javac>
+    </target>
+
+    <target name="rebuild" depends="clean,compileJSE,compileJ2ME" />
+
+    <target name="preverify" depends="compileJ2ME" if="midp.available">
+        <mkdir dir="preverify" />
+        <pathconvert property="midp.path" refid="midp.lib" />
+        <exec executable="${midp.home}/bin/preverify">
+            <arg value="-classpath" />
+            <arg value="${midp.path}" />
+            <arg value="-d" />
+            <arg value="${preverify}" />
+            <arg value="${build}" />
+            <arg value="-cldc1.0" />
+        </exec>
+    </target>
+
+    <target name="jar" depends="preverify,compileJSE" description="Pack all compiled files into jar files">
+        <ant dir="../javax.speech.security" target="jar"
+            inheritall="false" inheritrefs="false"/>
+        <jar jarfile="${dist.jar}" compress="false">
+            <fileset dir="${preverify}">
+                <include name="**/*.class" />
+            </fileset>
+            <manifest>
+                <attribute name="Built-By" value="${user.name}" />
+                <section name="common">
+                    <attribute name="Implementation-Vendor" value="JVoiceXML group" />
+                    <attribute name="Implementation-Title" value="JSR 113" />
+                    <attribute name="Specification-Version" value="2.0.6" />
+                    <attribute name="Implementation-Version" value="${version}" />
+                </section>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="compiletests" depends="jar"
+        description="Compile the JAVA sources for the test cases">
+        <mkdir dir="${test.build}"/>
+        <javac destdir="${test.build}" optimize="off" debug="on"
+            deprecation="on" includeantruntime="false">
+            <src path="${test.src}" />
+            <include name="javax/speech/**/*.java" />
+            <classpath path="${preverify}" />
+            <classpath location="../org.jvoicexml.jsapi2/3rdparty/junit4.8.2/lib/junit-4.8.2.jar" />
+            <compilerarg value="-Xlint:unchecked" />
+        </javac>
+        <copy todir="${test.build}" overwrite="true">
+            <fileset dir="${test.src}">
+                <include name="**/*.properties" />
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="test" depends="compiletests" description="run unit tests on all test cases">
+        <!-- Delete old test results. -->
+        <delete dir="${test.results}" failonerror="false">
+            <include name="TEST-*" />
+        </delete>
+        <mkdir dir="${test.results}"/>
+        <junit printsummary="yes" maxmemory="256M" fork="no" haltonfailure="no" showoutput="yes">
+            <classpath location="${test.build}" />
+            <classpath path="${preverify}" />
+            <classpath location="../org.jvoicexml.jsapi2/3rdparty/junit4.8.2/lib/junit-4.8.2.jar" />
+
+            <formatter type="brief" usefile="false" />
+            <formatter type="xml" />
+            <batchtest todir="${test.results}">
+                <fileset dir="${test.build}">
+                    <include name="javax/speech/**/*Test.class" />
+                    <exclude name="javax/speech/mock/**" />
+                </fileset>
+            </batchtest>
+        </junit>
+
+        <junitreport>
+            <fileset dir="${test.results}">
+                <include name="TEST-*.xml" />
+            </fileset>
+            <report format="frames" todir="${test.results}/html" />
+        </junitreport>
+    </target>
+</project>

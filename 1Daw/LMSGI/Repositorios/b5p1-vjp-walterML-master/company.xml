@@ -1,0 +1,21 @@
+<company>
+    <office location="Boston">
+        <employee>
+            <first_name>John</first_name>
+            <last_name>Smith</last_name>
+            <age>25</age>
+        </employee>
+    </office>
+    <office location="Vienna">
+        <employee>
+            <first_name>Mary</first_name>
+            <last_name>Brown</last_name>
+            <age>30</age>
+        </employee>
+        <employee>
+            <first_name>Peter</first_name>
+            <last_name>Davis</last_name>
+            <age>34</age>
+        </employee>
+    </office>
+</company>

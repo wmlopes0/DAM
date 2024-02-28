@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id='liga_equipo_action' model='ir.actions.act_window'>
+        <field name="name">Equipos de la liga</field>
+        <field name="res_model">liga.equipo</field>
+        <!-- Indicamos que este modelo se puede ver en kanban, tree y form -->
+        <field name="view_mode">tree,kanban,form,graph</field>
+    </record>
+
+
+    <menuitem name="Gestión de liga" id="liga_base_menu" />
+    <menuitem name="Equipos" id="liga_equipo_menu" parent="liga_base_menu" action="liga_equipo_action" />
+
+    <!-- Vista formulario -->
+    <record id="liga_equipo_view_form" model="ir.ui.view">
+        <field name="name">Formulario de equipo de futbol</field>
+        <field name="model">liga.equipo</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="nombre" />
+                        <field name="escudo" widget="image" class="oe_avatar" />
+                        <field name="fecha_fundacion" />
+                    </group>
+                    <group>
+                        <field name="descripcion" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree(list) View -->
+    <record id="liga_equipo_view_tree" model="ir.ui.view">
+        <field name="name">Lista de Equipos de la liga</field>
+        <field name="model">liga.equipo</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre" />
+                <field name="escudo" widget="image" class="oe_avatar" />
+                <field name="fecha_fundacion" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista busqueda-->
+    <record id="liga_equipo_view_search" model="ir.ui.view">
+        <field name="name">Búsqueda de Equipos por nombre</field>
+        <field name="model">liga.equipo</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="nombre" />
+             </search>
+        </field>
+    </record>
+
+
+    <!-- Vista Kanban -->
+    <record id="liga_equipo_view_kanban" model="ir.ui.view">
+        <field name="name">Lista de Equipo</field>
+        <field name="model">liga.equipo</field>
+        <field name="arch" type="xml">
+            <!-- Agrupamos por el atributo "parent_id"-->
+            <kanban>
+                <!-- Indicamos que atributos usaremos al hacer la vista Kanban -->
+                <field name="nombre" />
+                <field name="id" />
+                <field name="escudo" />
+                <!-- Plantilla QWeb para indicar como es la tarjeta Kanban-->
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="o_kanban_image_inner_pic">
+                            <field name="nombre" />
+                            <img alt="Avatar" t-att-src="kanban_image('liga.equipo', 'escudo', record.id.raw_value)" />
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+
+    <!-- Vista Graph  que muestra información usando como base los puntos-->
+    <record model="ir.ui.view" id="liga_equipo_view_graph">
+        <field name="name">Puntos por equipo</field>
+        <field name="model">liga.equipo</field>
+        <field name="type">graph</field>
+        <field name="arch" type="xml">
+            <!-- Indicamos que cada fila es un equipo y que la medida que los valora son los puntos
+                Con esto conseguimos, por ejemplo, en un pie chart, que cada quesito sea un equipo
+                y el tamaño del quesito sean los puntos -->
+              <graph string="Puntos por equipo">
+                <field name="nombre" group="True" type="row"/>
+                <field name="puntos" group="True" type="measure"/>
+             </graph>
+         </field>
+     </record>
+
+</odoo>

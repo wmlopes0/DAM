@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Generico;
+
+import Personajes.*;
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Quique Pineda
+ */
+public class Celda {
+    /*********** Añade aquí los atributos de la clase Celda *************/
+    
+    /*********** Añade aquí los métodos de la clase Celda *************/
+
+    /***************************************************************************************/
+    /***************************************************************************************/
+    /****************************** MÉTODOS PARA PINTAR MAPA *******************************/
+    /***************************************************************************************/
+    /***************************************************************************************/
+    @Override
+    public String toString() {
+        if  (this.lPersonajes.size() > 0){
+            if  (this.lPersonajes.size() == 1){
+                //valueOf convierte a String el char recibido por parámetro
+                return String.valueOf(this.lPersonajes.get(0).getMarca());
+            }
+            else{
+                //valueOf convierte a String el int recibido por parámetro
+                return String.valueOf(this.lPersonajes.size());
+            }        
+        }
+        else{
+            return Constantes.CERO;
+        }
+    }
+}

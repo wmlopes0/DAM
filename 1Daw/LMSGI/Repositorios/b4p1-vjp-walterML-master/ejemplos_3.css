@@ -1,0 +1,23 @@
+a:link{
+    color: pink;
+}
+
+a.noticia:visited{
+    color: orange;
+}
+
+:active{
+    color: yellow;
+}
+
+li:hover{
+    color: red;
+}
+
+::first-letter{
+     color:green;
+}
+
+p::first-line{
+    color: blue;
+}

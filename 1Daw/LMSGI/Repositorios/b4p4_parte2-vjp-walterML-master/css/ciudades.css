@@ -1,0 +1,18 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    font-size: 23px;
+}
+
+.ciudades>ul {
+    display: flex;
+}
+
+.ciudades>ul>li {
+    list-style: none;
+    padding: 0px 10px;
+}
+
+.ciudades>ul>li:not(:nth-child(1)) {
+    border-left: 2px solid grey;
+}

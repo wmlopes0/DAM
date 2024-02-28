@@ -1,0 +1,32 @@
+/* 
+    Created on : 4 feb 2024, 17:43:49
+    Author     : Walter
+*/
+
+.fondo-label{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #da499c, #2d23a6);
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, #1e0148, 25, 0.2, 0, 8);
+    -fx-background-radius: 0 0 7 7;
+}
+
+.fondo-panel{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #c89cce, #d7c8e1);
+}
+
+.tarjeta{
+    -fx-background-color: #f4eaff;
+    -fx-border-color: #9a55a3;
+    -fx-border-width: 2; /* Grosor del borde */
+    -fx-border-radius: 10; /* Esquinas del borde redondeadas */
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.0, 0, 5); /* Una sombra suave para resaltar */
+    -fx-halignment: center; /* Alineación horizontal para el contenido de las celdas */
+    -fx-valignment: center; /* Alineación vertical para el contenido de las celdas */
+}
+
+.boton-falta{
+    -fx-background-color:#d6eadf;
+    -fx-effect: innershadow(gaussian, #262626, 20, 0.0, 0, 5);
+    -fx-background-radius: 0 0 10 10;
+}

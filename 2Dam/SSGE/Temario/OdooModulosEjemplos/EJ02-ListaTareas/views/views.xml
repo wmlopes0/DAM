@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+    <!-- actions opening views on models -->
+    <!-- Acciones al abrir las vistas en los modelos 
+    https://www.odoo.com/documentation/14.0/developer/reference/addons/actions.html
+    -->
+    <record model="ir.actions.act_window" id="action_lista_tareas">
+      <!-- -->
+      <field name="name">Listado de tareas pendientes</field>
+      <!-- Nombre del modelo que mostraremos en la vista-->
+      <field name="res_model">lista_tareas.lista</field>
+      <!-- indicamos que nuestro formulario tendrá vista tree (para mostrar todos los datos
+      y vista form (para crear o editar datos)
+      La vista Form no la definimos, por lo cual tendremos la version automatica.
+      La vista tree la definiremos mas abajo.
+      -->
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- Top menu item 
+    En este ejemplo, todo el menu de "menuitem" esta puesto como ejemplo, no hace una función concreta
+    -->
+    <menuitem name="Listado de tareas" id="lista_tareas_menu_root" />
+
+    <!-- menu categories -->
+    <menuitem name="Opciones Lista Tareas" id="lista_tareas_menu_1" parent="lista_tareas_menu_root" />
+
+    <!-- actions -->
+    <menuitem name="Mostrar lista" id="lista_tareas_menu_1_list" parent="lista_tareas_menu_1" action="action_lista_tareas" />
+
+
+    <!-- Odoo puede colocar vistas automaticas, aunque con un aspecto y funcionalidad mejorable
+    Nosotros, para afinarlo, explicaremos de manera explicita como es cada vista -->
+
+    <!-- Definimos como es la vista explicita de la lista-->
+    <record model="ir.ui.view" id="lista_tareas">
+      <field name="name">Lista de tareas</field>
+      <field name="model">lista_tareas.lista</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="tarea" />
+          <field name="prioridad" />
+          <field name="urgente" />
+          <field name="realizada" />
+        </tree>
+      </field>
+    </record>
+
+
+  </data>
+</odoo>

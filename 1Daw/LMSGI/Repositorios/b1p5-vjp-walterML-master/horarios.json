@@ -1,0 +1,726 @@
+{
+	"Grupos": {
+		"Centro": "IES Valle del Jerte",
+		"Url": "https://iesvallejertepla.educarex.es/",
+		"Curso": "2022-2023",
+		"Grupo": [
+			{
+				"Nombre": "1ºGS-Administración de Sistemas Informáticos en Red",
+				"Tutoria": {
+					"Profesor": "Fátima Hontiveros Almaraz",
+					"Tramo": {
+						"Id": "4",
+						"HoraInicio": "18:25",
+						"HoraFin": "19:20",
+						"Dias": {
+							"Dia": {
+								"Nombre": "Martes",
+								"Abreviatura": "LMSGI"
+							}
+						}
+					}
+				},
+				"Asignaturas": {
+					"Asignatura": [
+						{
+							"Abreviatura": "ISO",
+							"Nombre": "Implantación de Sistemas Operativos",
+							"Horas": "224",
+							"Profesor": "Antonio Berrocal"
+						},
+						{
+							"Abreviatura": "PARE",
+							"Nombre": "Planificación y Administración de Redes",
+							"Horas": "224",
+							"Profesor": "Marian Valdera"
+						},
+						{
+							"Abreviatura": "FHW",
+							"Nombre": "Fundamentos de Hardware",
+							"Horas": "96",
+							"Profesor": "Fernando Torrecilla"
+						},
+						{
+							"Abreviatura": "GBD",
+							"Nombre": "Gestión de Bases de Datos",
+							"Horas": "192",
+							"Profesor": "Marcos Fernández"
+						},
+						{
+							"Abreviatura": "LMSGI",
+							"Nombre": "Lenguajes de Marca y Sistemas de Gestión de Inf.",
+							"Horas": "128",
+							"Profesor": "Antonio Berrocal"
+						},
+						{
+							"Abreviatura": "FOL",
+							"Nombre": "Formación y Orientación Laboral",
+							"Horas": "96",
+							"Profesor": "Fátima Hontiveros"
+						}
+					]
+				},
+				"Horario": {
+					"Tramos": {
+						"Tramo": [
+							{
+								"Id": "1",
+								"HoraInicio": "15:20",
+								"HoraFin": "16:15",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "ISO"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "GBD"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "PARE"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "ISO"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "FHW"
+										}
+									]
+								}
+							},
+							{
+								"Id": "2",
+								"HoraInicio": "16:15",
+								"HoraFin": "17:10",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "LMSGI"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "FHW"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "GBD"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "ISO"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "FHW"
+										}
+									]
+								}
+							},
+							{
+								"Id": "3",
+								"HoraInicio": "17:10",
+								"HoraFin": "18:05",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "FOL"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "PARE"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "ISO"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "LMSGI"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "PARE"
+										}
+									]
+								}
+							},
+							{
+								"Id": "4",
+								"HoraInicio": "18:25",
+								"HoraFin": "19:20",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "GBD"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "LMSGI"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "LMSGI"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "GBD"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "PARE"
+										}
+									]
+								}
+							},
+							{
+								"Id": "5",
+								"HoraInicio": "19:20",
+								"HoraFin": "20:15",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "GBD"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "ISO"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "FOL"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "PARE"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "ISO"
+										}
+									]
+								}
+							},
+							{
+								"Id": "6",
+								"HoraInicio": "20:15",
+								"HoraFin": "21:10",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "PARE"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "ISO"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "FOL"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "PARE"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "GBD"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"Nombre": "1ºGS-Desarrollo de Aplicaciones Multiplataforma",
+				"Tutoria": {
+					"Profesor": "Puerto Cruz Mateos",
+					"Tramo": {
+						"Id": "2",
+						"HoraInicio": "16:15",
+						"HoraFin": "17:10",
+						"Dias": {
+							"Dia": [
+								{
+									"Nombre": "Martes",
+									"Abreviatura": "BBDD"
+								},
+								{
+									"Nombre": "Jueves",
+									"Abreviatura": "BBDD"
+								}
+							]
+						}
+					}
+				},
+				"Asignaturas": {
+					"Asignatura": [
+						{
+							"Abreviatura": "SSINF",
+							"Nombre": "Sistemas Informáticos",
+							"Horas": "192",
+							"Profesor": "Julio Barbero"
+						},
+						{
+							"Abreviatura": "BBDD",
+							"Nombre": "Base de Datos",
+							"Horas": "192",
+							"Profesor": "Puerto Cruz"
+						},
+						{
+							"Abreviatura": "PGRMC",
+							"Nombre": "Programación",
+							"Horas": "224",
+							"Profesor": "Quique Pineda"
+						},
+						{
+							"Abreviatura": "ENTDL",
+							"Nombre": "Entornos de Desarrollo",
+							"Horas": "128",
+							"Profesor": "Marcos Fernández"
+						},
+						{
+							"Abreviatura": "LMSGI",
+							"Nombre": "Lenguajes de Marca y Sistemas de Gestión de Inf.",
+							"Horas": "128",
+							"Profesor": "Antonio Berrocal"
+						},
+						{
+							"Abreviatura": "FOL",
+							"Nombre": "Formación y Orientación Laboral",
+							"Horas": "96",
+							"Profesor": "Fátima Hontiveros"
+						}
+					]
+				},
+				"Horario": {
+					"Tramos": {
+						"Tramo": [
+							{
+								"Id": "1",
+								"HoraInicio": "15:20",
+								"HoraFin": "16:15",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "FOL"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "BBDD"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "ENTDL"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "ENTDL"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "SSINF"
+										}
+									]
+								}
+							},
+							{
+								"Id": "2",
+								"HoraInicio": "16:15",
+								"HoraFin": "17:10",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "FOL"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "BBDD"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "LMSGI"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "BBDD"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "SSINF"
+										}
+									]
+								}
+							},
+							{
+								"Id": "3",
+								"HoraInicio": "17:10",
+								"HoraFin": "18:05",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "ENTDL"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "LMSGI"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "BBDD"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "SSINF"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "ENTDL"
+										}
+									]
+								}
+							},
+							{
+								"Id": "4",
+								"HoraInicio": "18:25",
+								"HoraFin": "19:20",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "PGRMC"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "PGRMC"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "BBDD"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "SSINF"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "LMSGI"
+										}
+									]
+								}
+							},
+							{
+								"Id": "5",
+								"HoraInicio": "19:20",
+								"HoraFin": "20:15",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "BBDD"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "PGRMC"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "PGRMC"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "FOL"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "PGRMC"
+										}
+									]
+								}
+							},
+							{
+								"Id": "6",
+								"HoraInicio": "20:15",
+								"HoraFin": "21:10",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "SSINF"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "SSINF"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "PGRMC"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "LMSGI"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "PGRMC"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"Nombre": "1ºGS-Desarrollo de Aplicaciones Web",
+				"Tutoria": {
+					"Profesor": "Marcos Fernández Sellers",
+					"Tramo": {
+						"Id": "4",
+						"HoraInicio": "18:25",
+						"HoraFin": "19:20",
+						"Dias": {
+							"Dia": {
+								"Nombre": "Viernes",
+								"Abreviatura": "ENTDL"
+							}
+						}
+					}
+				},
+				"Asignaturas": {
+					"Asignatura": [
+						{
+							"Abreviatura": "SSINF",
+							"Nombre": "Sistemas Informáticos",
+							"Horas": "192",
+							"Profesor": "Julio Barbero"
+						},
+						{
+							"Abreviatura": "BBDD",
+							"Nombre": "Base de Datos",
+							"Horas": "192",
+							"Profesor": "Puerto Cruz"
+						},
+						{
+							"Abreviatura": "PGRMC",
+							"Nombre": "Programación",
+							"Horas": "224",
+							"Profesor": "Quique Pineda"
+						},
+						{
+							"Abreviatura": "ENTDL",
+							"Nombre": "Entornos de Desarrollo",
+							"Horas": "128",
+							"Profesor": "Marcos Fernández"
+						},
+						{
+							"Abreviatura": "LMSGI",
+							"Nombre": "Lenguajes de Marca y Sistemas de Gestión de Inf.",
+							"Horas": "128",
+							"Profesor": "Antonio Berrocal"
+						},
+						{
+							"Abreviatura": "FOL",
+							"Nombre": "Formación y Orientación Laboral",
+							"Horas": "96",
+							"Profesor": "Marta Pérez"
+						}
+					]
+				},
+				"Horario": {
+					"Tramos": {
+						"Tramo": [
+							{
+								"Id": "1",
+								"HoraInicio": "15:20",
+								"HoraFin": "16:15",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "FOL"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "FOL"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "LMSGI"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "BBDD"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "BBDD"
+										}
+									]
+								}
+							},
+							{
+								"Id": "2",
+								"HoraInicio": "16:15",
+								"HoraFin": "17:10",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "SSINF"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "FOL"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "PGRMC"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "ENTDL"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "PGRMC"
+										}
+									]
+								}
+							},
+							{
+								"Id": "3",
+								"HoraInicio": "17:10",
+								"HoraFin": "18:05",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "SSINF"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "BBDD"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "PGRMC"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "ENTDL"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "PGRMC"
+										}
+									]
+								}
+							},
+							{
+								"Id": "4",
+								"HoraInicio": "18:25",
+								"HoraFin": "19:20",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "LMSGI"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "BBDD"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "SSINF"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "LMSGI"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "ENTDL"
+										}
+									]
+								}
+							},
+							{
+								"Id": "5",
+								"HoraInicio": "19:20",
+								"HoraFin": "20:15",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "PGRMC"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "SSINF"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "BBDD"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "SSINF"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "ENTDL"
+										}
+									]
+								}
+							},
+							{
+								"Id": "6",
+								"HoraInicio": "20:15",
+								"HoraFin": "21:10",
+								"Dias": {
+									"Dia": [
+										{
+											"Nombre": "Lunes",
+											"Abreviatura": "PGRMC"
+										},
+										{
+											"Nombre": "Martes",
+											"Abreviatura": "PGRMC"
+										},
+										{
+											"Nombre": "Miércoles",
+											"Abreviatura": "BBDD"
+										},
+										{
+											"Nombre": "Jueves",
+											"Abreviatura": "SSINF"
+										},
+										{
+											"Nombre": "Viernes",
+											"Abreviatura": "LMSGI"
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			}
+		]
+	}
+}

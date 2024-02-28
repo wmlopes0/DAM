@@ -1,0 +1,122 @@
+/* ESTILOS GENERALES */
+:root {
+  --margin-circulo: 4px;
+  --padding-dado: 5px;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.fichas {
+  /* VARIABLE TAMAÑO */
+  --tamano-circulo: 25px;
+  /* ------------------- */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Color fondo blanco, con sombra.. */
+.ficha {
+  background-color: #e7e7e7;
+  box-shadow: inset 0 5px white, inset 0 -5px #bbb, inset 5px 0 #d7d7d7,
+    inset -5px 0 #d7d7d7;
+  border-radius: 10%;
+  min-width: calc(var(--tamano-circulo)*3 + var(--padding-dado)*2 + var(--margin-circulo)*6);
+  min-height: auto;
+}
+
+:is(#fichasdados, #fichasdomino) {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Circulo negro */
+.container.ficha>div,
+#fichasdomino>.ficha>.container>div {
+  width: var(--tamano-circulo);
+  height: var(--tamano-circulo);
+  margin: var(--margin-circulo);
+  border-radius: 50%;
+  background-color: #333;
+  box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+
+/* DOMINÓ ============================*/
+#fichasdomino>.ficha>.container {
+  width: calc(var(--tamano-circulo) * 3 + var(--margin-circulo) * 6 + 8px);
+  height: calc(var(--tamano-circulo) * 3 + var(--margin-circulo) * 6 + 8px);
+}
+
+hr {
+  width: auto;
+  height: calc(var(--tamano-circulo)/3);
+  margin: var(--margin-circulo);
+  background-color: #333;
+  box-shadow: inset -1px -1px #111, inset 0 -3px #555;
+}
+
+/* CON HERRAMIENTA GRID */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  place-items: center;
+  padding: var(--padding-dado);
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i";
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+.g {
+  grid-area: g;
+}
+
+.h {
+  grid-area: h;
+}
+
+.i {
+  grid-area: i;
+}
+
+/* FIN HERRAMIENTA */

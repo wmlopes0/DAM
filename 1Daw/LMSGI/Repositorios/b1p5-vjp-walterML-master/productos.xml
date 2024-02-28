@@ -1,0 +1,33 @@
+<!DOCTYPE catalogo SYSTEM "productos.dtd">
+<catalogo>
+    <producto id="1">
+        <nombre>Coca Cola</nombre>
+        <cantidad>100</cantidad>
+        <precio>2</precio>
+        <maximoGanancia>200</maximoGanancia>
+    </producto>
+    <producto id="2">
+        <nombre>Pepsi</nombre>
+        <cantidad>50</cantidad>
+        <precio>1,5</precio>
+        <maximoGanancia>75</maximoGanancia>
+    </producto>
+    <producto id="3">
+        <nombre>Fanta</nombre>
+        <cantidad>26</cantidad>
+        <precio>2</precio>
+        <maximoGanancia>52</maximoGanancia>
+    </producto>
+    <producto id="4">
+        <nombre>Mirinda</nombre>
+        <cantidad>56</cantidad>
+        <precio>3</precio>
+        <maximoGanancia>168</maximoGanancia>
+    </producto>
+    <producto id="5">
+        <nombre>Sprite</nombre>
+        <cantidad>203</cantidad>
+        <precio>2</precio>
+        <maximoGanancia>406</maximoGanancia>
+    </producto>
+</catalogo>

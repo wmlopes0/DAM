@@ -1,0 +1,63 @@
+Ejercicio sobre representación del texto y títulos
+
+El futuro de la Web
+
+Muchas aplicaciones tradicionalmente de escritorio las podemos encontrar como aplicaciones Web: procesadores de texto, hojas de cálculo, gestión de personal, facturación, etc., incluso podemos encontrar completos sistemas operativos desarrollados como una aplicación Web y con la que podemos trabajar utilizando un navegador. En marzo de 1949, en Popular Machanics, se dijo ENIAC se equipó con 18.000 tubos de vacío y pesó 30 toneladas, los computadores del futuro pueden tener 1.000 tubos de vacío y quizá pesen entre 1 y 1/2 toneladas. Hoy vemos que el pronóstico fue ampliamente superado. La Web comenzó en la decada de los 90, ¿cúal será su futuro?
+
+PHP
+
+Definición
+
+Para realizar el proyecto Web necesitaremos utilizar PHP, definido en php.net como:
+
+PHP, acrónimo de "Hypertext Preprocessor", es un lenguaje "Open Source" interpretado de alto nivel, especialmente pensado para desarrollos web y el cual puede ser embebido en páginas HTML. La mayoría de su sintaxis es similar a C, Java y Perl y es fácil de aprender. La meta de este lenguaje es permitir escribir a los creadores de páginas web, páginas dinámicas de una manera rápida y fácil, aunque se pueda hacer mucho más con PHP.
+Existen múltiud de páginas en las que podemos encontrar información y ejemplos de PHP, además la biblioteca del dpto. dispone de varios ejemplares que tratan el desarrollo de páginas Web con PHP.
+
+Un primer ejemplo
+
+Una respuesta corta y concisa, pero, ¿qué significa realmente? Un ejemplo nos aclarará las cosas:
+
+
+<html>
+    <head>
+        <title>Ejemplo</title>
+    </head>
+    <body>
+
+        <?php
+        echo “Hola, ¡soy un script PHP!”;
+        ?>
+    </body>
+</html>
+
+
+Al invocar al script anterior obtenemos la salida::
+
+“Hola, ¡soy un script PHP!”
+Puede apreciarse que no es lo mismo que un script escrito en otro lenguaje de programación como Perl o C -- En vez de escribir un programa con muchos comandos para crear una salida en HTML, escribimos el código HTML con cierto código PHP embebido (incluido) en el mismo, que producirá cierta salida (en nuestro ejemplo, producirá un texto). El código PHP se incluye entre etiquetas especiales de comienzo y final que nos permitirán entrar y salir del modo PHP.
+
+Lo que distingue a PHP de la tecnología Javascript, la cual se ejecuta en la máquina cliente, es que el código PHP es ejecutado en el servidor. Si tuviésemos un script similar al de nuestro ejemplo en nuestro servidor, el cliente solamente recibiría el resultado de su ejecución en el servidor, sin ninguna posibilidad de determinar qué código ha producido el resultado recibido. El servidor web puede ser incluso configurado para que procese todos los archivos HTML con PHP.
+
+Lo mejor de usar PHP es que es extremadamente simple para el principiante, pero a su vez, ofrece muchas características avanzadas para los programadores profesionales.
+
+Aunque el desarrollo de PHP está concentrado en la programación de scripts en el lado del servidor, se puede utilizar para muchas otras cosas.
+
+Identificar la versión instalada
+
+Para conocer la versión de PHP que tienes instalada — es mejor opción crear una página Web llamando a phpinfo() —, desde la línea de comandos teclea php -v Un ejemplo de lo que puedes obtener es:
+
+PHP 5.2.0 (cli) (built: Nov 2 2006 11:57:36)
+Copyright (c) 1997-2006 The PHP Group
+Zend Engine v2.2.0, Copyright (c) 1998-2006 Zend Technologies
+
+Nota: la orden anterior funcionará independientemente del directorio activo en el que te encuentres siempre que la ruta al ejecutable PHP.EXE esté incluida en la variable PATH
+
+Bibliografía
+
+http://www.php.net
+ 
+
+H3CAR    S.L. 
+C\ Mi Dirección, s/n
+10600 Plasencia
+Tfno: 927 11 11 11

@@ -1,0 +1,27 @@
+
+header{
+    background-color: lightblue;
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav,aside{
+    background-color: blue;
+    width: 20%;
+    position: fixed;
+    height: calc(100vh - 70px);
+}
+nav{
+    top: 70px;
+    left: 0;
+}
+aside{
+    top: 70px;
+    right: 0;
+}
+main{
+    margin: 70px 20% 0 20%;
+    text-align: justify;
+}

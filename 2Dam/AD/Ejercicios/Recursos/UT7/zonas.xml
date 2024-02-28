@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<zonas>
+<TITULO>DATOS DE LA TABLA ZONAS</TITULO>
+<zona>
+  <cod_zona>10</cod_zona>
+  <nombre>Madrid-CENTRO</nombre>
+  <director>Pedro Martín</director>
+</zona>
+<zona>
+<cod_zona>20</cod_zona>
+  <nombre>Extremadura-Galicia</nombre>
+  <director>Alicia Pérez</director>
+</zona>
+<zona>
+ <cod_zona>30</cod_zona>
+  <nombre>Levante-Cataluña</nombre>
+  <director>Carlos Grau</director>
+</zona>
+<zona>
+  <cod_zona>40</cod_zona>
+  <nombre>Andalucía</nombre>
+  <director>Rocío Gil</director>
+</zona>
+</zonas>

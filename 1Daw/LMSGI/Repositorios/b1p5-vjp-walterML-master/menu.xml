@@ -1,0 +1,13 @@
+<!DOCTYPE menu_almuerzo SYSTEM "menu.dtd">
+<menu_almuerzo>
+    <comida calorias="650">
+		<nombre>Waffles</nombre>
+		<precio>2.00</precio>
+		<descripcion>Waffles baratos de McDonalds</descripcion>
+    </comida>
+    <comida calorias="1500">
+		<nombre>Hamburguesa</nombre>
+		<precio>5.00</precio>
+		<descripcion>La hamburguesa mas común de McDonalds</descripcion>
+    </comida>    
+</menu_almuerzo>

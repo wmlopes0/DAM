@@ -1,0 +1,23 @@
+OPERADORES NUCLEARES
+Científico{nombre=Legásov, turno=1, idCeldaActual=10, marca=L, reconocido=false}
+Científico{nombre=Shcherbina, turno=2, idCeldaActual=1, marca=S, reconocido=false}
+Minero{nombre=Glújov, turno=4, idCeldaActual=0, marca=G, reconocido=false}
+Bombero{nombre=Ignatenko, turno=7, idCeldaActual=12, marca=I, reconocido=false, cargaRefrigerador=5}
+
+KGB
+Oficial{nombre=Vladimir, turno=1, idCeldaActual=11, marca=V}
+Voluntario{nombre=Yuri, turno=1, idCeldaActual=34, marca=Y}
+Voluntario{nombre=Anatoli, turno=1, idCeldaActual=35, marca=T}
+
+LLAVES
+Llave{idLlave=1, celdaAct=31}
+Llave{idLlave=2, celdaAct=44}
+
+SIMULACIÓN
+Científico Legásov realizando sus acciones.
+Científico Shcherbina realizando sus acciones.
+Minero Glújov realizando sus acciones.
+Bombero Ignatenko realizando sus acciones.
+Oficial Vladimir realizando sus acciones.
+Voluntario Yuri realizando sus acciones.
+Voluntario Anatoli realizando sus acciones.

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">T05Ejercicio12</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news">NEWS</string>
+    <string name="results">RESULTS</string>
+    <string name="spanishSelection">SPANISH SELECTION</string>
+    <string name="calendar">CALENDAR</string>
+    <string name="finalPhase">FINAL PHASE</string>
+    <string name="statistics">STATISTICS</string>
+</resources>

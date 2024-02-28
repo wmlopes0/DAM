@@ -1,0 +1,2 @@
+Este es un texto que se encuentra/encontraba
+en un fichero llamado 'FicheroOrigen.txt'

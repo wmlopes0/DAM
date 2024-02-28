@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">T08Ejercicio04</string>
+    <string name="titulo">¿Cuál es tu serie favorita?</string>
+    <string name="seleccionado">Has seleccionado: </string>
+</resources>

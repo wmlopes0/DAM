@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title></title>
+
+<!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+	th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+<link href="../../static/css/style.css" th:href="@{/css/style.css}"
+	rel="stylesheet" />
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+body {
+	margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">IES Valle del Jerte Shop</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Opciones <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a th:href="@{/admin/categoria/}">Gestión de categorías</a></li>
+							<li><a th:href="@{/admin/producto/}">Gestión de productos</a></li>
+						</ul></li>
+				</ul>				
+			</div>
+
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+				<div class="alert alert-warning alert-dismissible" role="alert"
+				 th:if="${param.error}">
+					<button type="button" class="close" data-dismiss="alert"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<span>No se puede borrar una categoria que tiene asociados productos</span>
+				</div>
+				<div class="pull-right">
+					<a th:href="@{/admin/categoria/nueva}" class="btn btn-primary">Nueva categoría</a>
+
+				</div>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Imagen</th>
+							<th>Nombre</th>
+							<th>Operaciones</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="categoria : ${listaCategorias}">
+							<td><img class="img-responsive icono-categoria" th:src="${not (#strings.isEmpty(categoria.imagen))} ? ${categoria.imagen} : 'http://placehold.it/48x48'" alt="imagen" /></td>
+							<td th:text="${categoria.nombre}">Nombre</td>
+							<td class="operaciones">
+								<a th:href="@{/admin/categoria/editar/{id}(id=${categoria.id})}" class="btn btn-primary">Editar</a> 
+								<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-modal" th:data-id="${categoria.id}">Borrar</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="delete-modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Borrar categoria</h4>
+				</div>
+				<div class="modal-body">
+					<p>¿Está usted seguro de borrar esta categoría?</p>
+					<button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+					<a th:href="@{/admin/categoria/borrar/}" class="btn btn-danger">Sí</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+		th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+		th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+	<script src="../../static/js/app.js" th:src="@{/js/app.js}"></script>
+
+
+</body>
+</html>

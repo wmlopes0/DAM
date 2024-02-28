@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">T05AnexoEjercicio02</string>
+    <string name="botonInicio">INICIO</string>
+    <string name="botonSumador">SUMADOR</string>
+    <string name="botonSumar">SUMAR</string>
+    <string name="bienvenida">Bienvenid@ a mi sumador</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

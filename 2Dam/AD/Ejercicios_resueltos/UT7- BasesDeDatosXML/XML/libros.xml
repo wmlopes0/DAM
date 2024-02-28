@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bib>
+  <book id="1">
+    <title>TCP/IP Illustrated</title>
+    <author>Stevens</author>
+    <publisher>Addison-Wesley</publisher>
+    <year>2002</year>
+  </book>
+  <book id="2">
+    <title>Advanced Programming in the Unix Environment</title> 
+    <author>Stevens</author> 
+    <publisher>Addison-Wesley</publisher>
+    <year>2004</year>
+  </book>
+  <book id="3">
+    <title>Data on the Web</title>
+    <author>Abiteboul</author>
+    <author>Buneman</author>
+    <author>Suciu</author>
+    <year>2006</year>
+  </book>
+</bib>

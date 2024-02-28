@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>http://lmsgi.iesvjp.es/b2p4-vjp-walterML/listas.html</loc>
+        <lastmod>2022-01-10</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://lmsgi.iesvjp.es/b2p4-vjp-walterML/horario.html</loc>
+        <lastmod>2022-01-10</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://lmsgi.iesvjp.es/b2p4-vjp-walterML/tabla_imagenes.html</loc>
+        <lastmod>2022-01-10</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablas.html</loc>
+        <lastmod>2022-01-10</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablaperiodica.html</loc>
+        <lastmod>2022-01-10</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://lmsgi.iesvjp.es/b2p4-vjp-walterML/multimedia.html</loc>
+        <lastmod>2022-01-10</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablas_V2.html</loc>
+        <lastmod>2022-01-10</lastmod>
+        <priority>1.00</priority>
+    </url>
+</urlset>

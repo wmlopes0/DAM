@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">T06Ejercicio08</string>
+    <string name="titulo">¿Cuál es tu equipo de futbol favorito?</string>
+    <string name="realMadrid">Real Madrid C.F</string>
+    <string name="barcelona">F.C Barcelona</string>
+    <string name="atletico">Atletico de Madrid</string>
+    <string name="meGusta">Me gusta el fútbol</string>
+    <string name="ningunaSeleccionada">Aún no has hecho ninguna selección</string>
+    <string name="madridSeleccionado">Este año aspira a ganarlo todo</string>
+    <string name="barcelonaSeleccionado">El año pasado hizo triplete</string>
+    <string name="atleticoSeleccionado">Partido a partido</string>
+    <string name="meGustaSeleccionado">Te gusta el fútbol!!!!</string>
+</resources>

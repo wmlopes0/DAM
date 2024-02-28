@@ -1,0 +1,6 @@
+<!ELEMENT fichas (ficha+)>
+<!ELEMENT ficha (nombre,apellido,direccion)>
+<!ATTLIST ficha numero NMTOKEN #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>

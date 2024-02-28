@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id='socio_action' model='ir.actions.act_window'>
+        <field name="name">Listado de socios</field>
+        <field name="res_model">socio</field>
+        <!-- Indicamos que este modelo se puede ver en kanban, tree y form -->
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+
+    <menuitem name="Gestión de socios" id="socios_base_menu" />
+    <menuitem name="Socios" id="socio_menu" parent="socios_base_menu" action="socio_action" />
+
+    <!-- Vista formulario -->
+    
+    <record id="socio_view_form" model="ir.ui.view">
+        <field name="name">Formulario de equipo de futbol</field>
+        <field name="model">socio</field>
+        <field name="arch" type="xml">
+            <form>
+               <group>
+                    <group>
+                        <field name="num_socio" />
+                        <field name="nombre" />
+                        <field name="apellidos" />
+                    </group>
+                    
+                    <group>
+                        <field name="foto" widget="image" class="oe_avatar" />
+                        <field name="barcode_carnet" widget="image" class="oe_avatar"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+-->
+    <!-- Tree(list) View -->
+    <record id="socio_view_tree" model="ir.ui.view">
+        <field name="name">Lista de Socios</field>
+        <field name="model">socio</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="num_socio" />
+                <field name="nombre" />
+                <field name="apellidos" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista busqueda-->
+    <record id="socio_view_search" model="ir.ui.view">
+        <field name="name">Búsqueda de Socio por nombre</field>
+        <field name="model">socio</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="num_socio" />
+                <field name="nombre" />
+                <field name="apellidos" />
+            </search>
+        </field>
+    </record>
+
+
+    <!-- Vista Kanban -->
+    <record id="socio_view_kanban" model="ir.ui.view">
+        <field name="name">Lista de Socios</field>
+        <field name="model">socio</field>
+        <field name="arch" type="xml">
+            <!-- Agrupamos por el atributo "parent_id"-->
+            <kanban>
+                <!-- Indicamos que atributos usaremos al hacer la vista Kanban -->
+
+                <field name="id" />
+                <field name="num_socio" />
+                <field name="nombre" />
+                <field name="apellidos" />
+                <field name="foto"/>
+                <!-- Plantilla QWeb para indicar como es la tarjeta Kanban-->
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="o_kanban_image_inner_pic">
+                            <field name="num_socio" />
+                            <field name="nombre" />
+                            <field name="apellidos" />
+                            <img alt="Avatar" t-att-src="kanban_image('socio', 'foto', record.id.raw_value)" />
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+</odoo>

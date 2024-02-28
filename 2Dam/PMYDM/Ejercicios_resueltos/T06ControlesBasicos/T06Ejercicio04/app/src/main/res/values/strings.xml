@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">T06 Ejercicio 04</string>
+    <string name="primerValor">Introduzca el primer valor</string>
+    <string name="segundoValor">Introduzca el segundo valor</string>
+    <string name="chekboxSumar">Sumar</string>
+    <string name="chekboxRestar">Restar</string>
+    <string name="botonOperar">OPERAR</string>
+    <string name="toastNumeroVacio">¡Debes introducir dos valores antes de operar!</string>
+    <string name="toastCheckVacio">¡Debes seleccionar alguna de las opciones!</string>
+</resources>

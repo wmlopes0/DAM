@@ -1,0 +1,8 @@
+***********************************************
+**************** I N F O R M E ****************
+***********************************************
+NÚMERO CLIENTE: 2
+DNI: 23456789B
+DÍA DE CONTACTO: 5/11/0020
+HORA DE CONTACTO: 10:30
+OBSERVACIONES: el sombrero no me gustó

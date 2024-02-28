@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Capítulo 2. Características básicas</title>
+</head>
+<body>
+    <h1>Capítulo 2. Características básicas</h1>
+<h2>2.1. Lenguajes de etiquetas</h2>
+<p>Uno de los retos iniciales a los que se tuvo que enfrentar la informática fue el de cómo almacenar la información en los archivos digitales. Como los primeros archivos sólo contenían texto sin formato, la solución utilizada era muy sencilla: se codificaban las letras del alfabeto y se transformaban en números.</p>
+
+<p>De esta forma, para almacenar un contenido de texto en un archivo electrónico, se utiliza una tabla de conversión que transforma cada carácter en un número. Una vez almacenada la secuencia de números, el contenido del archivo se puede recuperar realizando el proceso inverso.</p>
+
+<div>
+    <img src="img/esquema_codificacion_caracteres.gif" alt="Ejemplo sencillo de codificación de caracteres" />
+    <p><strong>Figura 2.1</strong> Ejemplo sencillo de codificación de caracteres</p>
+</div>
+
+
+
+<p>El proceso de transformación de caracteres en secuencias de números se denomina <strong>codificación de caracteres</strong> y cada una de las tablas que se han definido para realizar la transformación se conocen con el nombre de <strong>páginas de código</strong>. Una de las codificaciones más conocidas (y una de las primeras que se publicaron) es la codificación <acronym title="American Standard Code">ASCII</acronym>. La importancia de las codificaciones en <acronym
+    title="HyperText Markup Language">HTML</acronym> se verá más adelante.</p>
+
+<p>Una vez resuelto el problema de almacenar el texto simple, se presenta el reto de almacenar los contenidos de texto con formato. En otras palabras, ¿cómo se almacena un texto en negrita? ¿y un texto de color rojo? ¿y otro texto azul, en negrita y subrayado?</p>
+
+<p>Utilizar una tabla de conversión similar a las que se utilizan para textos sin formato no es posible, ya que existen infinitos posibles estilos para aplicar al texto. Una solución técnicamente viable consiste en almacenar la información sobre el formato del texto en una zona especial reservada dentro del propio archivo. En esta zona se podría indicar dónde comienza y dónde termina cada formato.</p>
+
+<p>No obstante, la solución que realmente se emplea para guardar la información con formato es mucho más sencilla: el archivo electrónico almacena tanto los contenidos como la información sobre el formato de esos contenidos. Si por ejemplo se quiere dividir el texto en párrafos y se desea dar especial importancia a algunas palabras, se podría indicar de la siguiente manera:</p>
+
+<div>
+    <code>
+        &nbsp;   &lt;parrafo&gt;
+
+        <br /><br /> &nbsp;  Contenido de texto con &lt;importante&gt;algunas palabras&lt;/importante&gt; resaltadas de forma especial.
+
+        <br /><br /> &nbsp;   &lt;parrafo&gt;
+    </code>
+</div>
+
+<p>El principio de un párrafo se indica mediante la palabra <code>&lt;parrafo&gt;</code> y el final de un párrafo se indica mediante la palabra <code>&lt;/parrafo&gt;</code>. De la misma manera, para asignar más importancia a ciertas palabras del texto, se encierran entre <code>&lt;importante&gt;</code> y <code>&lt;/importante&gt;</code> .</p>
+
+<p>El proceso de indicar las diferentes partes que componen la información se denomina <strong>marcar</strong> (<em>markup</em> en inglés). Cada una de las palabras que se emplean para marcar el inicio y el final de una sección se denominan <strong>etiquetas</strong>.</p>
+
+<div align="right">
+    <br /><a href="cap2.1.html"><big><strong>Siguiente &#8594;</strong></big></a>
+</div>
+
+</body>
+</html>

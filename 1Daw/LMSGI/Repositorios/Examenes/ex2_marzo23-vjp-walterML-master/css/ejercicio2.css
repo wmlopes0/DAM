@@ -1,0 +1,120 @@
+/* ESTILOS GENERALES */
+/* a */
+body {
+    margin-left: 20px;
+}
+
+
+
+/* ---------------------- */
+/* b- Tablas primera y cuarta*/
+:is(table:nth-of-type(1), table:nth-of-type(4)) {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0.4);
+
+}
+
+/* Encabezado */
+:is(table:nth-of-type(1), table:nth-of-type(4))>thead {
+    background-color: #009879;
+    color: white;
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>thead th {
+    text-align: left;
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>thead :is(th:nth-child(1), th:nth-last-child(1), th:nth-last-child(2), th:nth-last-child(3)) {
+    text-align: center;
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>thead>tr>th:last-of-type {
+    border-top-right-radius: 10px;
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>thead>tr>th:first-of-type {
+    border-top-left-radius: 10px;
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>thead>tr>* {
+    padding: 20px;
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>caption {
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>caption::first-letter {
+    font-size: 45px;
+}
+
+/* Filas de datos */
+:is(table:nth-of-type(1), table:nth-of-type(4))>tbody>tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>tbody>tr>* {
+    padding: 15px;
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>tbody>tr {
+    border-bottom: 1px solid #a8a8a8;
+    border-top: 1px solid #a8a8a8;
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>tbody>tr:hover {
+    color: #009879;
+    border-color: #009879;
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>tbody>tr:nth-child(2n) {
+    background-color: #dedede;
+
+}
+
+:is(table:nth-of-type(1), table:nth-of-type(4))>tbody :is(td:nth-child(1), td:nth-last-child(1), td:nth-last-child(2), td:nth-last-child(3)) {
+    text-align: right;
+    width: 75px;
+    min-width: 60px;
+}
+
+/* c - menu superior*/
+body>div>ul {
+    background-color: rgba(145, 145, 145, 0.5);
+    padding: 0px;
+    height: 82px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+body>div>ul>li {
+    list-style: none;
+    background-color: #949458;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin-top: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+body>div>ul>li>a {
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+}
+
+body>div>ul>li:hover {
+    cursor: pointer;
+}
+
+body>div>ul>li:hover>a {
+    color: #009879;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<esdla>
+	<autor>John Ronald Reuel Tolkien</autor>
+	<ciudades>
+		<ciudad>
+			<nombre>Hobbiton</nombre>
+			<faccion>Hobbits</faccion>
+		</ciudad>
+		<ciudad>
+			<nombre>Edoras</nombre>
+			<faccion>Rohan</faccion>
+		</ciudad>
+		<ciudad>
+			<nombre>Minas Morgul</nombre>
+			<faccion>Mordor</faccion>
+		</ciudad>
+		<ciudad>
+			<nombre>Minas Tirith</nombre>
+			<faccion>Gondor</faccion>
+		</ciudad>
+		<ciudad>
+			<nombre>Rivendel</nombre>
+			<faccion>Elfos</faccion>
+		</ciudad>
+	</ciudades>
+	<personajes>
+		<hobbits>
+			<personaje>Bilbo</personaje>
+			<personaje>Frodo</personaje>
+			<personaje>Sam</personaje>
+			<personaje>Merry</personaje>
+			<personaje>Pipin</personaje>
+		</hobbits>
+		<elfos>
+			<personaje>Legolas</personaje>
+			<personaje>Elrond</personaje>
+			<personaje>Arwen</personaje>
+			<personaje>Galadriel</personaje>
+			<personaje>Celeborn</personaje>
+		</elfos>
+		<enanos>
+			<personaje>Gimli</personaje>
+			<personaje>Durin</personaje>
+			<personaje>Gloin</personaje>
+			<personaje>Thorin</personaje>
+		</enanos>
+		<hombres>
+			<personaje>Aragorn</personaje>
+			<personaje>Arwen</personaje>
+			<personaje>Boromir</personaje>
+			<personaje>Faramir</personaje>
+			<personaje>Denethor</personaje>
+			<personaje>Theoden</personaje>
+			<personaje>Eomer</personaje>
+		</hombres>
+		<magos>
+			<personaje>Gandalf</personaje>
+			<personaje>Saruman</personaje>
+			<personaje>Radagast</personaje>
+		</magos>
+		<villanos>
+			<personaje>Sauron</personaje>
+			<personaje>Gothmog</personaje>
+			<personaje>Rey Brujo</personaje>
+		</villanos>
+	</personajes>
+</esdla>

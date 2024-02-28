@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">T07Ejercicio03</string>
+    <string name="introduceNombre">Introduce tu nombre</string>
+    <string name="hola">HOLA</string>
+    <string name="toastValorNulo">¡Debes introducir el nombre!</string>
+    <string name="toastExtraNulo">Error en el paso de valores entre intents</string>
+    <string name="nombre">nombre</string>
+</resources>

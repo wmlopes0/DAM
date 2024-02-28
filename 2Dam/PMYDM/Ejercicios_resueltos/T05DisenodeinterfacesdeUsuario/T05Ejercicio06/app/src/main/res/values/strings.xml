@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">T05Ejercicio06</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="gato">Gato</string>
+    <string name="perro">Perro</string>
+    <string name="leon">León</string>
+    <string name="fragment_gato">Hola! Soy el Fragment Gato</string>
+    <string name="fragment_perro">Hola! Soy el Fragment Perro</string>
+    <string name="fragment_leon">Hola! Soy el Fragment León</string>
+
+</resources>

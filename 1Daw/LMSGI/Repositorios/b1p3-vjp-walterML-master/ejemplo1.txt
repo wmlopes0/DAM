@@ -1,0 +1,2 @@
+Primera línea ejemplo1.txt
+CAS 30-09-2022

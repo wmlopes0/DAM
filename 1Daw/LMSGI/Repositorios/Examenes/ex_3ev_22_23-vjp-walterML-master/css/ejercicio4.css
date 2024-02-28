@@ -1,0 +1,19 @@
+
+fieldset{
+    border: 3px solid #797272;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 0px #797272;
+    padding: 20px;
+}
+
+label{
+    width: 200px;
+}
+
+#observaciones{
+    height: 100px;
+}
+
+:valid{
+    border-color: green;
+}

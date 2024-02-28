@@ -1,0 +1,78 @@
+div.galeria {
+    text-align: center;
+    margin-top: 40px;
+}
+
+div.galeria>span {
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(18, 95, 212, 0.09707633053221287) 17%);
+    cursor: pointer;
+    padding: 15px;
+}
+
+div.caja {
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 0px 6px black;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+/* HOVER */
+div.caja > img{
+    transform: translate(0px, 200px);
+    transition: all 1s;
+
+}
+div.galeria>span:hover{
+    text-shadow:0px 5px 10px #fdff00;
+}
+
+div.galeria>span:nth-child(1):hover~.caja>img {
+    transform: rotate(360deg) translate(-247px, -265px);
+}
+div.galeria>span:nth-child(2):hover~.caja>img {
+    transform: rotate(0deg) translate(-20px, -355px);
+}
+div.galeria>span:nth-child(3):hover~.caja>img {
+    transform: rotate(180deg) translate(90px, 270px);
+}
+div.galeria>span:nth-child(4):hover~.caja>img {
+    transform: rotate(270deg) translate(334px, -80px);
+}
+div.galeria>span:nth-child(5):hover~.caja>img {
+    transform: rotate(270deg) translate(140px, -380px);
+}
+div.galeria>span:nth-child(6):hover~.caja>img {
+    transform: rotate(180deg) translate(205px, 450px);
+}
+
+
+/*
+Iphone 4
+    transform: rotate(180deg) translate(205px, 450px);
+*/
+
+/*
+IOS
+transform: rotate(270deg) translate(334px, 80px);
+*/
+
+/*
+ICLOUD
+transform: rotate(180deg) translate(90px, 270px);
+*/
+
+/*
+SIRI
+transform: rotate(360deg) translate(-247px, -265px);
+*/
+
+/*
+CÁMARA
+transform: rotate(0deg) translate(-20px, -355px);
+*/
+
+/*
+transform: rotate(270deg) translate(140px, -380px);
+
+*/

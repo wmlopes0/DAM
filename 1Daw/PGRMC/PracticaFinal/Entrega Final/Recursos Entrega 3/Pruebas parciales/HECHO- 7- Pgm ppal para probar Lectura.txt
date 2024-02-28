@@ -1,0 +1,45 @@
+    //Realiza todo lo necesario para el tratamiento de un personaje en su turno
+    public static void tratamientoPersonaje(Personaje personaje) {
+        CentralNuclear central = CentralNuclear.getInstancia();
+        int turnoP = personaje.getTurno();
+        if (turnoP == central.getTurno()) {
+            personaje.realizarAcciones();
+            personaje.setTurno(turnoP + 1);
+        }
+    }
+
+public static void simulacion(){
+        Personaje personajeEnTratamiento;
+        CentralNuclear central = CentralNuclear.getInstancia();
+        
+        //ESCOMBROS
+        central.inicializarEscombros();        
+        
+        System.out.println("TURNO: "+central.getTurno());
+        central.mostrarMatriz();
+        //SIMULACIÖN
+        for(int i = 0;i < central.getTurnosNecesarios();i++){       
+            central.setTurno(central.getTurno()+1);
+            
+            System.out.println("TURNO: "+central.getTurno());
+            
+            for(int j = 0;j < central.getSizeListaPersonajes();j++){
+                personajeEnTratamiento = central.getPersonajeDeListaPorPosicion(j);
+                tratamientoPersonaje(personajeEnTratamiento);      
+            }
+            
+            central.mostrarMatriz();
+        }
+        mostrarInformes();
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {   
+        boolean cargado;
+        cargado = Lectura.cargarFichero();
+        if  (cargado){
+            simulacion();
+        }
+    }

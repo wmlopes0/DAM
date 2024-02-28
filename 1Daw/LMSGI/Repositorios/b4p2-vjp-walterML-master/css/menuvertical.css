@@ -1,0 +1,35 @@
+div {
+
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+div:nth-of-type(1) {
+    background-image: url("https://picsum.photos/id/870/200/300?grayscale");
+}
+
+div:nth-of-type(1):hover {
+    background-image: url("https://picsum.photos/id/870/200/300");
+}
+div:nth-of-type(2) {
+    background-image: url("https://picsum.photos/id/871/200/300?grayscale");
+}
+
+div:nth-of-type(2):hover {
+    background-image: url("https://picsum.photos/id/871/200/300");
+}
+div:nth-of-type(3) {
+    background-image: url("https://picsum.photos/id/872/200/300?grayscale");
+}
+
+div:nth-of-type(3):hover {
+    background-image: url("https://picsum.photos/id/872/200/300");
+}
+div:nth-of-type(4) {
+    background-image: url("https://picsum.photos/id/873/200/300?grayscale");
+}
+
+div:nth-of-type(4):hover {
+    background-image: url("https://picsum.photos/id/873/200/300");
+}

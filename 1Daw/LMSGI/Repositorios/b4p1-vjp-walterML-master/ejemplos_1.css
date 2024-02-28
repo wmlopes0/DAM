@@ -1,0 +1,39 @@
+p {
+    color: red;
+}
+
+p#pConcreto {
+    color: blue;
+}
+
+p.impar {
+    color: green;
+}
+
+p[title] {
+    border: 1px solid black;
+}
+
+p[title="atributo"] {
+    color: orange;
+}
+
+p[title="DAw plasencia" i] {
+    color: blueviolet;
+}
+
+p[title~="dam"] {
+    color: black;
+}
+
+p[title^="da"] {
+    border: 1px solid orangered;
+}
+
+p[title$="a"] {
+    background-color: bisque;
+}
+
+p[title*="plasencia"] {
+    text-transform: uppercase;
+}

@@ -1,0 +1,129 @@
+/* ESTILOS GENERALES */
+figcaption,
+caption {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+thead {
+    color: white;
+    font-variant: small-caps;
+
+    /* temporal */
+    background-color: #666;
+}
+
+/* ------------------------------ */
+
+tbody :is(td:nth-child(1), td:nth-child(n+6)) {
+    text-align: right;
+}
+
+/* TABLA1 */
+#tabla1 table {
+    border-collapse: collapse;
+}
+
+#tabla1 table tbody tr:nth-child(2n+1) {
+    border: 3px solid green;
+    background-color: rgb(196, 196, 196);
+}
+
+/* TABLA2 */
+#tabla2 table {
+    border-collapse: collapse;
+    border: 5px solid #666;
+}
+
+#tabla2 table tbody {
+    background-color: #A4A4A4;
+}
+
+#tabla2 table tr>:nth-child(2n+0) {
+    background-color: #e1e1e1;
+}
+
+#tabla2 tbody tr:nth-child(2n+1) {
+    border-top: 1px solid black;
+}
+
+#tabla2 tbody tr:nth-child(2n) {
+    border-top: 2px outset white;
+}
+
+#tabla2 thead tr>* {
+    padding: 20px 5px;
+}
+
+/* TABLA 3 */
+#tabla3 table {
+    border-collapse: collapse;
+}
+
+#tabla3 tbody tr:nth-child(2n+1) td:nth-child(2n+1) {
+    background-color: #339999;
+}
+
+#tabla3 tbody tr:nth-child(2n+1) td:nth-child(2n) {
+    background-color: #666699;
+}
+
+#tabla3 tbody tr:nth-child(2n) td:nth-child(2n+1) {
+    background-color: #cccc66;
+}
+
+#tabla3 tbody tr:nth-child(2n) td:nth-child(2n) {
+    background-color: #ccffcc;
+}
+
+/* TABLA 4 */
+
+#tabla4 table {
+    border-spacing: 5px;
+}
+
+#tabla4 thead th {
+    padding: 20px 5px;
+}
+
+#tabla4 tr>:nth-child(2n+1),
+#tabla4 caption {
+    background-color: rgb(82, 102, 254);
+    border: 3px outset rgb(82, 102, 254);
+}
+
+#tabla4 tr>:nth-child(2n) {
+    background-color: rgb(223, 190, 0);
+    border: 3px outset rgb(223, 190, 0);
+}
+
+/* MENU */
+nav ul{
+    background-color: #666;
+    width: 140px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 20px;
+    list-style-type: none;
+}
+
+nav ul li{
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgray;
+}
+nav ul li a{
+    font-size: 15px;
+    letter-spacing: 0.5em;
+    font-weight: bolder;
+}
+
+nav ul li a:hover{
+    font-variant: small-caps;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+html{
+    scroll-behavior: smooth;
+}

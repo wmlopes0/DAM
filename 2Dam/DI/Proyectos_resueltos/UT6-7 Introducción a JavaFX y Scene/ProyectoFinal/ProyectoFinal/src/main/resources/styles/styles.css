@@ -1,0 +1,141 @@
+.label {
+    -fx-text-fill: #a664af; /* Color del texto */
+    -fx-font-family: "Microsoft PhagsPa"; /* Familia de fuentes */
+    -fx-font-size: 20px; /* Tamaño de la fuente */
+    -fx-font-weight: bold; /* Hacer el texto en negrita */
+}
+.labelTitulo {
+    -fx-text-fill: #ffffff; /* Color del texto */
+    -fx-font-family: "Microsoft PhagsPa"; /* Familia de fuentes */
+    -fx-font-size: 30px; /* Tamaño de la fuente */
+    -fx-font-weight: bold; /* Hacer el texto en negrita */
+}
+.textField{
+    -fx-text-fill: #09161f; /* Color del texto */
+    -fx-font-family: "Microsoft PhagsPa"; /* Familia de fuentes */
+    -fx-font-size: 15px; /* Tamaño de la fuente */
+    -fx-font-weight: italic; /* Hacer el texto en negrita */
+}
+
+.fondo{
+    -fx-background-color: #09161f;
+}
+
+.fondoClaro{
+    -fx-background-color: #263d52;
+}
+
+.button {
+    -fx-background-color: #09161f; /* Color de fondo del botón */
+    -fx-text-fill: #ffffff; /* Color de la letra principal */
+    -fx-font-family: "Microsoft PhagsPa"; /* Familia de fuentes */
+    -fx-font-size: 18px; /* Tamaño de la fuente */
+    -fx-font-weight: bold; /* Hacer el texto en negrita */
+    -fx-border-color: #a664af; /* Color del borde del botón */
+    -fx-border-width: 2px; /* Ancho del borde del botón */
+    -fx-padding: 10px 20px; /* Espaciado interno del botón */
+    -fx-background-radius: 5px; /* Redondear las esquinas del botón */
+    -fx-border-radius: 5px; /* Redondear las esquinas del borde */
+}
+
+.button:hover {
+    -fx-background-color: #292251; /* Cambiar el color de fondo al pasar el mouse */
+    -fx-text-fill: #a664af; /* Cambiar el color de la letra al pasar el mouse */
+    -fx-cursor: hand; /* Cambiar el cursor a una mano al pasar el mouse */
+}
+
+.option-button {
+    -fx-background-color: #09161f; /* Color de fondo del botón, oscuro para contraste */
+    -fx-text-fill: #ffffff; /* Color de la letra principal, blanco para contraste */
+    -fx-font-family: "Microsoft PhagsPa"; /* Manteniendo la consistencia de la familia de fuentes */
+    -fx-font-size: 20px; /* Tamaño de la fuente más grande para botones grandes */
+    -fx-font-weight: bold; /* Texto en negrita para destacar */
+    -fx-border-color: #a664af; /* Color del borde utilizando el color letra secundario */
+    -fx-border-width: 3px; /* Borde más ancho para hacer el botón más definido */
+    -fx-padding: 20px; /* Espaciado interno más grande para hacer el botón grande y cuadrado */
+    -fx-background-radius: 0; /* Esquinas cuadradas para el botón */
+    -fx-border-radius: 0; /* Esquinas cuadradas para el borde */
+    -fx-min-width: 150px; /* Ancho mínimo para asegurar que el botón sea grande */
+    -fx-min-height: 150px; /* Altura mínima para asegurar que el botón sea cuadrado y grande */
+}
+
+.option-button:hover {
+    -fx-background-color: #292251; /* Cambio de color de fondo al pasar el mouse */
+    -fx-text-fill: #a664af; /* Cambio de color de la letra al pasar el mouse */
+    -fx-cursor: hand; /* Cambio del cursor a una mano al pasar el mouse */
+    -fx-border-color: #ffffff; /* Cambio del color del borde al pasar el mouse para un contraste adicional */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 5); /* Agrega una sombra */
+}
+
+/* Estilo general de la tabla */
+.tabla {
+    -fx-base: #a664af;
+    -fx-control-inner-background: #a664af; /* Color de fondo de la tabla */
+    -fx-background-color: #a664af;
+    -fx-table-cell-border-color: #292251; /* Color de las líneas entre celdas */
+    -fx-padding: 5; /* Espaciado interno para la tabla */
+}
+
+/* Estilo de las cabeceras de la tabla */
+.tabla .column-header-background .label {
+    -fx-font-family: "Microsoft PhagsPa"; /* Familia de fuentes */
+    -fx-font-size: 16px; /* Tamaño de la fuente */
+    -fx-font-weight: bold; /* Hacer el texto en negrita */
+    -fx-text-fill: #a664af; /* Color del texto de las cabeceras */
+    -fx-alignment: center; /* Alineación del texto */
+    -fx-background-color: #292251; /* Color de fondo de las cabeceras */
+}
+
+/* Estilo de las celdas de la tabla */
+.tabla .cell {
+    -fx-text-fill: #ffffff; /* Color del texto de las celdas */
+    -fx-font-family: "Microsoft PhagsPa"; /* Familia de fuentes */
+    -fx-font-size: 14px; /* Tamaño de la fuente */
+    -fx-background-color: #09161f; /* Color de fondo de las celdas */
+    -fx-alignment: center-left; /* Alineación del contenido de la celda */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .fondo-label{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #da499c, #2d23a6);
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, #1e0148, 25, 0.2, 0, 8);
+    -fx-background-radius: 0 0 7 7;
+}
+.root {
+    --colorFondo: #09161f;
+    --colorLetraPrincipal: #ffffff;
+    --colorLetraSecundario: #a664af;
+    --colorMoradoOscuro: #292251;
+}
+
+.fondo-panel{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #c89cce, #d7c8e1);
+}
+
+.tarjeta{
+    -fx-background-color: #f4eaff;
+    -fx-border-color: #9a55a3;
+    -fx-border-width: 2; /* Grosor del borde */
+/* -fx-border-radius: 10; Esquinas del borde redondeadas */
+/* -fx-background-radius: 10; */
+/* -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.0, 0, 5); Una sombra suave para resaltar */
+/* -fx-halignment: center; Alineación horizontal para el contenido de las celdas */
+/* -fx-valignment: center; Alineación vertical para el contenido de las celdas */
+/*}
+
+.boton-falta{
+    -fx-background-color:#d6eadf;
+    -fx-effect: innershadow(gaussian, #262626, 20, 0.0, 0, 5);
+    -fx-background-radius: 0 0 10 10;
+} */

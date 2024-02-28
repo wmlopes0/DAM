@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE persona SYSTEM "contactos.dtd">
+<persona>
+	<nombre>Pepe</nombre>
+	<apellido>Pinillos</apellido>
+	<DNI>434235</DNI>
+	<fechanacimiento>
+		<dia>30</dia>
+		<mes>3</mes>
+		<anio>1976</anio>
+	</fechanacimiento>
+	<direccion>
+		<calle>Avenida de la Felicidad</calle>
+		<numero>34</numero>
+		<poblacion>Villaarriba del Condado</poblacion>
+		<pais>Libertonia</pais>
+	</direccion>
+	<telefono>987654321</telefono>
+	<telefono>65431987</telefono>
+	<email>ppinillos@hotmail.com</email>
+	<email>pepito@hola.com</email>		
+</persona>

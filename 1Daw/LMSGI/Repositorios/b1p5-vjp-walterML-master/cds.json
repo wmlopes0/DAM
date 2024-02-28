@@ -1,0 +1,30 @@
+{
+    "cds": {
+        "cd": [
+            {
+                "numero": "1",
+                "titulo": "Sinónimo",
+                "artista": "Rayden",
+                "numeroCanciones": "10",
+                "precio": "6,89€",
+                "anno": "2019"
+            },
+            {
+                "numero": "2",
+                "titulo": "Curso básico de poesía",
+                "artista": "Shariff",
+                "numeroCanciones": "15",
+                "precio": "5,99€",
+                "anno": "2014"
+            },
+            {
+                "numero": "3",
+                "titulo": "Para todos los públicos",
+                "artista": "Extremoduro",
+                "numeroCanciones": "12",
+                "precio": "10,17€",
+                "anno": "2013"
+            }
+        ]
+    }
+}

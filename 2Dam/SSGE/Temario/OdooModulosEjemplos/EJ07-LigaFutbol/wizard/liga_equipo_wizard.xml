@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id='liga_equipo_wizard_form' model='ir.ui.view'>
+    <field name='name'>Wizard para introducir un Equipo</field>
+    <field name='model'>liga.equipo.wizard</field>
+    <field name='arch' type='xml'>
+        <form string="Introducir datos de un equipo">
+            <sheet>
+                <group>
+                    <field name='nombre'/>
+                </group>
+                <group>
+                    <field name='descripcion'/>
+                </group>
+            </sheet>
+            <footer>
+                <button string='Añadir' name='add_liga_equipo' class='btn-primary' type='object'/>
+                <button string='Cancel' class='btn-default' special='cancel'/>
+            </footer>
+        </form>
+    </field>
+</record>
+
+<act_window id="action_wizard_liga_equipo" name="Añadir equipo" res_model="liga.equipo.wizard" view_mode="form" target="new" />
+<menuitem id="menu_wizard_liga_equipo" parent="liga_base_menu" action="action_wizard_liga_equipo" sequence="20" />
+
+</odoo>

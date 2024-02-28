@@ -1,0 +1,121 @@
+<project name="org.jvoicexml.jsapi2.sphinx4" default="jar" basedir=".">
+  <description>
+This file builds the sphinx4 layer for JSAPI.
+    </description>
+
+  <property name="base-project" value ="../org.jvoicexml.jsapi2" />
+  
+  <!-- allow the user to override setting in an own propertiesfile. -->
+  <property file="${base-project}/personal-props/ant.properties" />
+  <property file="${base-project}/config-props/ant.properties" />
+
+  <target name="-init">
+    <!-- directory structure -->
+    <property name="src" value="src" />
+    <property name="test.src" value="unittests" />
+    <property name="build" value="classes" />
+    <property name="apidoc" value="doc/api" />
+    <property name="dist" value="${base-project}/dist" />
+    
+    <!-- distribution files -->
+    <property name="component" value="org.jvoicexml.jsapi2.sphinx4" />
+    <property name="dist.jar" value="${dist}/${component}.jar" />
+
+    <property name="sphinx4.lib.dir" value="3rdparty/sphinx4/lib" />
+
+    <mkdir dir="${build}" />
+    <mkdir dir="${dist}" />
+
+    <path id="classpath">
+      <pathelement location="${base-project}/dist/jsr113.jar"/>
+      <pathelement location="${base-project}/dist/org.jvoicexml.jsapi2.jar"/>
+      <fileset dir="${sphinx4.lib.dir}">
+        <include name="sphinx4.jar" />
+      </fileset>
+    </path>
+  </target>
+
+
+  <target name="clean" description="Remove all compiled and distribution files">
+    <delete dir="${build}" />
+    <delete file="${dist.jar}" />
+  </target>
+
+  <target name="compile" depends="-init" description="Compile the JAVA sources">
+    <echo message="compiling with debug=${debug}, optimize=${optimize}" />
+    <javac destdir="${build}"
+      optimize="${optimize}" debug="${debug}" deprecation="on"
+      includeantruntime="false">
+      <src path="${src}" />
+      <classpath refid="classpath" />
+      <compilerarg value="-Xlint:unchecked" />
+    </javac>
+    <copy todir="${build}">
+      <fileset dir="${src}">
+        <include name="**/*.xml" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="jar" depends="compile" description="Pack all compiled files into jar files">
+    <jar jarfile="${dist.jar}" compress="false">
+      <fileset dir="${build}">
+        <include name="org/jvoicexml/**/*.class" />
+        <include name="org/jvoicexml/**/*xml" />
+        <exclude name="**/*Test.class" />
+      </fileset>
+      <manifest>
+        <attribute name="Built-By" value="${user.name}" />
+        <section name="common">
+          <attribute name="Implementation-Vendor"
+            value="JVoiceXML group" />
+          <attribute name="Implementation-Title"
+            value="Sphinx recognition implementation for JSAPI2" />
+          <attribute name="Implementation-Version"
+              value="${version}" />
+        </section>
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="-inittests">
+    <!-- the class path for the test case -->
+    <path id="test.classpath">
+        <path refid="classpath" />
+        <pathelement path="../org.jvoicexml.jsapi2/3rdparty/junit4.8.2/lib/junit-4.8.2.jar" />
+    </path>
+  </target>
+
+  <target name="compiletests"
+          depends="compile,-inittests"
+          description="Compile the JAVA sources for the test cases">
+    <javac destdir="${build}"
+         optimize="off"
+         debug="on"
+         deprecation="on"
+         includeantruntime="false">
+      <src path="${test.src}" />
+      <include name="org/jvoicexml/**/*.java" />
+      <classpath refid="test.classpath" />
+      <compilerarg value="-Xlint:unchecked" />
+    </javac>
+  </target>
+
+  <target name="test" depends="compiletests"
+          description="run unit tests on all test cases">
+    <junit printsummary="yes"
+           maxmemory="256M"
+           fork="yes"
+           haltonfailure="no"
+           showoutput="yes">
+      <classpath location="${build}" />
+      <classpath refid="test.classpath" />
+      <formatter type="brief" usefile="false"/>
+      <batchtest>
+        <fileset dir="${build}">
+          <include name="org/jvoicexml/**/*Test.class" />
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+</project>

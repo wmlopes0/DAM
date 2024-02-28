@@ -1,0 +1,9 @@
+Antes de probar el proyecto DinoDash debes ir a esta ruta:
+
+PMYDM\Ejercicios_resueltos\T11DesarrolloJuego2DUnity\DinoDash\Library\PackageCache\com.unity.burst@1.8.12\.Runtime
+
+y descomprimir el archivo libburst-llvm-16.zip
+
+quedará un archivo libburst-llvm-16.dylib
+
+elimina el zip después de descomprimirlo y listo.

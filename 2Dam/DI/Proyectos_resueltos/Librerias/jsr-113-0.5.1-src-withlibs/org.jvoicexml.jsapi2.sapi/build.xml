@@ -1,0 +1,229 @@
+<project name="org.jvoicexml.jsapi2.sapi" default="jar" basedir=".">
+  <description>
+This file builds the JSR 113.jar.
+    </description>
+
+  <property name="base-project" value ="../org.jvoicexml.jsapi2" />
+  
+  <!-- allow the user to override setting in an own propertiesfile. -->
+  <property file="${base-project}/personal-props/ant.properties" />
+  <property file="${base-project}/config-props/ant.properties" />
+
+  <!-- directory structure -->
+  <property name="src" value="src" />
+  <property name="build" value="classes" />
+  <property name="apidoc" value="doc/api" />
+  <property name="dist" value="${base-project}/dist" />
+  <property name="test.src" value="unittests" />
+  <property name="test.build" value="classes" />
+  
+  <!-- distribution files -->
+  <property name="component" value="org.jvoicexml.jsapi2.sapi" />
+  <property name="dist.jar" value="${dist}/${component}.jar" />
+
+  <target name="-init">
+    <condition property="isWindows">
+      <os family="windows"/>
+    </condition>
+	<condition property="isDebug">
+		<or>
+			<equals arg1="${debug}" arg2="true" casesensitive="false"/>
+			<equals arg1="${debug}" arg2="on" casesensitive="false"/>
+		</or>
+	</condition>
+    <mkdir dir="${build}" />
+    <mkdir dir="${dist}" />
+  </target>
+
+  <path id="classpath">
+    <pathelement location="${base-project}/dist/jsr113.jar"/>
+    <pathelement location="${base-project}/dist/org.jvoicexml.jsapi2.jar"/>
+    <pathelement location="${base-project}/dist/org.jvoicexml.jsapi2.jse.jar"/>
+  </path>
+
+  <target name="clean" description="Remove all compiled and distribution files">
+    <delete dir="${build}" />
+    <delete file="${dist.jar}" />
+    <delete dir="${dist}">
+      <include name="*.dll" />
+    </delete>
+    <exec dir="cpp/Jsapi2SapiBridge" executable="${msvc.devenv}"
+      osfamily="windows">
+      <arg value="Jsapi2SapiBridge.sln"/>
+      <arg value="/Clean"/>
+      <arg value="&quot;Debug|Win32&quot;"/>
+    </exec>
+    <exec dir="cpp/Jsapi2SapiBridge" executable="${msvc.devenv}"
+      osfamily="windows">
+      <arg value="Jsapi2SapiBridge.sln"/>
+      <arg value="/Clean"/>
+      <arg value="&quot;Release|Win32&quot;"/>
+    </exec>
+    <exec dir="cpp/Jsapi2SapiBridge" executable="${msvc.devenv}"
+      osfamily="windows">
+      <arg value="Jsapi2SapiBridge.sln"/>
+      <arg value="/Clean"/>
+      <arg value="&quot;Debug|x64&quot;"/>
+    </exec>
+    <exec dir="cpp/Jsapi2SapiBridge" executable="${msvc.devenv}"
+      osfamily="windows">
+      <arg value="Jsapi2SapiBridge.sln"/>
+      <arg value="/Clean"/>
+      <arg value="&quot;Release|x64&quot;"/>
+    </exec>
+    <delete dir="cpp/Jsapi2SapiBridge/include">
+      <include name="org_jvoicexml_jsapi2*.h"/>
+    </delete>
+  </target>
+
+  <target name="compile" depends="-init" description="Compile the JAVA sources">
+    <echo message="compiling with debug=${debug}, optimize=${optimize}" />
+    <javac destdir="${build}"
+      optimize="${optimize}" debug="${debug}" deprecation="on"
+      includeantruntime="false">
+      <src path="${src}" />
+      <classpath refid="classpath" />
+      <compilerarg value="-Xlint:unchecked" />
+    </javac>
+    <copy todir="${build}">
+      <fileset dir="${src}">
+        <include name="**/*.xsl" />
+      </fileset>
+    </copy>
+    <javah destdir="cpp/Jsapi2SapiBridge/include">
+      <class name="${component}.SapiEngineListFactory"/>
+      <class name="${component}.logging.Log4CPlus2JavaLoggingAdapter"/>    
+      <class name="${component}.recognition.SapiRecognizer"/>
+      <class name="${component}.recognition.SapiRecognitionThread"/>
+      <class name="${component}.synthesis.SapiSynthesizer"/>  	
+      <classpath refid="classpath"/>
+      <classpath location="${build}"/>
+    </javah>
+    <echo>Building Win32 Debug</echo>
+    <exec dir="cpp/Jsapi2SapiBridge" executable="${msvc.devenv}"
+      osfamily="windows">
+      <arg value="Jsapi2SapiBridge.sln"/>
+      <arg value="/Build"/>
+      <arg value="&quot;Debug|Win32&quot;"/>
+    </exec>
+    <echo>Building Win32 Release</echo>
+    <exec dir="cpp/Jsapi2SapiBridge" executable="${msvc.devenv}"
+      osfamily="windows">
+      <arg value="Jsapi2SapiBridge.sln"/>
+      <arg value="/Build"/>
+      <arg value="&quot;Release|Win32&quot;"/>
+    </exec>
+    <echo>Building Win64 Debug</echo>
+    <exec dir="cpp/Jsapi2SapiBridge" executable="${msvc.devenv}"
+      osfamily="windows">
+      <arg value="Jsapi2SapiBridge.sln"/>
+      <arg value="/Build"/>
+      <arg value="&quot;Debug|x64&quot;"/>
+    </exec>
+    <echo>Building Win64 Release</echo>
+    <exec dir="cpp/Jsapi2SapiBridge" executable="${msvc.devenv}"
+      osfamily="windows">
+      <arg value="Jsapi2SapiBridge.sln"/>
+      <arg value="/Build"/>
+      <arg value="&quot;Release|x64&quot;"/>
+    </exec>
+  </target>
+
+  <target name="-copyReleaseDll">
+    <copy file="cpp/Jsapi2SapiBridge/Release/Jsapi2SapiBridge.dll"
+      tofile="${dist}/Jsapi2SapiBridge.dll" overwrite="true"/>
+    <copy file="cpp/Jsapi2SapiBridge/Release_x64/Jsapi2SapiBridge_x64.dll"
+      tofile="${dist}/Jsapi2SapiBridge_x64.dll" overwrite="true"/>
+  </target>
+
+  <target name="-copydll" if="isWindows" depends="-copyReleaseDll">
+  </target>
+
+  <target name="jar" depends="compile,-copydll"
+    description="Pack all compiled files into jar files">
+    <jar jarfile="${dist.jar}" compress="false">
+      <fileset dir="${build}">
+        <include name="org/jvoicexml/**/*.class" />
+      </fileset>
+      <manifest>
+        <attribute name="Built-By" value="${user.name}" />
+        <section name="common">
+          <attribute name="Implementation-Vendor"
+            value="JVoiceXML group" />
+          <attribute name="Implementation-Title"
+            value="SAPI implementation for JSR113" />
+          <attribute name="Implementation-Version"
+              value="${version}" />
+        </section>
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="compiletests" depends="-init"
+          description="Compile the JAVA sources for the test cases">
+      <javac destdir="${test.build}"
+             optimize="off"
+             debug="on"
+             deprecation="on"
+             includeantruntime="false">
+          <src path="${test.src}" />
+          <include name="org/jvoicexml/**/*.java" />
+          <classpath refid="classpath" />
+          <classpath location="${build}" />
+          <classpath location="../org.jvoicexml.jsapi2/3rdparty/junit4.8.2/lib/junit-4.8.2.jar" />
+          <compilerarg value="-Xlint:unchecked" />
+      </javac>
+      <copy todir="${test.build}" overwrite="true">
+        <fileset dir="${test.src}">
+          <include name="**/*.gram"/>
+          <include name="**/*.gsl"/>
+          <include name="**/*.vxml"/>
+          <include name="**/*.xml"/>
+        </fileset>
+      </copy>
+  </target>
+
+  <target name="test" depends="compiletests"
+          description="run unit tests on all test cases">
+      <junit printsummary="yes"
+             maxmemory="256M"
+             fork="yes"
+             haltonfailure="no"
+             showoutput="yes">
+          <jvmarg value="-Djava.library.path=${basedir}/cpp/Jsapi2SapiBridge/Debug"/>
+          <classpath refid="classpath" />
+          <classpath location="${build}" />
+          <classpath location="../org.jvoicexml.jsapi2/3rdparty/junit4.8.2/lib/junit-4.8.2.jar" />
+          <classpath location="${config}" />
+          <formatter type="brief" usefile="false" />
+          <batchtest todir="${test.results}">
+              <fileset dir="${test.build}">
+                  <include name="org/jvoicexml/**/Test*" />
+                  <exclude name="org/jvoicexml/**/Test*$*" />
+                  <exclude name="org/jvoicexml/test/**" />
+              </fileset>
+          </batchtest>
+      </junit>
+  </target>
+
+    <target name="testSingle" depends="compiletests"
+            description="run unit tests on all test cases">
+        <!-- Delete old test results. -->
+        <delete dir="${test.results}" failonerror="false">
+            <include name="TEST-*"/>
+        </delete>
+        <junit printsummary="yes"
+               maxmemory="256M"
+               fork="yes"
+               haltonfailure="no"
+               showoutput="yes">
+            <jvmarg value="-Djava.library.path=${basedir}/cpp/Jsapi2SapiBridge/Debug"/>
+            <classpath refid="classpath" />
+            <classpath location="${build}" />
+            <classpath location="../org.jvoicexml.jsapi2/3rdparty/junit4.8.2/lib/junit-4.8.2.jar" />
+            <classpath location="${config}" />
+            <formatter type="brief" usefile="false" />
+            <test name="${test.class}" />
+        </junit>
+    </target>
+</project>

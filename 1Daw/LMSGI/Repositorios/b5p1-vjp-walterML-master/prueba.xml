@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<example_schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="prueba.xsd">
+  <line id="235678">
+    <code>ABCD</code>
+    <gard>
+      <firstname>Carlos</firstname>
+      <lastname>García</lastname>
+      <address>Calle Mayor 123</address>
+      <city>Madrid</city>
+      <country>España</country>
+    </gard>
+    <length unit_of_length="Kilómetros">1234</length>
+    <count_vehicles>3</count_vehicles>
+    <car>Audi</car>
+    <map>Mapa1</map>
+    <start_station id="745">
+      <name>Estación A</name>
+    </start_station>
+    <end_station id="896">
+      <name>Estación B</name>
+    </end_station>
+    <intermediate_stations id="947">
+      <name>Estación C</name>
+    </intermediate_stations>
+    <vehicles_line id="159">
+      <name>Linea1</name>
+      <capacity>50</capacity>
+      <driver id="257" code="AZ" lang="es">
+        <person>
+          <firstname>Juan</firstname>
+          <lastname>Pérez</lastname>
+          <Address>
+            <Line1>Av. Primavera 456</Line1>
+            <Line2>Barrio Sol, Madrid</Line2>
+          </Address>
+        </person>
+        <birth_date>1980-06-25</birth_date>
+        <email>juan.perez@mail.com</email>
+        <phone>+34911234567</phone>
+        <avatar>avatar1.jpg</avatar>
+      </driver>
+      <mechanic>
+        <employee>Empleado1</employee>
+      </mechanic>
+      <age>12</age>
+    </vehicles_line>
+    <person>
+      <firstname>María</firstname>
+      <lastname>Sánchez</lastname>
+      <Address>
+        <Line1>Calle Sol 789</Line1>
+        <Line2>Barrio Luna, Madrid</Line2>
+      </Address>
+    </person>
+  </line>
+  <line id="214578">
+    <!-- Sección repetida con distintos datos -->
+  </line>
+  <Customer>
+    <Dob>1985-08-15</Dob>
+    <Address>
+      <Line1>Calle Estrella 321</Line1>
+      <Line2>Barrio Cielo, Barcelona</Line2>
+    </Address>
+    <Message>
+      <DateSent>2023-04-01</DateSent>
+      <Sender>Emisor Mensaje</Sender>
+      <Content>
+      <firstname>María</firstname>
+      <lastname>Sánchez</lastname>
+      </Content>
+    </Message>
+  </Customer>
+  <Supplier>
+    <Phone>34567891</Phone>
+    <Address>
+      <Line1>Calle Luna 654</Line1>
+      <Line2>Barrio Estrella, Valencia</Line2>
+    </Address>
+  </Supplier>
+</example_schema>

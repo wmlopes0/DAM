@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="700.0" styleClass="fondo" stylesheets="@../../../../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.usuario.VisualizarClasesSemanaController">
+   <children>
+      <TableView fx:id="tablaClases" layoutX="82.0" layoutY="102.0" prefHeight="327.0" prefWidth="538.0" styleClass="tabla">
+        <columns>
+          <TableColumn fx:id="columnaNombre" prefWidth="172.0" text="Nombre" />
+          <TableColumn fx:id="columnaFecha" prefWidth="165.0" text="Fecha" />
+            <TableColumn fx:id="columnaHora" prefWidth="184.0" text="Hora" />
+        </columns>
+      </TableView>
+      <Button fx:id="botonVerClase" layoutX="291.0" layoutY="459.0" mnemonicParsing="false" onAction="#verClase" text="Ver clase" />
+      <Label layoutX="286.0" layoutY="30.0" styleClass="labelTitulo" text="SEMANA" />
+   </children>
+</AnchorPane>

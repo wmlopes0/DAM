@@ -1,0 +1,43 @@
+body {
+    background-color: #f1fbfd;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.acordeon {
+    list-style: none;
+    padding-left: 0;
+    width: 30%;
+    border: 1px solid gray;
+}
+
+.acordeon .encabezado {
+    background: linear-gradient(#eee, #ccc);
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.acordeon>li {
+    cursor: pointer;
+}
+
+.acordeon>li>p.texto {
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    transition: height 0.4s ease-out, padding 0.7s ease-in;
+
+}
+
+.acordeon>li:hover>p.texto {
+    height: 130px;
+    padding: 10px;
+}

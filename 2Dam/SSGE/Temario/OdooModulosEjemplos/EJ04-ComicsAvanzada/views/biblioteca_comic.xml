@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <!-- Definimos como mostramos la vista en el modelo -->
+    <record id='biblioteca_comic_action' model='ir.actions.act_window'>
+        <field name="name">Biblioteca de Comics</field>
+        <!-- Indicamos a que modelo aplica -->
+        <field name="res_model">biblioteca.comic</field>
+        <!-- Indicamos que los comics pueden verse en tree o kanban para el listado,
+                (se pueden cambiar con el icono arriba a la derecha)
+                y en form para la creación/edición 
+            NOTA: la vista Kanban se ha añadido en esta versión del ejemplo
+            -->
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+    <!-- Creamos la base del menu item -->
+    <menuitem name="Mi biblioteca (Avanzada)" id="biblioteca_base_menu" />
+    <!-- Creamos un hijo de la base, que servira para ir a la vista de comics 
+    En la otra vista, crearemos uno igual para ir a la vista de categorias
+    -->
+    <menuitem name="Comics" id="biblioteca_comic_menu" parent="biblioteca_base_menu" action="biblioteca_comic_action" />
+
+    <!-- Vista formulario -->
+    <record id="biblioteca_comic_view_form" model="ir.ui.view">
+        <field name="name">Formulario de Comic de la biblioteca</field>
+        <field name="model">biblioteca.comic</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <!-- Creamos un boton "archivar". 
+                    Al llamarse "archivar" se encarga de llamar al metodo "archivar"
+                    del modelo del que hereda "biblioteca_comic".
+                    Este metodo archivar cambie el estado del atributo del modelo "activo"
+                -->
+                    <button type="object" name="archivar" string="Archivar Comics" />
+                </header>
+                <group>
+                    <group>
+                        <field name="nombre" />
+                        <!-- Utilizamos el Widget "many2many_tags" para que la relación
+                            muchos a muchos se vea en la interfaz como etiquetas -->
+                        <field name="autor_ids" widget="many2many_tags" />
+                        <field name="estado" />
+                        <field name="paginas" />
+                        <field name="categoria_id" />
+                        <field name="activo" readonly="1" />
+                    </group>
+                    <group>
+                        <field name="editorial_id" />
+                        <field name="precio" />
+                        <field name="fecha_publicacion" />
+                        <field name="dias_lanzamiento" />
+                        <!-- con widget="image" class="oe_avatar" preparamos el aspecto de como se verá este campo 
+                            NOTA: en este ejemplo, el modelo lo guarda como fichero (field.Binary) y así forzamos a que parezca una imagen
+                            pero a partir de Odoo 13, se puede usar field.Image, que entre otras ventajas
+                            incluye recorte de imagen subida
+                        -->
+                        <field name="portada" widget="image" class="oe_avatar" />
+                        <field name="valoracion_lector" />
+                        <field name="ref_doc_id" />
+                    </group>
+                </group>
+                <group>
+                    <field name="descripcion" />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Definición de la vista Tree -->
+    <record id="biblioteca_comic_view_tree" model="ir.ui.view">
+        <field name="name">Lista de Comics de la biblioteca</field>
+          <field name="model">biblioteca.comic</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre" />
+                <field name="fecha_publicacion" />
+                <field name="estado" />
+                <field name="categoria_id" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Definición de la vista busqueda-->
+    <record id="biblioteca_comic_view_search" model="ir.ui.view">
+        <field name="name">Búsqueda de Comics en la biblioteca</field>
+        <field name="model">biblioteca.comic</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="nombre" />
+                <field name="autor_ids" />
+                <!-- Indicamos que para si filtramos por los del dominio "autor_ids=false" 
+                se muestre el texto "Sin autor"-->
+                <filter string="Sin autor" name="sin_autor" domain="[('autor_ids','=',False)]" />
+            </search>
+        </field>
+    </record>
+
+
+    <!-- Definición de la vista Kanban (añadida en este ejemplo) -->
+    <record id="biblioteca_comic_view_kanban" model="ir.ui.view">
+        <field name="name">Lista de Comics de la biblioteca</field>
+        <field name="model">biblioteca.comic</field>
+        <field name="arch" type="xml">
+            <!-- Agrupamos por el atributo "parent_id"-->
+            <kanban default_group_by="categoria_id">
+                <!-- Indicamos que atributos usaremos al hacer la vista Kanban -->
+                <field name="nombre" />
+                <field name="id" />
+                <field name="portada" />
+                <!-- Plantilla QWeb para indicar como es la tarjeta Kanban-->
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_card oe_kanban_global_click">
+                            <field name="nombre" />
+                        </div>
+                        <!-- Usamos este parte para cargar en la tarjeta Kanabn la imagen que tenemos.
+                            Con la funcion "kanban_image", indicando modelo, atributo e id (con record.id.raw_value)
+                            cargamos la url de la imagen a cargar -->
+                        <div class="o_kanban_image_inner_pic">
+                            <img alt="Avatar" t-att-src="kanban_image('biblioteca.comic', 'portada', record.id.raw_value)" style="width:30mm; height:30mm;" />
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+</odoo>

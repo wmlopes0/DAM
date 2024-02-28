@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+       <xs:appinfo>IES VJP - PLASENCIA - LMSGI - 1.0</xs:appinfo>
+       <xs:documentation xml:lang="es">
+           Schema para validación de documentos XML con horarios escolares por grupo, elaborado por <strong>Walter ML</strong>
+       </xs:documentation>
+       <xs:documentation xml:lang="en">
+           Schema for validating XML documents with school schedules by group, prepared by <strong>Walter ML</strong>
+       </xs:documentation>
+  </xs:annotation>
+  <xs:element name="Nombre" type="xs:string"/>
+  <xs:element name="Url" type="xs:anyURI"/>
+  <xs:element name="Periodo">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:time" name="desde" use="optional"/>
+          <xs:attribute type="xs:time" name="hasta" use="optional"/>
+          <xs:attribute type="xs:string" name="abbr" use="optional"/>
+          <xs:attribute type="tipoPeriodo" name="tipo" use="optional" default="módulo"/>
+          <xs:attribute type="xs:string" name="descripcion" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="tipoPeriodo">
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse" />
+      <xs:enumeration value="módulo" />
+      <xs:enumeration value="descanso" />
+      <xs:enumeration value="activo" />
+    </xs:restriction>
+</xs:simpleType>
+  <xs:element name="Dia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Periodo" maxOccurs="7" minOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute type="diaSemana" name="nombre" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="diaSemana">
+   <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse" />
+      <xs:enumeration value="Lunes" />
+      <xs:enumeration value="Martes" />
+      <xs:enumeration value="Miércoles" />
+      <xs:enumeration value="Jueves" />
+      <xs:enumeration value="Viernes" />
+   </xs:restriction>
+</xs:simpleType>
+<xs:element name="Profesor">
+  <xs:complexType mixed="true">
+    <xs:sequence>      
+      <xs:element ref="Dia" minOccurs="0" maxOccurs="7">
+        <xs:annotation>
+       <xs:documentation>Días y horas en las que contestará a los mensajes que reciba en los contactos</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:group ref="Contacto" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+  <xs:element name="Modulo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Profesor"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="abbr" use="optional"/>
+      <xs:attribute type="xs:string" name="nombre" use="optional"/>
+      <xs:attribute type="xs:unsignedShort" name="horas" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Tutoria">
+   <xs:complexType>
+      <xs:all>
+        <xs:element ref="Dia" />
+        <xs:element ref="Profesor" minOccurs="1"/>
+        <xs:element ref="Ubicacion" minOccurs="0"/>
+        <xs:element name="Observaciones" type="xs:string" minOccurs="0"/>
+        <xs:element name="DocenteTitular" minOccurs="0">
+           <xs:complexType />
+        </xs:element>
+      </xs:all>
+   </xs:complexType>
+ </xs:element>
+<xs:element name="Ubicacion">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse" />
+      <xs:minLength value="10" />
+      <xs:maxLength value="100" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+  <xs:element name="Modulos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Modulo" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Horario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Dia" maxOccurs="5" minOccurs="5"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+<xs:element name="IES">
+ <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="Nombre"/>
+      <xs:element ref="Url"/>
+      <xs:group ref="Contacto" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="codigo" use="optional" type="tipoCodigo"/>
+  </xs:complexType>
+</xs:element>
+  <xs:simpleType name="tipoCodigo">
+   <xs:restriction base="xs:positiveInteger">
+      <xs:totalDigits value="10"/>
+   </xs:restriction>
+</xs:simpleType>
+  <xs:element name="Grupo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Tutoria"/>
+        <xs:element ref="Modulos"/>
+        <xs:element ref="Horario"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="nombre" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HorarioEscolar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="IES"/>
+        <xs:element ref="Grupo" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="curso"/>
+      <xs:attribute type="xs:date" name="fechaCreacion"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="Contacto">
+  <xs:choice>
+    <xs:element name="Telefono">
+      <xs:complexType>
+        <xs:simpleContent>
+          <xs:extension base="xs:positiveInteger">
+             <xs:attributeGroup ref="attrContacto" />
+           </xs:extension>
+        </xs:simpleContent>
+      </xs:complexType>
+    </xs:element>
+    <xs:element name="Mail">
+      <xs:complexType>
+        <xs:simpleContent>
+          <xs:extension base="emailAddress">
+             <xs:attributeGroup ref="attrContacto" />
+           </xs:extension>
+         </xs:simpleContent>
+       </xs:complexType>
+    </xs:element>
+  </xs:choice>
+</xs:group>
+<xs:simpleType name="emailAddress">
+  <xs:restriction base="xs:string">
+ <xs:pattern value="[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*" />
+  </xs:restriction>
+</xs:simpleType>
+<xs:attributeGroup name="attrContacto">
+ <xs:attribute name="corporativo" type="xs:boolean"></xs:attribute>
+ <xs:attribute name="idiomas" type="listaIdiomas" default="es-ES"/>
+</xs:attributeGroup>
+<xs:simpleType name="listaIdiomas">
+  <xs:list itemType="xs:language"/>
+</xs:simpleType>
+
+</xs:schema>

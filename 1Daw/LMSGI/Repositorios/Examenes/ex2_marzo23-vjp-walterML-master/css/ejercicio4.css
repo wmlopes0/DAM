@@ -1,0 +1,93 @@
+@media print {
+    * {
+        color: black;
+        text-decoration: none;
+    }
+
+    a::after {
+        content: " [" attr(href)"]";
+        font-style: oblique;
+    }
+
+    abbr::after {
+        content: " [" attr(title)"]";
+
+    }
+
+    /* --------------- */
+
+    iframe {
+        width: 0;
+        height: 0;
+    }
+
+    nav.menu>ul {
+        height: 220px;
+    }
+
+}
+
+/* ESTILOS GENERALES */
+body {
+    margin: 0px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+iframe {
+    width: 100vw;
+    height: 700px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+div.icono {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+/* --------------------------- */
+nav.menu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 300px;
+    cursor: pointer;
+}
+
+nav.menu>div.icono.desplegable {
+    background-image: url(../img/menu.png);
+    width: 50px;
+    height: 50px;
+}
+
+nav.menu>ul {
+    height: 0px;
+    transition: all 2s;
+}
+
+nav.menu>div.icono.desplegable:hover~ul,
+nav.menu:hover>div.icono.desplegable~ul {
+    height: 220px;
+}
+
+nav.menu>ul>li {
+    border: 1px solid #ddd;
+}
+
+nav.menu>ul>li>p {
+    margin: 0px;
+    display: inline-block;
+}
+
+nav.menu>ul>li>a {
+    line-height: 50px;
+    text-align: center;
+}

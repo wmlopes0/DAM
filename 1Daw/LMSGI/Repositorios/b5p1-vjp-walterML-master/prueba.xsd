@@ -1,0 +1,184 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:attribute name="id" type="xs:positiveInteger" />
+ <xs:attribute name="color">
+   <xs:simpleType>
+     <xs:restriction base="xs:integer">
+       <xs:pattern value="[0-9][0-9][0-9]"/>
+     </xs:restriction>
+   </xs:simpleType>
+ </xs:attribute>
+ <xs:complexType name="station">
+   <xs:sequence>
+     <xs:element name="name" type="xs:string" />
+   </xs:sequence>
+   <xs:attribute ref="id" use="required" />
+ </xs:complexType>
+ <xs:complexType name="AddressType">
+   <xs:sequence>
+     <xs:element name="Line1" type="xs:string"/>
+     <xs:element name="Line2" type="xs:string"/>
+   </xs:sequence>
+ </xs:complexType>
+ <xs:complexType name="personinfo">
+   <xs:sequence>
+     <xs:element name="firstname" type="xs:string"/>
+     <xs:element name="lastname" type="xs:string"/>
+   </xs:sequence>
+ </xs:complexType>
+ <xs:complexType name="fullpersoninfo">
+   <xs:complexContent>
+     <xs:extension base="personinfo">
+       <xs:sequence>
+         <xs:element name="address" type="xs:string"/>
+         <xs:element name="city" type="xs:string"/>
+         <xs:element name="country" type="xs:string"/>
+       </xs:sequence>
+     </xs:extension>
+   </xs:complexContent>
+ </xs:complexType>
+ <xs:complexType name="driver">
+   <xs:sequence>
+     <xs:element name="person">
+       <xs:complexType>
+         <xs:all>
+           <xs:element name="firstname" type="xs:string" default="John" />
+           <xs:element name="lastname" type="xs:string" default="Doe" />
+           <xs:element name="Address" type="AddressType"/>
+         </xs:all>
+         <xs:anyAttribute/>
+       </xs:complexType>
+     </xs:element>
+     <xs:element name="birth_date" type="xs:date" />
+     <xs:element name="email" type="xs:string" maxOccurs="unbounded" />
+     <xs:element name="phone" type="xs:string" />
+     <xs:element name="avatar" type="xs:string" />
+   </xs:sequence>
+   <xs:attribute ref="id" use="required" />
+   <xs:attribute name="code">
+     <xs:simpleType>
+       <xs:restriction base="xs:string">
+         <xs:pattern value="[A-Z][A-Z]"/>
+       </xs:restriction>
+     </xs:simpleType>
+   </xs:attribute>
+   <xs:attribute name="lang" type="xs:string" use="required" />
+ </xs:complexType>
+ <xs:element name="example_schema">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element name="line" minOccurs="0" maxOccurs="unbounded">
+         <xs:complexType>
+           <xs:sequence minOccurs="0" maxOccurs="2">
+             <xs:element name="code" type="xs:string" default="0001" />
+             <xs:element name="gard" type="fullpersoninfo"/>
+             <xs:element name="length">
+               <xs:complexType>
+                 <xs:simpleContent>
+                   <xs:extension base="xs:integer">
+                     <xs:attribute name="unit_of_length" type="xs:string" />
+                   </xs:extension>
+                 </xs:simpleContent>
+               </xs:complexType>
+             </xs:element>
+             <xs:element name="count_vehicles" fixed="3">
+               <xs:simpleType>
+                 <xs:restriction base="xs:integer">
+                   <xs:minInclusive value="0" />
+                   <xs:maxInclusive value="10" />
+                 </xs:restriction>
+               </xs:simpleType>
+             </xs:element>
+             <xs:element name="car">
+               <xs:simpleType>
+                 <xs:restriction base="xs:string">
+                   <xs:enumeration value="Audi" />
+                   <xs:enumeration value="Golf" />
+                   <xs:enumeration value="BMW" />
+                 </xs:restriction>
+               </xs:simpleType>
+             </xs:element>
+             <xs:element name="map" type="xs:string" />
+             <xs:element name="start_station" type="station" minOccurs="0" maxOccurs="1" />
+             <xs:element name="end_station" type="station" minOccurs="0" maxOccurs="1" />
+             <xs:element name="intermediate_stations" type="station" minOccurs="0" maxOccurs="5" />
+             <xs:element name="vehicles_line" minOccurs="0" maxOccurs="10">
+               <xs:complexType>
+                 <xs:sequence>
+                   <xs:element name="name" type="xs:string" />
+                   <xs:element name="capacity" type="xs:integer" />
+                   <xs:element name="driver" minOccurs="0" maxOccurs="unbounded" type="driver" />
+                   <xs:element name="mechanic">
+                     <xs:complexType>
+                       <xs:choice>
+                         <xs:element name="employee" type="xs:string" />
+                         <xs:element name="member" type="xs:string" />
+                       </xs:choice>
+                     </xs:complexType>
+                   </xs:element>
+                   <xs:element name="age">
+                     <xs:simpleType>
+                       <xs:restriction base="xs:integer">
+                         <xs:minInclusive value="0" />
+                         <xs:maxInclusive value="120" />
+                       </xs:restriction>
+                     </xs:simpleType>
+                   </xs:element>
+                 </xs:sequence>
+                 <xs:attribute ref="id" use="required" />
+               </xs:complexType>
+             </xs:element>
+             <xs:element name="person">
+               <xs:complexType>
+                 <xs:all>
+                   <xs:element name="firstname" type="xs:string" default="John" />
+                   <xs:element name="lastname" type="xs:string" default="Doe" />
+                   <xs:element name="Address" type="AddressType"/>
+                 </xs:all>
+                 <xs:anyAttribute/>
+               </xs:complexType>
+             </xs:element>
+           </xs:sequence>
+           <xs:attribute ref="id" use="required" />
+         </xs:complexType>
+       </xs:element>
+       <xs:element name="Customer">
+         <xs:complexType>
+           <xs:sequence>
+             <xs:element name="Dob" type="xs:date" />
+             <xs:element name="Address" type="AddressType"/>
+             <xs:element name="Message">
+               <xs:complexType>
+                 <xs:sequence>
+                   <xs:element name="DateSent" type="xs:date" />
+                   <xs:element name="Sender" type="xs:string" />
+                   <xs:element name="Content">
+                     <xs:complexType>
+                       <xs:sequence>
+                         <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+                       </xs:sequence>
+                     </xs:complexType>
+                   </xs:element>
+                 </xs:sequence>
+               </xs:complexType>
+             </xs:element>
+           </xs:sequence>
+         </xs:complexType>
+       </xs:element>
+       <xs:element name="Supplier">
+         <xs:complexType>
+           <xs:sequence>
+             <xs:element name="Phone">
+               <xs:simpleType>
+                 <xs:restriction base="xs:string">
+                   <xs:length value="8"/>
+                 </xs:restriction>
+               </xs:simpleType>
+             </xs:element>
+             <xs:element name="Address" type="AddressType"/>
+           </xs:sequence>
+         </xs:complexType>
+       </xs:element>
+     </xs:sequence>
+   </xs:complexType>
+ </xs:element>
+</xs:schema>

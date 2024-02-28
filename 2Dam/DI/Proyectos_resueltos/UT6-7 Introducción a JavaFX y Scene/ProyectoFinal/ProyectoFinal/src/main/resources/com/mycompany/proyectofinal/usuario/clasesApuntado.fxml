@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="700.0" styleClass="fondo" stylesheets="@../../../../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.usuario.ClasesApuntadoController">
+   <children>
+      <TableView fx:id="tablaClases" layoutX="89.0" layoutY="93.0" prefHeight="354.0" prefWidth="523.0" styleClass="tabla">
+        <columns>
+          <TableColumn fx:id="columnaNombre" prefWidth="210.0" text="Nombre" />
+          <TableColumn fx:id="columnaFecha" prefWidth="162.0" text="Fecha" />
+            <TableColumn fx:id="columnaHora" prefWidth="145.0" text="Hora" />
+        </columns>
+      </TableView>
+      <Button fx:id="botonDarseDeBaja" layoutX="271.0" layoutY="470.0" mnemonicParsing="false" onAction="#darseDeBaja" text="Darse de baja" />
+      <Label layoutX="298.0" layoutY="34.0" styleClass="labelTitulo" text="CLASES" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="panelPrincipal" prefHeight="550.0" prefWidth="700.0" styleClass="fondo" stylesheets="@../../../../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.administrador.GestionClasesController">
+   <children>
+      <TableView fx:id="tablaClases" layoutX="83.0" layoutY="101.0" prefHeight="320.0" prefWidth="535.0" styleClass="tabla" stylesheets="@../../../../styles/styles.css">
+        <columns>
+          <TableColumn fx:id="columnaId" prefWidth="54.0" text="ID" />
+          <TableColumn fx:id="columnaTipoClase" prefWidth="179.0" text="Tipo clase" />
+            <TableColumn fx:id="columnaFecha" prefWidth="141.0" text="Fecha" />
+            <TableColumn fx:id="columnaHora" prefWidth="150.0" text="Hora" />
+        </columns>
+      </TableView>
+      <Button fx:id="botonAlta" layoutX="79.0" layoutY="461.0" mnemonicParsing="false" onAction="#altaClase" prefHeight="47.0" prefWidth="119.0" stylesheets="@../../../../styles/styles.css" text="Alta" />
+      <Button fx:id="botonEliminar" layoutX="507.0" layoutY="461.0" mnemonicParsing="false" onAction="#eliminarClase" stylesheets="@../../../../styles/styles.css" text="Eliminar " />
+      <Button fx:id="botonAddTipoClase" layoutX="245.0" layoutY="461.0" mnemonicParsing="false" onAction="#addTipoClase" stylesheets="@../../../../styles/styles.css" text="Nuevo tipo de clase" />
+      <Label layoutX="207.0" layoutY="40.0" styleClass="labelTitulo" stylesheets="@../../../../styles/styles.css" text="GESTIÓN DE CLASES" />
+   </children>
+</AnchorPane>

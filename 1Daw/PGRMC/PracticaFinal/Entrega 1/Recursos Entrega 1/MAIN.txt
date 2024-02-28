@@ -1,0 +1,49 @@
+public static void main(String[] args) {
+        //OPERADORES NUCLEARES
+        Personaje p1 = new Cientifico("Legásov", 1, 10, 'L');
+        Personaje p2 = new Cientifico("Shcherbina", 2, 1, 'S');        
+        Personaje p3 = new Minero("Glújov", 4, 0, 'G');
+        Personaje p4 = new Bombero();
+        p4.setNombre("Ignatenko");
+        p4.setTurno(7);
+        p4.setIdCeldaActual(12);
+        p4.setMarca('I');
+        
+        //KGB
+        Personaje p5 = new Oficial("Vladimir", 1, 11, 'V');
+        Personaje p6 = new Voluntario("Yuri", 1, 34, 'Y');
+        Personaje p7 = new Voluntario("Anatoli", 1, 35, 'T');
+        
+        //LLAVES
+        Llave llave1 = new Llave(1, 31);
+        Llave llave2 = new Llave(2, 44);
+        
+        //MOSTRANDO INFORMACIÓN
+        System.out.println("");  //Línea en blanco
+        System.out.println("OPERADORES NUCLEARES");
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(p3.toString());
+        System.out.println(p4.toString());
+        System.out.println("");  //Línea en blanco
+        
+        System.out.println("KGB");
+        System.out.println(p5.toString());
+        System.out.println(p6.toString());
+        System.out.println(p7.toString());
+        System.out.println("");  //Línea en blanco
+        
+        System.out.println("LLAVES");
+        System.out.println(llave1.toString());
+        System.out.println(llave2.toString());
+        System.out.println("");  //Línea en blanco
+        
+        System.out.println("SIMULACIÓN");
+        p1.realizarAcciones();
+        p2.realizarAcciones();
+        p3.realizarAcciones();
+        p4.realizarAcciones();
+        p5.realizarAcciones();
+        p6.realizarAcciones();
+        p7.realizarAcciones();
+    }

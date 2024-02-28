@@ -1,0 +1,28 @@
+div.caja>div {
+    border: 5px dotted blue;
+    padding: 5px;
+    width: 300px;
+    height: 400px;
+    float: left;
+}
+
+div.caja>div>p:nth-child(1) {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+div.caja>div:nth-child(1) {
+    overflow: hidden;
+}
+
+div.caja>div:nth-child(2) {
+    overflow: auto;
+}
+
+div.caja>div:nth-child(3) {
+    overflow: scroll;
+}
+
+div.caja>div:nth-child(4) {
+    overflow: visible;
+}

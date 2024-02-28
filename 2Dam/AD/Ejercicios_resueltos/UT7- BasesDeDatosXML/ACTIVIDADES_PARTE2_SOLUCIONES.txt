@@ -1,0 +1,175 @@
+6.A
+for $zona in distinct-values(productos/produc/cod_zona)
+let $productos:=count(productos/produc[cod_zona= $zona])
+return element zona {concat($zona," Productos:",$productos)}
+
+6.B
+for $producto in productos/produc
+let $zona:= $producto/cod_zona
+return element {concat('zona',$zona)}{$producto/denominacion/string()}
+
+6.C
+for $zona in distinct-values(productos/produc/cod_zona)
+let $caro:= max(productos/produc[cod_zona = $zona]/precio)
+let $denominacion:= productos/produc[cod_zona = $zona and precio=$caro]/denominacion/string()
+return element {concat('zona',$zona)}{$denominacion}
+
+6.D
+for $producto in productos/produc
+let $nombre:= $producto/denominacion/string()
+let $etiqueta:=
+if (contains($nombre,"Placa Base")) then "placa" else
+if (contains($nombre,"Memoria")) then "memoria" else
+if (contains($nombre,"Micro")) then "micro" else "otros"
+order by $etiqueta ascending
+return element {$etiqueta}{$nombre}
+
+=============================================================================================
+7.A
+for $sucursal in sucursales/sucursal
+let $codigo:= $sucursal/@codigo
+let $cuentasAhorro:= $sucursal/count(cuenta[@tipo='AHORRO'])
+let $cuentasPensiones:= $sucursal/count(cuenta[@tipo='PENSIONES'])
+return concat("-Cod:",$codigo,", CuentasAhorro:",$cuentasAhorro,", CuentasPensiones:",$cuentasPensiones)
+
+7.B
+for $sucursal in sucursales/sucursal
+  let $codigo:= $sucursal/@codigo
+  let $director:= $sucursal/director
+  let $poblacion:=$sucursal/poblacion
+  let $totalDebe:= sum($sucursal/cuenta/saldodebe)
+  let $totalHaber:= sum($sucursal/cuenta/saldohaber)
+return concat("-Cod:",$codigo,", Director:",$director,", Población:",$poblacion,", TotalDebe:",$totalDebe,", TotalHaber:",$totalHaber)
+
+7.C
+for $sucursal in sucursales/sucursal
+  let $numCuentas:= count($sucursal/cuenta)
+return if ($numCuentas>3) then
+concat("-Cod:",$sucursal/@codigo,", Director:",$sucursal/director,", Población:",$sucursal/poblacion)
+
+7.D
+for $sucursal in sucursales/sucursal
+let $maxSaldoDebe:= max($sucursal/cuenta/saldodebe)
+return 
+<sucursal codigo="{$sucursal/@codigo}">
+    {
+      for $cuenta in $sucursal/cuenta
+      where $cuenta/saldodebe = $maxSaldoDebe
+      return $cuenta
+    }
+</sucursal>
+
+7.E
+let $maxAportacion:=max(sucursales/sucursal/cuenta[@tipo="PENSIONES"]/aportacion)
+for $cuenta in sucursales/sucursal/cuenta[@tipo="PENSIONES"]
+return if($cuenta/aportacion = $maxAportacion) then $cuenta
+
+===================================================================================================
+
+8.A
+for $producto in productos/produc
+let $denominacion:= $producto/denominacion
+let $precio:= $producto/precio
+let $codZona:= $producto/cod_zona
+let $nombreZona:= zonas/zona[cod_zona=$codZona]/nombre
+order by $nombreZona ascending
+return concat("# Denominación: ",$denominacion,", Precio: ",$precio,", NombreZona: ",$nombreZona)
+
+8.B
+for $zona in zonas/zona
+let $nombreZona:= $zona/nombre
+let $codZona:= $zona/cod_zona
+let $numProductos:=productos/count(produc[cod_zona=$codZona])
+return concat("# Zona: ",$nombreZona,", Cod: ",$codZona,", NumProductos: ",$numProductos)
+
+8.C
+for $zona in zonas/zona
+let $nombreZona:= $zona/nombre
+let $codZona:= $zona/cod_zona
+let $minStock:=productos/min(produc[cod_zona=$codZona]/stock_actual)
+let $producto:= productos/produc[stock_actual = $minStock and cod_zona = $codZona]/denominacion
+return concat("# Zona: ",$nombreZona,", Cod: ",$codZona,", NombreProductoMinStock: ",$producto)
+
+=========================================================================================================
+
+9.A
+for $sucursal in sucursales/sucursal
+let $maxSaldo:= $sucursal/max(cuenta/saldohaber)
+let $nombreCuenta:= $sucursal/cuenta[saldohaber=$maxSaldo]/nombre
+return element {$sucursal/@codigo}{concat("Saldo: ",$maxSaldo," NombreCuenta: ",$nombreCuenta)}
+
+9.B
+for $sucursal in sucursales/sucursal
+let $maxSaldo:= $sucursal/max(cuenta[@tipo="AHORRO"]/saldodebe)
+let $nombreCuenta:= $sucursal/cuenta[@tipo="AHORRO" and saldodebe = $maxSaldo]/nombre
+return element {$sucursal/@codigo}{concat("Nombre: ",$nombreCuenta," SaldoDebe: ",$maxSaldo)}
+
+=========================================================================================================
+
+10.A
+for $zona in zonas/zona
+let $codZona := $zona/cod_zona
+let $nombreZona:= $zona/nombre
+for $producto in productos/produc[cod_zona = $codZona]
+return concat("Zona: ", $nombreZona, ", Producto: ", $producto/denominacion)
+-----------------SIN FOR----------------------------------------
+for $producto in productos/produc
+let $denominacion:= $producto/denominacion
+let $codZona:= $producto/cod_zona
+let $nombreZona:= zonas/zona[cod_zona=$codZona]/nombre
+return <producto>{concat("Denominacion: ",$denominacion," Zona: ",$nombreZona)}</producto>
+
+10.B
+for $zona in zonas/zona
+let $codZona:= $zona/cod_zona
+let $nombreZona:= $zona/nombre
+let $director:= $zona/director
+for $producto in productos/produc
+let $denominacion:= $producto[cod_zona=$codZona]/denominacion
+let $stockMinimo:= $producto[cod_zona=$codZona]/stock_minimo
+return if (number($stockMinimo)>5) then
+<producto>{concat("Denominacion: ",$denominacion," CodZona: ",$codZona," NombreZona: ",$nombreZona," Director: ",$director)}</producto>
+
+=====================================================================================================================
+
+11.A
+insert node 
+<produc>
+    <cod_prod>1023</cod_prod>
+    <denominacion>HD externo Seagate expansión 250GB</denominacion>
+    <precio>70</precio>
+    <stock_actual>100</stock_actual>
+    <stock_minimo>20</stock_minimo>
+    <cod_zona>{zonas/zona[nombre = "Andalucía"]/cod_zona}</cod_zona>
+ </produc>
+before /productos/produc[1]
+
+11.B
+for $producto in productos/produc
+let $precioActualizado:= number($producto/precio) * 1.03
+return replace value of node $producto/precio with $precioActualizado
+
+11.C
+for $producto in productos/produc
+let $stock:= $producto/stock_actual
+return if($stock = 0) then delete node $producto
+
+11.D
+for $producto in productos/produc
+let $stockModificado:= number($producto/stock_actual)+10
+return replace value of node $producto/stock_actual with $stockModificado
+
+=====================================================================================================================
+
+12.A
+insert node 
+<empleado salario="2340">
+      <puesto>Técnico</puesto>
+      <nombre>Pedro Fraile</nombre>
+</empleado>
+after universidad/departamento[2]/nombre
+
+12.B
+for $empleado in universidad/departamento[codigo="MAT1"]/empleado
+let $salarioModificado:= number($empleado/@salario)+100
+return replace value of node $empleado/@salario with $salarioModificado

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">T09Ejercicio2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_consultarModulo">Consultar Módulo</string>
+    <string name="menu_listarModulos">Listado de Módulos</string>
+    <string name="menu_addModulo">Añadir Módulo</string>
+    <string name="menu_eliminarModulo">Eliminar Módulo</string>
+
+    <string name="notFound">No existe ningún módulo con el ID especificado</string>
+    <string name="internalServerError">Error: Internal Server Error</string>
+    <string name="errorGeneral">Error: no se que pasa</string>
+
+    <string name="idModulo">ID Módulo:</string>
+    <string name="botonConsultar">CONSULTAR</string>
+    <string name="nombre">Nombre:</string>
+    <string name="profesor">Profesor:</string>
+    <string name="nota">Nota:</string>
+
+    <string name="addModulo">Añadir Módulo</string>
+    <string name="botonGuardar">GUARDAR</string>
+
+
+    <string name="toastIdNulo">¡Debes introducir un ID!</string>
+    <string name="toastCamposVacios">¡Debes rellenar todos los campos!</string>
+    <string name="toastIdExistente">¡El ID introducido ya existe!</string>
+    <string name="toastInsertCorrecto">¡Módulo insertado correctamente!</string>
+    <string name="toastDeleteCorrecto">¡Módulo eliminado correctamente!</string>
+
+    <string name="botonEliminar">ELIMINAR</string>
+
+
+</resources>

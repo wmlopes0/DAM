@@ -1,0 +1,6 @@
+<!ELEMENT employees (employee+)>
+<!ELEMENT employee (id,firstname,lastName,photo)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT photo (#PCDATA)>

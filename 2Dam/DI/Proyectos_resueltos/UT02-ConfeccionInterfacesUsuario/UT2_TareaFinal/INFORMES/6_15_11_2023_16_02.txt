@@ -1,0 +1,8 @@
+***********************************************
+**************** I N F O R M E ****************
+***********************************************
+NÚMERO CLIENTE: 6
+DNI: 67890123F
+DÍA DE CONTACTO: 15/11/2023
+HORA DE CONTACTO: 16:02
+OBSERVACIONES: Informe de prueba

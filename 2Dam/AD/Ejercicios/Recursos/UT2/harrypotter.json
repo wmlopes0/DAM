@@ -1,0 +1,53 @@
+{
+  "harrypotter": {
+    "autor": "J. K. Rowling",
+    "asignaturas": [
+        "Astronomía",
+        "Encantamientos",
+        "Vuelo",
+        "Defensa contra las artes oscuras",
+        "Pociones"
+      ],
+    "casas": [
+        {
+          "nombre": "Gryffindor",
+          "fundador": "Godric Gryffindor"
+        },
+        {
+          "nombre": "Hufflepuff",
+          "fundador": "Helga Hufflepuff"
+        },
+        {
+          "nombre": "Ravenclaw",
+          "fundador": "Rowena Ravenclaw"
+        },
+        {
+          "nombre": "Slytherin",
+          "fundador": "Salazar Slytherin"
+        }
+      ],
+    "personajes": {
+      "profesores": [
+          "Albus Dumbledore",
+          "Minerva McGonagall",
+          "Quirinus Quirrell",
+          "Remus Lupin",
+          "Severus Snape"
+        ],
+      "alumnos": [
+          "Harry Potter",
+          "Draco Malfoy",
+          "Luna Lovegood",
+          "Hermione Granger",
+          "Ron Weasly",
+          "Neville Longbottom"
+        ],
+      "villanos": [
+          "Dolores Umbridge",
+          "Lucius Malfoy",
+          "Bellatrix Lestrange",
+          "Voldemort"
+        ]
+    }
+  }
+}

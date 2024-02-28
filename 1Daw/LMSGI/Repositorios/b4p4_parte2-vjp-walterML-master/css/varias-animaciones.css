@@ -1,0 +1,166 @@
+/* A */
+div.a>div {
+    border: 2px solid black;
+}
+
+div.a>div>div.caja_colores {
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    animation-name: cambio_color, mover;
+    animation-duration: 1s, 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    position: relative;
+}
+
+@keyframes cambio_color {
+    0% {
+        background-color: red;
+        transform: rotate(0);
+    }
+
+    100% {
+        background-color: blue;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mover {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: calc(100% - 30px);
+    }
+}
+
+/* B */
+div.b>div {
+    border: 4px solid blue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: circulo 1s alternate infinite;
+}
+
+@keyframes circulo {
+    0% {
+        transform: scale(0);
+        border-color: red;
+    }
+
+    100% {
+        transform: scale(1);
+        border-color: blue;
+    }
+}
+
+/* C */
+
+div.c .contenido {
+    display: none;
+    border: 1px solid red;
+    padding: 20px;
+    width: max-content;
+}
+
+div.c .fa-minus {
+    display: none;
+}
+
+div.c #wrapperIcono {
+    width: max-content;
+}
+
+div.c #wrapperIcono:hover .contenido {
+    display: block;
+}
+
+div.c #wrapperIcono:hover .fa-plus {
+    display: none;
+}
+
+div.c #wrapperIcono:hover .fa-minus {
+    display: inline-block;
+}
+
+/* D */
+
+div.d .contenido {
+    display: none;
+    border: 1px solid red;
+    padding: 20px;
+    width: max-content;
+    position: absolute;
+    background-color: white;
+}
+
+div.d .fa-minus {
+    display: none;
+}
+
+div.d #wrapperIcono {
+    width: max-content;
+}
+
+div.d #wrapperIcono:hover .contenido {
+    display: block;
+}
+
+div.d #wrapperIcono:hover .fa-plus {
+    display: none;
+}
+
+div.d #wrapperIcono:hover .fa-minus {
+    display: inline-block;
+}
+
+/* E */
+div.e span[data-descr] {
+    text-decoration: underline dotted;
+    position: relative;
+}
+
+div.e span[data-descr]:hover::after {
+    content: attr(data-descr);
+    display: block;
+    position: absolute;
+    border: 1px solid red;
+    background-color: rgb(179, 179, 97);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 10;
+    top: 20px;
+    left: 0;
+}
+
+/* F */
+div.f>h2 {
+    color: rgb(65, 0, 65);
+    width: max-content;
+    position: relative;
+}
+
+div.f>h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Ajusta el grosor del subrayado */
+    background-color: purple;
+    /* Ajusta el color del subrayado */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s;
+    /* Ajusta la duración y el efecto de la animación */
+}
+
+div.f>h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}

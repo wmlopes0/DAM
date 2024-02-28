@@ -1,0 +1,43 @@
+
+Tipo:  Metorológica
+Autonomía: Castilla y León
+Provincia: Zamora
+Causa: Niebla
+Población: Zamora
+Fecha y hora de inicio: 2017-11-27 11:07
+Nivel: Verde
+PK inicial: 412.0
+PK final: 455.0
+Sentido: Ambos sentidos
+Coordenada X: 41.51757
+Coordenada Y: -5.23385
+
+
+Tipo: Obras
+Autonomía: Extremadura
+Provincia: Badajoz
+Causa: Obras en General
+Población: Valdivia
+Fecha y hora de inicio: 2017-11-17 11:00
+Nivel: Negro
+PK inicial: 0.0
+PK final: 5.0
+Sentido: Ambos sentidos
+Coordenada X: 39.0338029
+Coordenada Y: -5.7104669
+
+
+
+Tipo: Obras
+Autonomía: Extremadura
+Provincia: Badajoz
+Causa: Trabajos de mantenimiento
+Población: Valverde de Leganés
+Fecha y hora de inicio: 2017-11-27 8:00
+Nivel: Amarillo
+PK inicial: 0.0
+PK final: 21.0
+Sentido: Ambos sentidos
+Coordenada X: 38.51993
+Coordenada Y: -6.85655
+

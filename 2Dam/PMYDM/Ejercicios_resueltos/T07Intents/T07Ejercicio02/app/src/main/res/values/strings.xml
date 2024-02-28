@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">T07Ejercicio02</string>
+    <string name="introduceCalificaciones">Introduce las calificaciones</string>
+    <string name="PMYDM">Programación Multimedia</string>
+    <string name="AD">Acceso a Datos</string>
+    <string name="DI">Desarrollo de Interfaces</string>
+    <string name="notaMedia">NOTA MEDIA</string>
+    <string name="botonVolver">VOLVER</string>
+    <string name="toastValoresNulos">¡Debes introducir todos los valores!</string>
+    <string name="toastExtraNulo">Error en el paso de valores entre intents</string>
+</resources>

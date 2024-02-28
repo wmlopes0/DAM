@@ -1,0 +1,92 @@
+@media screen {
+
+    /* ESTILOS GENERALES */
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(54, 54, 54);
+
+    }
+
+    /* ------------------- */
+
+    /* .tablaVerde */
+    table.tablaVerde {
+        padding: 15px;
+        text-align: center;
+        border-spacing: 0px;
+        cursor: pointer;
+    }
+
+    .tablaVerde tr:nth-child(2n) td {
+        background-color: #A8E890;
+    }
+
+    .tablaVerde tr:nth-child(2n+1) td {
+        background-color: #d0ff8dc5;
+    }
+
+    .tablaVerde tr:hover td {
+        background-color: #425F57;
+        color: #CFFF8D;
+    }
+
+    .tablaVerde tr td:hover {
+        background-color: #425F57;
+        outline: 2px solid black;
+        color: #CFFF8D;
+    }
+
+    .tablaVerde tr th {
+        background-color: #425F57;
+        border: 1px solid black;
+        font-size: large;
+        color: #CFFF8D;
+    }
+
+    /* ---------------------------------- */
+    /* .listaIndex */
+    .listaIndex:is(ul, ol) {
+        padding: 0px;
+    }
+
+    .listaIndex:is(ul, ol)>li {
+        text-align: center;
+        list-style: none;
+        width: max-content;
+        margin: auto;
+        padding: 5px;
+        transition: all 300ms;
+    }
+
+    .listaIndex:is(ul, ol)>li:hover {
+        background-color: #fafafa;
+        font-weight: bold;
+        /* font-size: 25px; */
+        transform: scale(1.5);
+        cursor: pointer;
+    }
+
+    /* ---------------------------------- */
+}
+
+@media print {
+    * {
+        color: black;
+        text-decoration: none;
+    }
+
+    a::after {
+        content: " [" attr(href)"]";
+    }
+
+    abbr::after {
+        content: " [" attr(title)"]";
+
+    }
+
+}

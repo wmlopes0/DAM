@@ -1,0 +1,13 @@
+<!ELEMENT ListaDeProductos (Producto+,UltimaActualizacion)>
+<!ELEMENT Producto (CodigoId,Nombre,Stock)>
+<!ELEMENT CodigoId (#PCDATA)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Stock (Actual,Minimo,Maximo)>
+<!ELEMENT Actual (#PCDATA)>
+<!ELEMENT Minimo (#PCDATA)>
+<!ELEMENT Maximo (#PCDATA)>
+<!ELEMENT UltimaActualizacion (Dia,Mes,Anno,Hora)>
+<!ELEMENT Dia (#PCDATA)>
+<!ELEMENT Mes (#PCDATA)>
+<!ELEMENT Anno (#PCDATA)>
+<!ELEMENT Hora (#PCDATA)>

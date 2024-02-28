@@ -1,0 +1,13 @@
+<!DOCTYPE fichas SYSTEM "ejemplo1.dtd">
+<fichas>
+    <ficha numero="1">
+        <nombre> Walter </nombre>
+        <apellido> Martín </apellido>
+        <direccion> Calle Níscalo 9 </direccion>
+    </ficha>
+    <ficha numero="2">
+        <nombre> Gabriel </nombre>
+        <apellido> Molina </apellido>
+        <direccion> Alfredo Vargas #36 </direccion>
+    </ficha>
+</fichas>

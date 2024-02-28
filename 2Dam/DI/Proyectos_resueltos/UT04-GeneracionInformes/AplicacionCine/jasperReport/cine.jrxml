@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cine" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b5c9e4a3-ceba-48ac-a2a8-78fdbe00c5ef">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="cine"/>
+	<parameter name="Semana" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `idHorario`,
+	`idSala`,
+	`idPelicula`,
+	`NumeroSemana`,
+	`HoraSesion1`,
+	`HoraSesion2`,
+	`HoraSesion3`
+FROM cine.horarios
+WHERE `NumeroSemana` =  $P{Semana}]]>
+	</queryString>
+	<field name="idHorario" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idHorario"/>
+		<property name="com.jaspersoft.studio.field.label" value="idHorario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="horarios"/>
+	</field>
+	<field name="idSala" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idSala"/>
+		<property name="com.jaspersoft.studio.field.label" value="idSala"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="horarios"/>
+	</field>
+	<field name="idPelicula" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idPelicula"/>
+		<property name="com.jaspersoft.studio.field.label" value="idPelicula"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="horarios"/>
+	</field>
+	<field name="NumeroSemana" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="NumeroSemana"/>
+		<property name="com.jaspersoft.studio.field.label" value="NumeroSemana"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="horarios"/>
+	</field>
+	<field name="HoraSesion1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="HoraSesion1"/>
+		<property name="com.jaspersoft.studio.field.label" value="HoraSesion1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="horarios"/>
+	</field>
+	<field name="HoraSesion2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="HoraSesion2"/>
+		<property name="com.jaspersoft.studio.field.label" value="HoraSesion2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="horarios"/>
+	</field>
+	<field name="HoraSesion3" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="HoraSesion3"/>
+		<property name="com.jaspersoft.studio.field.label" value="HoraSesion3"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="horarios"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="130" splitType="Stretch">
+			<staticText>
+				<reportElement x="18" y="91" width="177" height="30" uuid="7adf899b-c584-4bf1-8569-983204c35385"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cartelera Semana ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="195" y="91" width="193" height="30" uuid="56b27e5f-02d1-4806-a4d3-4c1a7eaaac95"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NumeroSemana}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="10" width="545" height="50" forecolor="#E60508" uuid="751d76be-7bca-4a50-b453-4ae4494058e3"/>
+				<textElement textAlignment="Center">
+					<font size="38" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CINE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="4" splitType="Stretch">
+			<staticText>
+				<reportElement x="68" y="0" width="100" height="4" uuid="222c530c-4987-4e5f-ba47-9929944999d0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d534c5f8-fec6-44a9-a626-7a347ab8b421"/>
+				</reportElement>
+				<text><![CDATA[HoraSesion1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="0" width="100" height="4" uuid="fe07e05b-1c72-41e9-87c7-37dcc524266a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="90d86cd2-950c-4031-a494-f5c23d32abbc"/>
+				</reportElement>
+				<text><![CDATA[HoraSesion2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="0" width="100" height="4" uuid="39770748-e486-48eb-8b33-17381f54f8ec">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9598550-7f7a-40f3-b2e5-a0752daa7371"/>
+				</reportElement>
+				<text><![CDATA[HoraSesion3]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="197" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="42" width="139" height="30" uuid="9ea4255c-ec30-449e-9d7f-5a28c8389e3f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d534c5f8-fec6-44a9-a626-7a347ab8b421"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HoraSesion1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="84" width="139" height="30" uuid="80750c9d-c43e-4b09-99f8-321517fcadcb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="90d86cd2-950c-4031-a494-f5c23d32abbc"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HoraSesion2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="124" width="139" height="30" uuid="cc01fab5-7098-487e-96a4-0a3f549da280">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9598550-7f7a-40f3-b2e5-a0752daa7371"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HoraSesion3}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="87" y="3" width="380" height="180" uuid="1e7a4e60-1a1b-4871-aaf8-b26a2aa6213b"/>
+				<subreportParameter name="Pelicula">
+					<subreportParameterExpression><![CDATA[$F{idPelicula}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["cine_pelicula.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

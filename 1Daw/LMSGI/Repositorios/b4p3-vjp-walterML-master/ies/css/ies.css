@@ -1,0 +1,121 @@
+body {
+    margin: 0 50px 30px 50px;
+}
+
+header {
+    background-image: url(../img/parte2Arriba.png);
+}
+
+.menu2>ul>li>ul {
+    display: none;
+}
+
+.menu2>ul>li:hover>ul {
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 550px;
+    border: 20px solid #b3ab79;
+    background-color: rgb(225, 225, 213);
+    text-align: left;
+    list-style: none;
+    padding: 5px;
+    min-height: 20px;
+}
+.menu2>ul>li:hover{
+    background-color: #b3ab79;
+}
+.menu2>ul>li:hover a{
+    color: white;
+}
+
+.menu2>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu2>ul>li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(201, 201, 166);
+}
+
+.menu2>ul {
+    padding: 0;
+    position: relative;
+}
+
+#cuerpo {
+    display: flex;
+    gap: 5px;
+}
+
+#contenido {
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    padding: 8px;
+}
+
+#primera_columna .menu_izquierda {
+    background-color: #135cae;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+#primera_columna .menu_izquierda>h3 {
+    color: white;
+    margin: 0;
+}
+
+#primera_columna .menu_izquierda>ul {
+    background-color: white;
+    border-radius: 12px;
+    width: max-content;
+    padding: 10px 25px;
+    margin: 0;
+}
+
+#primera_columna .menu_izquierda>ul>li {
+    margin: 7px;
+}
+
+#primera_columna .menu_izquierda a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#animar {
+    background-image: url(../img/animada_frame1.gif);
+    width: 200px;
+    height: 100px;
+    margin: 10px auto;
+    background-size: cover;
+}
+
+#animar:hover {
+    background-image: url(../img/animada.gif);
+    cursor: crosshair;
+}
+
+#pie {
+    display: flex;
+    background-color: black;
+    border-radius: 0 0 12px 12px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: lightgray;
+    font-size: 0.8em;
+}
+
+#pie a {
+    color: white;
+}
+
+#pie>div:nth-child(2) {
+    flex-grow: 1;
+    text-align: right;
+    padding-top: 22px;
+}

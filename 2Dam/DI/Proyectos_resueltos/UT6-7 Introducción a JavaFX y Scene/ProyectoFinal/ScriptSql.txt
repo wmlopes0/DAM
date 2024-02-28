@@ -1,0 +1,37 @@
+-- Creación de la tabla Usuarios
+CREATE TABLE Usuarios (
+    usuario_id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre_usuario VARCHAR(255),
+    contrasena VARCHAR(255), -- Usar un algoritmo de hash antes de almacenar.
+    url_fotografia VARCHAR(255),
+    datos VARCHAR(255),
+    n_clases_pagadas INT,
+    tipo_usuario VARCHAR(255) CHECK (tipo_usuario IN ('Administrador', 'Usuario'))
+);
+
+-- Creación de la tabla Tipos de Clase
+CREATE TABLE TiposDeClase (
+    tipo_clase_id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(255),
+    cupos_disponibles INT,
+    url_fotografia VARCHAR(255)
+);
+
+-- Creación de la tabla Clases
+CREATE TABLE Clases (
+    clase_id INT PRIMARY KEY AUTO_INCREMENT,
+    tipo_clase_id INT,
+    fecha DATE,
+    hora TIME,
+    FOREIGN KEY (tipo_clase_id) REFERENCES TiposDeClase(tipo_clase_id) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+-- Creación de la tabla Reservas
+CREATE TABLE Reservas (
+    reserva_id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario_id INT,
+    clase_id INT,
+    estado VARCHAR(255) CHECK (estado IN ('Reservada', 'Cancelada')),
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (clase_id) REFERENCES Clases(clase_id) ON UPDATE CASCADE ON DELETE CASCADE
+);

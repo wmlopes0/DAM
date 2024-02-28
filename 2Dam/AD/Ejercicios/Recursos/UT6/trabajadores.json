@@ -1,0 +1,112 @@
+[{
+  "nombre": {
+    "nomb": "Alicia",
+    "ape1": "Ramos",
+    "ape2": "Martín"
+  },
+  "direccion": {
+    "poblacion": "Madrid",
+    "calle": "Avda Toledo 10"
+  },
+  "salario": 1200,
+  "oficios": [
+    "Profesora",
+    "Analista"
+  ],
+  "primas": [
+    20,
+    30,
+    40
+  ],
+  "edad": 50
+},{
+  "nombre": {
+    "nomb": "Juan",
+    "ape1": "Gil",
+    "ape2": "Sánchez"
+  },
+  "direccion": {
+    "poblacion": "Madrid",
+    "calle": "Mayor 12"
+  },
+  "salario": 1400,
+  "oficios": [
+    "Programador",
+    "Analista"
+  ],
+  "primas": [
+    120,
+    130,
+    40
+  ],
+  "edad": 30
+},{
+  "nombre": {
+    "nomb": "Raquel",
+    "ape1": "García",
+    "ape2": "del Amo"
+  },
+  "direccion": {
+    "poblacion": "Toledo",
+    "calle": "Ocaña 22"
+  },
+  "salario": 1500,
+  "oficios": [
+    "Profesor"
+  ],
+  "primas": [
+    60,
+    30,
+    80
+  ],
+  "edad": 45
+},{
+  "nombre": {
+    "nomb": "Fernando",
+    "ape1": "Romo",
+    "ape2": "Pérez"
+  },
+  "direccion": {
+    "poblacion": "Talavera",
+    "calle": "Las cañas 2"
+  },
+  "salario": 1300,
+  "oficios": [
+    "Profesor",
+    "Representante"
+  ],
+  "edad": 43
+},{
+  "nombre": {
+    "nomb": "María",
+    "ape1": "Suárez",
+    "ape2": "Verdes"
+  },
+  "direccion": {
+    "poblacion": "Toledo",
+    "calle": "Av Madrid 32"
+  },
+  "salario": 1600,
+  "oficios": [
+    "Profesor",
+    "Contable"
+  ],
+  "primas": [
+    30,
+    70,
+    80
+  ],
+  "edad": 55
+},{
+  "nombre": {
+    "nomb": "Santiago",
+    "ape1": "Gómez",
+    "ape2": "Corregidor"
+  },
+  "direccion": {
+    "poblacion": "Toledo",
+    "calle": "Av Madrid 32"
+  },
+  "salario": 1600,
+  "edad": 55
+}]

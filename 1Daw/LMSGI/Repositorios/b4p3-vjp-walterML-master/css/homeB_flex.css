@@ -1,0 +1,53 @@
+:root {
+    --color-fondo-pagina: lightyellow;
+    --color-fondo-cabecera: #60de4c;
+    --color-fondo-menu: rgb(109, 128, 0);
+    --color-fondo-contenido: rgb(181, 65, 65);
+    --color-fondo-publi: rgb(177, 96, 235);
+    --alto-cabecera: 70px;
+    --padding-pagina: 40px;
+    --alto-izq-der-cuerpo: calc(100vh - var(--alto-cabecera) - var(--padding-pagina)*2);
+}
+
+nav,
+aside,
+main {
+    height: var(--alto-izq-der-cuerpo);
+    overflow: auto;
+}
+
+body {
+    background-color: var(--color-fondo-pagina);
+    padding: var(--padding-pagina);
+    margin: 0;
+}
+
+header {
+    background-color: var(--color-fondo-cabecera);
+    height: var(--alto-cabecera);
+    overflow: auto;
+}
+header>h1{
+    margin: 0px;
+}
+nav {
+    background-color: var(--color-fondo-menu);
+}
+
+aside {
+    background-color: var(--color-fondo-publi);
+    order: 1;
+}
+
+main {
+    background-color: var(--color-fondo-contenido);
+    overflow: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+/* FLEX */
+.container{
+    display: flex;
+}

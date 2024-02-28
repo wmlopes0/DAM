@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+    <!-- Tree(list) View -->
+    <record id="liga_equipo_clasificacion_view_tree" model="ir.ui.view">
+        <field name="name">Lista de Equipos de la liga</field>
+        <field name="model">liga.equipo</field>
+        <field name="arch" type="xml">
+            <!-- Indicamos el orden para poner la clasificacion-->
+            <tree default_order="puntos desc">
+                <field name="escudo" widget="image" class="oe_avatar" />
+                <field name="nombre" />
+                <field name="puntos" />
+                <field name="jugados" />
+                <field name="goles_a_favor" />
+                <field name="goles_en_contra" />
+                <field name="victorias" />
+                <field name="empates" />
+                <field name="derrotas" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista busqueda-->
+    <record id="liga_equipo_clasificacion_view_search" model="ir.ui.view">
+        <field name="name">Búsqueda de Equipos por nombre</field>
+        <field name="model">liga.equipo</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="nombre" />
+            </search>
+        </field>
+    </record>
+
+
+    <!-- Indicamos el action de esta nueva vista -->
+    <record id='liga_equipo_clasificacion_action' model='ir.actions.act_window'>
+        <field name="name">Clasificacion de la liga</field>
+        <field name="res_model">liga.equipo</field>
+        <!-- Indicamos que este modelo se puede ver en tree -->
+        <field name="view_mode">tree</field>
+        <!-- Si no lo ponemos, cogera la otra vista tree definida en equipo
+        esto se usa para diferentes vistas de un mismo modelo-->
+        <field name="view_id" ref="liga_equipo_clasificacion_view_tree" />
+    </record>
+
+    <menuitem name="Clasificacion" id="liga_equipo_clasificacion_menu" parent="liga_base_menu" action="liga_equipo_clasificacion_action" />
+
+
+
+</odoo>

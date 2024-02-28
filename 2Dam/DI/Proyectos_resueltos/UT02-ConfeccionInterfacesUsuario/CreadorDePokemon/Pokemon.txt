@@ -1,0 +1,11 @@
+Pikachu,Eléctrico,Impactrueno,Trueno,Cola Férrea
+Charizard,Fuego,Lanzallamas,Garra Dragón,Cola Dragón
+Blastoise,Agua,Hidrobomba,Hidropulso,Salpicar
+Venusaur,Planta,Rayo Solar,Látigo Cepa,Placaje
+Jolteon,Eléctrico,Impactrueno,Trueno,Chispa
+Tyranitar,Roca,Terremoto,Colmillo Rayo,Roca Afilada
+Pidgeot,Vuelo,Tornado,Golpe Aéreo,Picoteo
+Steelix,Acero,Golpe Cabeza,Mordisco,Cola Hierro
+Alakazam,Psíquico,Confusión,Psicorrayo,Ataque Alarido
+Muk,Veneno,Lodoso,Gas Venenoso,Ácido
+Lapras,Hielo,Rayo Hielo,Frío Polar,Surf

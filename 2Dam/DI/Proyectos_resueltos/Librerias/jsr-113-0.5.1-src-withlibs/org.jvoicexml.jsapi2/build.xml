@@ -1,0 +1,287 @@
+<project name="org.jvoicexml.jsapi2" default="jar" basedir=".">
+    <description>
+This file builds the JSAPI2 project.
+    </description>
+
+    <!-- allow the user to override setting in an own properties file. -->
+    <property file="personal-props/ant.properties" />
+    <property file="config-props/ant.properties" />
+
+    <target name="-initVariables">
+        <!-- directory structure -->
+        <property name="src" value="src" />
+        <property name="build" value="classes" />
+        <property name="dist" value="dist" />
+        <property name="apidoc" value="doc/api" />
+
+        <!-- unit tests -->
+        <property name="test" value="${basedir}/unittests" />
+
+        <property name="test.src" value="${test}/src" />
+        <property name="test.results" value="${dist}/unittests" />
+        <property name="test.build" value="${test}/classes" />
+
+        <!-- distribution files -->
+        <property name="component" value="org.jvoicexml.jsapi2" />
+        <property name="dist.jar" value="${dist}/${component}.jar" />
+        <property name="dist.src.zip"
+                  value="${dist}/jsr-113-${version}-src.zip" />
+        <property name="dist.src.libs.zip"
+                  value="${dist}/jsr-113-${version}-src-withlibs.zip" />
+        <property name="dist.zip" value="${dist}/jsr-113-${version}.zip" />
+        <property name="dist.jsr113.jar" value="${dist}/jsr113.jar" />
+
+        <!-- Properties for components to use -->
+        <condition property="jsapi2.freetts.use">
+            <istrue value="${jsapi2.freetts}" />
+        </condition>
+        <condition property="jsapi2.sphinx4.use">
+            <istrue value="${jsapi2.sphinx4}" />
+        </condition>
+        <condition property="jsapi2.sapi.use">
+            <istrue value="${jsapi2.sapi}" />
+        </condition>
+        <condition property="jsapi2.mac.use">
+            <istrue value="${jsapi2.mac}" />
+        </condition>
+
+        <fileset dir="." id="dist.files.additional">
+            <include name="AUTHORS" />
+            <include name="COPYING" />
+            <include name="INSTALL" />
+            <include name="README" />
+            <include name="ChangeLog" />
+        </fileset>
+    </target>
+
+    <target name="-init" depends="-initVariables">
+        <mkdir dir="${build}" />
+        <mkdir dir="${dist}" />
+    </target>
+
+    <target name="-cleanFreetts" depends="-init" if="jsapi2.freetts.use">
+        <ant dir="../org.jvoicexml.jsapi2.freetts"
+             target="clean"
+             inheritall="false"
+             inheritrefs="false" />
+    </target>
+
+    <target name="-cleanSphinx4" depends="-init" if="jsapi2.sphinx4.use">
+        <ant dir="../org.jvoicexml.jsapi2.sphinx4"
+             target="clean"
+             inheritall="false"
+             inheritrefs="false" />
+    </target>
+
+    <target name="-cleanSapi" depends="-init" if="jsapi2.sapi.use">
+        <ant dir="../org.jvoicexml.jsapi2.sapi"
+             antfile="build.xml"
+             target="clean"
+             inheritall="false"
+             inheritrefs="false" />
+    </target>
+
+    <target name="-cleanMac" depends="-init" if="jsapi2.mac.use">
+        <ant dir="../org.jvoicexml.jsapi2.mac"
+             antfile="build.xml"
+             target="clean"
+             inheritall="false"
+             inheritrefs="false" />
+    </target>
+
+    <target name="clean"
+            depends="-initVariables,-cleanFreetts,-cleanSphinx4,-cleanSapi,-cleanMac"
+            description="Remove all compiled and distribution files">
+        <delete dir="${build}" />
+        <delete dir="${dist}" />
+    </target>
+
+    <target name="-dependentComponents">
+        <ant dir="../javax.speech"
+             antfile="build.xml"
+             inheritall="false"
+             inheritrefs="false" />
+    </target>
+
+    <target name="compile"
+            depends="-init,-dependentComponents"
+            description="Compile the JAVA sources">
+        <echo message="compiling ${component} with debug=${debug}, optimize=${optimize}" />
+        <javac destdir="${build}"
+               optimize="${optimize}"
+               includeantruntime="false"
+               debug="${debug}"
+               deprecation="on">
+            <src path="${src}" />
+            <classpath location="../javax.speech/preverify" />
+            <compilerarg value="-Xlint:unchecked" />
+        </javac>
+    </target>
+
+    <target name="rebuild" depends="clean,compile" />
+
+    <target name="-jar"
+            depends="compile"
+            description="Pack all compiled files into jar files">
+        <jar jarfile="${dist.jar}" compress="false">
+            <fileset dir="${build}">
+                <include name="**/*.class" />
+            </fileset>
+            <manifest>
+                <attribute name="Built-By" value="${user.name}" />
+                <section name="common">
+                    <attribute name="Implementation-Vendor"
+                               value="JVoiceXML group" />
+                    <attribute name="Implementation-Title"
+                               value="Base implementation for JSR 113 vendors" />
+                    <attribute name="Implementation-Version"
+                               value="${version}" />
+                </section>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="-buildFreetts" depends="-init" if="jsapi2.freetts.use">
+        <ant dir="../org.jvoicexml.jsapi2.freetts"
+             target="jar"
+             inheritall="false"
+             inheritrefs="false" />
+    </target>
+
+    <target name="-buildSphinx4" depends="-init" if="jsapi2.sphinx4.use">
+        <ant dir="../org.jvoicexml.jsapi2.sphinx4"
+             target="jar"
+             inheritall="false"
+             inheritrefs="false" />
+    </target>
+
+    <target name="-buildSapi" depends="-init" if="jsapi2.sapi.use">
+        <ant dir="../org.jvoicexml.jsapi2.sapi"
+             antfile="build.xml"
+             inheritall="false"
+             inheritrefs="false" />
+    </target>
+
+    <target name="-buildMac" depends="-init" if="jsapi2.mac.use">
+        <ant dir="../org.jvoicexml.jsapi2.mac"
+             antfile="build.xml"
+             inheritall="false"
+             inheritrefs="false" />
+    </target>
+
+    <target name="-components"
+            depends="-jar,-buildFreetts,-buildSphinx4,-buildSapi,-buildMac">
+    </target>
+
+    <target name="jar" depends="-jar,-components" />
+
+    <target name="compiletests"
+            depends="jar"
+            description="Compile the JAVA sources for the test cases">
+        <mkdir dir="${test.build}" />
+        <javac destdir="${test.build}"
+               optimize="off"
+               debug="on"
+               deprecation="on"
+               includeantruntime="false">
+            <src path="${test.src}" />
+            <include name="org/jvoicexml/jsapi2/**/*.java" />
+            <classpath path="${build}" />
+            <classpath location="../javax.speech/preverify" />
+            <classpath location="3rdparty/junit4.8.2/lib/junit-4.8.2.jar" />
+            <compilerarg value="-Xlint:unchecked" />
+        </javac>
+        <copy todir="${test.build}" overwrite="true">
+            <fileset dir="${test.src}">
+                <include name="**/*.properties" />
+                <include name="**/*.xml" />
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="test"
+            depends="compiletests"
+            description="run unit tests on all test cases">
+        <!-- Delete old test results. -->
+        <delete dir="${test.results}" failonerror="false">
+            <include name="TEST-*" />
+        </delete>
+        <mkdir dir="${test.results}" />
+        <junit printsummary="yes"
+               maxmemory="256M"
+               fork="no"
+               haltonfailure="no"
+               showoutput="yes">
+            <classpath location="${test.build}" />
+            <classpath path="${build}" />
+            <classpath location="../javax.speech/preverify" />
+            <classpath location="3rdparty/junit4.8.2/lib/junit-4.8.2.jar" />
+
+            <jvmarg value="-Djava.protocol.handler.pkgs=org.jvoicexml.jsapi2.protocols"/>
+
+            <formatter type="brief" usefile="false" />
+            <formatter type="xml" />
+            <batchtest todir="${test.results}">
+                <fileset dir="${test.build}">
+                    <include name="org/jvoicexml/jsapi2/**/*Test.class" />
+                    <exclude name="org/jvoicexml/jsapi2/mock/**" />
+                </fileset>
+            </batchtest>
+        </junit>
+
+        <junitreport>
+            <fileset dir="${test.results}">
+                <include name="TEST-*.xml" />
+            </fileset>
+            <report format="frames" todir="${test.results}/html" />
+        </junitreport>
+    </target>
+
+    <target name="distribution"
+            description="Build the distribution files"
+            depends="clean">
+        <antcall target="jar" />
+        <zip basedir="${dist}" destfile="${dist.zip}" compress="true">
+            <include name="*.jar" />
+            <include name="*.dll" />
+            <include name="*.jnilib" />
+            <fileset refid="dist.files.additional" />
+        </zip>
+        <zip basedir=".." destfile="${dist.src.zip}" compress="true">
+            <include name="javax.speech/src/**/*.java" />
+            <include name="javax.speech/build.xml" />
+            <include name="org.jvoicexml.jsapi2*/build.xml" />
+            <include name="org.jvoicexml.jsapi2*/src/**/*.java" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/*.cpp" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/*.h" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/*.sln" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/*.vcp" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/*.lib" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/lib*.jnilib" />
+            <include name="org.jvoicexml.jsapi2*/demo/**" />
+            <include name="org.jvoicexml.jsapi2*/build.xml" />
+            <include name="org.jvoicexml.jsapi2/config-props/**" />
+            <include name="org.jvoicexml.jsapi2/personal-props/README.txt" />
+            <include name="org.jvoicexml.jsapi2*/etc/**" />
+            <fileset refid="dist.files.additional" />
+        </zip>
+        <zip basedir=".." destfile="${dist.src.libs.zip}" compress="true">
+            <include name="javax.speech/src/**/*.java" />
+            <include name="javax.speech/build.xml" />
+            <include name="org.jvoicexml.jsapi2*/src/**/*.java" />
+            <include name="org.jvoicexml.jsapi2*/3rdparty/**/*.jar" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/*.cpp" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/*.h" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/*.sln" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/*.vcp" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/*.lib" />
+            <include name="org.jvoicexml.jsapi2*/cpp/**/lib*.jnilib" />
+            <include name="org.jvoicexml.jsapi2*/demo/**" />
+            <include name="org.jvoicexml.jsapi2*/build.xml" />
+            <include name="org.jvoicexml.jsapi2/config-props/**" />
+            <include name="org.jvoicexml.jsapi2/personal-props/README.txt" />
+            <include name="org.jvoicexml.jsapi2*/etc/**" />
+            <fileset refid="dist.files.additional" />
+        </zip>
+    </target>
+</project>

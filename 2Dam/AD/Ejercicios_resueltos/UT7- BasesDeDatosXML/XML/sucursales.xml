@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<sucursales>
+  <sucursal telefono="112233" codigo="SUC1">
+      <director>Alicia Gómez</director>
+	    <poblacion>Madrid</poblacion>
+	    <cuenta tipo="AHORRO">
+			  <nombre>Antonio García</nombre>
+				<numero>123456</numero>
+				<saldohaber>21000</saldohaber>
+				<saldodebe>200</saldodebe>
+			</cuenta>
+			<cuenta tipo="AHORRO">
+			  <nombre>Pedro Gómez</nombre>
+				<numero>1111456</numero>
+				<saldohaber>12000</saldohaber>
+				<saldodebe>0</saldodebe>
+			</cuenta>
+			<cuenta tipo="AHORRO">
+		    <nombre>Alicia Martín</nombre>
+				<numero>223344</numero>
+				<saldohaber>13000</saldohaber>
+				<saldodebe>0</saldodebe>
+			</cuenta>
+			<cuenta tipo="AHORRO">
+		    <nombre>María Montes</nombre>
+				<numero>667788</numero>
+				<saldohaber>3000</saldohaber>
+				<saldodebe>100</saldodebe>
+			</cuenta>
+			<cuenta tipo="PENSIONES">
+			   <nombre>María Montes</nombre>
+				 <numero>99667788</numero>
+				 <aportacion>23000</aportacion>
+			</cuenta>
+		 <cuenta tipo="PENSIONES">
+			   <nombre>Juan Gil</nombre>
+				 <numero>99112200</numero>
+				 <aportacion>30000</aportacion>
+			</cuenta>					
+	</sucursal>
+	 <sucursal telefono="2023345" codigo="SUC2">
+      <director>Fernando Rato</director>
+	    <poblacion>Talavera</poblacion>
+	    <cuenta tipo="AHORRO">
+			  <nombre>Marcelo Saez</nombre>
+				<numero>30303036</numero>
+				<saldohaber>15000</saldohaber>
+				<saldodebe>12000</saldodebe>
+			</cuenta>
+			<cuenta tipo="AHORRO">
+			  <nombre>María Jesús Ramos</nombre>
+				<numero>4444222</numero>
+				<saldohaber>5000</saldohaber>
+				<saldodebe>0</saldodebe>
+			</cuenta>
+		</sucursal>	
+		<sucursal telefono="5566775" codigo="SUC3">
+      <director>Pedro Martín</director>
+	    <poblacion>Talavera</poblacion>	
+			<cuenta tipo="AHORRO">
+		    <nombre>Alicia Perea</nombre>
+				<numero>2023424</numero>
+				<saldohaber>12000</saldohaber>
+				<saldodebe>0</saldodebe>
+			</cuenta>
+			<cuenta tipo="AHORRO">
+		    <nombre>Pedro Guerra</nombre>
+				<numero>1606778</numero>
+				<saldohaber>31000</saldohaber>
+				<saldodebe>1000</saldodebe>
+			</cuenta>
+			<cuenta tipo="PENSIONES">
+			   <nombre>Javier Alonso</nombre>
+				 <numero>99123788</numero>
+				 <aportacion>23000</aportacion>
+			</cuenta>
+		 <cuenta tipo="PENSIONES">
+			   <nombre>Juana Galiano</nombre>
+				 <numero>99002200</numero>
+				 <aportacion>15000</aportacion>
+			</cuenta>					
+	</sucursal>
+</sucursales >
+

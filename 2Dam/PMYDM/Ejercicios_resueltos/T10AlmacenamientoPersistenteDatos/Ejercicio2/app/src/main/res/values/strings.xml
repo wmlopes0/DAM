@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ejercicio2</string>
+    <string name="fecha">Fecha:</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="recuperar">RECUPERAR</string>
+    <string name="toastFaltaFecha">¡Debes introducir una fecha!</string>
+    <string name="toastFaltaTexto">¡Debes introducir alguna tarea!</string>
+    <string name="toastTareasGuardadas">¡Tareas guardadas correctamente!</string>
+    <string name="toastNotFound">¡No se han encontrado tareas para esta fecha!</string>
+</resources>

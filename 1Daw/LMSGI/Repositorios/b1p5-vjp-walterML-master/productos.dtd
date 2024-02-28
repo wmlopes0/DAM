@@ -1,0 +1,7 @@
+<!ELEMENT catalogo (producto+)>
+<!ELEMENT producto (nombre,cantidad,precio,maximoGanancia)>
+<!ATTLIST producto id NMTOKEN #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT maximoGanancia (#PCDATA)>

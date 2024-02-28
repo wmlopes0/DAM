@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">T08Ejercicio05</string>
+    <string name="superman_text">SuperMan</string>
+    <string name="batman_text">BatMan</string>
+    <string name="capitan_americo_text">Capitán America</string>
+    <string name="hulk_text">Hulk</string>
+    <string name="ironman_text">IronMan</string>
+    <string name="spiderman_text">SpiderMan</string>
+</resources>

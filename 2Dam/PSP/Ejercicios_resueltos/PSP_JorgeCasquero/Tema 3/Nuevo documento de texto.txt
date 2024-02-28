@@ -1,0 +1,24 @@
+DHCP  2
+DNS  x
+HTTP  1
+IPTV  2 streaming
+TFTP  2
+Telnet  1 paso de mensajes y comunicacion
+FTP  1 mandar ficheros entre dos maquinas
+SMTP  1 trasmision de correos de electronicos
+VoIP  2 llamadas de voz 
+
+
+
+				
+				TCP UDP
+Establecimiento de sesión 1
+Sin conexión 2
+Entrega ordenada 1
+Entrega no ordenada 2
+Entrega garantizada 1
+Requisitos de transmisión rápida 2
+Segmentos de mensaje en secuencia 1
+Sin acuse de recibo 2
+Control de flujo 1 
+Menos sobrecarga 2

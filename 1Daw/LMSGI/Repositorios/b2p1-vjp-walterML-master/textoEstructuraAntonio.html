@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ 
+<html>
+ 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Ejercicio 8</title>
+</head>
+ 
+<body>
+    <h1>Ejercicio sobre representación del texto y títulos</h1>
+ 
+    <h2>El futuro de la Web</h2>
+ 
+    <p>Muchas aplicaciones tradicionalmente de escritorio las podemos encontrar como aplicaciones Web: procesadores de
+        texto, hojas de cálculo, gestión de personal, facturación, <abbr title="etcétera">etc.</abbr>, incluso podemos
+        encontrar completos sistemas operativos desarrollados como una aplicación Web y con la que podemos trabajar
+        utilizando un navegador. En marzo de 1949, en <cite>Popular Machanics</cite>, se dijo <q><acronym
+                title="Electronic Numerical Integrator And Computer (Computador e Integrador Numérico Electrónico)">ENIAC</acronym>
+            se equipó con
+            18.000 tubos de vacío y pesó 30 toneladas, los computadores del futuro pueden tener 1.000 tubos de vacío y
+            quizá pesen entre 1 y 1/2 toneladas</q>. Hoy vemos que el pronóstico fue ampliamente superado. La Web
+        comenzó en la decada de los 90, ¿cúal será su futuro?</p>
+ 
+    <h2><acronym title="Hypertext Preprocessor">PHP</acronym></h2>
+ 
+    <h3>Definición</h3>
+ 
+    <p>Para realizar el proyecto Web necesitaremos utilizar <acronym title="Hypertext Preprocessor">PHP</acronym>,
+        definido en <cite>php.net</cite> como:</p>
+ 
+    <blockquote cite="http://www.php.net">
+        <strong><dfn><acronym title="Hypertext Preprocessor">PHP</acronym></dfn></strong>, acrónimo de "Hypertext
+        Preprocessor", es un lenguaje "Open Source" interpretado de alto nivel, especialmente pensado para desarrollos
+        web y el cual puede ser embebido en páginas <acronym title="HyperText Markup Language">HTML</acronym>. La
+        mayoría de su sintaxis es similar a C, Java y Perl y es fácil de aprender. La meta de este lenguaje es permitir
+        escribir a los creadores de páginas web, páginas dinámicas de una manera rápida y fácil, aunque se pueda hacer
+        mucho más con <acronym title="Hypertext Preprocessor">PHP</acronym>. Existen múltiud de páginas en las que
+        podemos encontrar información y ejemplos de <acronym title="Hypertext Preprocessor">PHP</acronym>, además la
+        biblioteca del <abbr title="Departamento">dpto.</abbr> dispone de varios ejemplares que tratan el desarrollo de
+        páginas Web con <acronym title="Hypertext Preprocessor">PHP</acronym>.
+    </blockquote>
+ 
+    <h3>Un primer ejemplo</h3>
+ 
+    <p>Una respuesta corta y concisa, pero, ¿qué significa realmente? Un ejemplo nos aclarará las cosas:</p>
+    <pre><code>
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Ejemplo&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;       
+                <strong>&lt;?php
+                echo “Hola, ¡soy un script PHP!”;
+                ?&gt;</strong>
+            &lt;/body&gt;
+        &lt;/html&gt; 
+        </code></pre>
+ 
+    <p>Al invocar al script anterior obtenemos la salida: <br>
+        <samp>Hola, ¡soy un script PHP!</samp></p>
+ 
+    <p>Puede apreciarse que no es lo mismo que un script escrito en otro lenguaje de programación como Perl o C -- En
+        vez de escribir un programa con muchos comandos para crear una salida en <acronym
+            title="HyperText Markup Language">HTML</acronym>, escribimos el código <acronym
+            title="HyperText Markup Language">HTML</acronym> con cierto código <acronym
+            title="Hypertext Preprocessor">PHP</acronym> embebido (incluido) en el mismo, que producirá cierta salida
+        (en nuestro ejemplo, producirá un texto). El código <acronym title="Hypertext Preprocessor">PHP</acronym> se
+        incluye entre etiquetas especiales de comienzo y final que nos permitirán entrar y salir del modo <acronym
+            title="Hypertext Preprocessor">PHP</acronym>.</p>
+ 
+    <p>Lo que distingue a <acronym title="Hypertext Preprocessor">PHP</acronym> de la tecnología Javascript, la cual se
+        ejecuta en la máquina cliente, es que el código <acronym title="Hypertext Preprocessor">PHP</acronym> es
+        ejecutado en el servidor. Si tuviésemos un script similar al de nuestro ejemplo en nuestro servidor, el cliente
+        solamente recibiría el resultado de su ejecución en el servidor, sin ninguna posibilidad de determinar qué
+        código ha producido el resultado recibido. El servidor web puede ser incluso configurado para que procese todos
+        los archivos <acronym title="HyperText Markup Language">HTML</acronym> con <acronym
+            title="Hypertext Preprocessor">PHP</acronym>.</p>
+ 
+    <p>Lo mejor de usar <acronym title="Hypertext Preprocessor">PHP</acronym> es que es extremadamente simple para el
+        principiante, pero a su vez, ofrece muchas características avanzadas para los programadores profesionales.</p>
+ 
+    <p>Aunque el desarrollo de <acronym title="Hypertext Preprocessor">PHP</acronym> está concentrado en la programación
+        de scripts en el lado del servidor, se puede utilizar para muchas otras cosas.</p>
+ 
+    <h3>Identificar la versión instalada</h3>
+ 
+    <p>Para conocer la versión de <acronym title="Hypertext Preprocessor">PHP</acronym> que tienes instalada — es mejor
+        opción crear una página Web llamando a <code>phpinfo()</code> —, desde la línea de comandos teclea <kbd>php
+            -v</kbd> Un
+        ejemplo de lo que puedes obtener es: <br>
+ 
+        <samp>PHP 5.2.0 (cli) (built: Nov 2 2006 11:57:36) <br>
+            Copyright (c) 1997-2006 The PHP Group <br>
+            Zend Engine v2.2.0, Copyright (c) 1998-2006 Zend Technologies</samp> </p>
+ 
+    <p>Nota: la orden anterior funcionará independientemente del directorio activo en el que te encuentres siempre que
+        la ruta al ejecutable PHP.EXE esté incluida en la variable <var>PATH</var></p>
+ 
+    <h3>Bibliografía</h3>
+ 
+    <p><cite>http://www.php.net</cite></p>
+ 
+    <address>
+        H3CAR S.L.<br>
+        C\ Mi Dirección, s/n<br>
+        10600 Plasencia<br>
+        Tfno: 927 11 11 11<br>
+    </address>
+ 
+</body>
+ 
+</html>

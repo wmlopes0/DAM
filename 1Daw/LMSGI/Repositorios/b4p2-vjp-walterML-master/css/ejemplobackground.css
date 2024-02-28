@@ -1,0 +1,66 @@
+body {
+    background-color: lightgrey;
+    background-image: url(../img/bolagiratoria.gif);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+
+h1 {
+    border: 2px solid red;
+    color: grey;
+    font-size: 15px;
+}
+
+p:nth-of-type(1) {
+    border: 20px red outset;
+    color: red;
+    text-align: center;
+    padding: 40px 0;
+    background-color: blue;
+    background-image: url(../img/fondo1.gif);
+    background-repeat: repeat-x;
+    background-position: center;
+    margin-bottom: 0;
+}
+
+p:nth-of-type(2) {
+    border: 3px solid blue;
+    margin-top: 0;
+}
+
+p:nth-of-type(2)>span {
+    color: slateblue;
+    background-color: aquamarine;
+    border: 2px dotted red;
+}
+
+#caja1 {
+    border: dotted 5px green;
+    background-image: url(../img/pintado1.jpg);
+    width: 300px;
+    height: 200px;
+    background-attachment: fixed;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#caja2 {
+    border: 5px solid blue;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    background-image: url(../img/fondo1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#caja2:hover {
+    background-repeat: repeat;
+}
+
+p:nth-of-type(4){
+    border: 2px blue solid;
+    background-color: cornflowerblue;
+}

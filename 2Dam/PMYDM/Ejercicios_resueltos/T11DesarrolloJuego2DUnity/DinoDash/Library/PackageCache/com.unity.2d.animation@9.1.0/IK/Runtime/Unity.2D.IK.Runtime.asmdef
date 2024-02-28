@@ -1,0 +1,9 @@
+{
+    "name": "Unity.2D.IK.Runtime",
+    "references": [
+        "Unity.InternalAPIEngineBridge.001"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blog>
+<autor> Susana Hernández </autor>
+<entrada>
+<titulo>Serialización con Xtream</titulo>
+<descripcion>A continuación vamos a ver cómo se pueden serializar de forma sencilla objetos Java a XML y viceversa; 
+utilizaremos para ello la librería XStream. Para poder utilizarla hemos de descargarnos los JAR desde el sitio web: 
+http://x-stream.github.io/download.html  
+para el ejemplo se ha descargado el fichero Binary distribution (xstream-distribution-1.4.8-bin.zip) 
+que hemos de descomprimir y buscar el JAR xstream-1.4.8 que está en la carpeta lib que es el que usaremos para el ejemplo</descripcion>
+</entrada>
+
+<entrada>
+<titulo>Instanciar Xtream</titulo>
+<descripcion>En primer lugar para utilizar XStream, simplemente creamos una instancia de la clase XStream. A la hora de instanciarlo es necesario indicarle el tipo de parser que va utilizar DOM,
+ Stax,... si no ponemos nada utilizar el parser KML:
+XStream xstream = new XStream();
+Si queremos utilizar el parser de DOM e indicarle el tipo de codificación instanciaremos Xtream de la siguiente forma:
+XStream xstream = new XStream(new DomDriver("UTF-8"));
+</descripcion>
+</entrada>
+
+<entrada>
+
+<titulo>Omitir campos Xtream</titulo>
+
+<descripcion>Si queremos que no aparezca algún campo de la clase utilizaremos el siguiente el método omitField():
+xstream.omitField(Persona.class,"edad");
+
+</descripcion>
+
+</entrada>
+
+</blog>

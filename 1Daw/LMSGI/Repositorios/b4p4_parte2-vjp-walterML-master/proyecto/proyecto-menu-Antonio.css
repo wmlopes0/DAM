@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #161613;
+    color: #eee;
+    font: 86% "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  }
+  .clear {
+    clear: both;
+  }
+  #bordersuperior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background-color: #c0db5a;
+    z-index: 10;
+  }
+  
+  #parteIzquierda {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    width: 230px;
+    box-sizing: border-box;
+  
+  }
+  
+  #contenido {
+    margin: 15px 0 0 45px;
+    max-width: 600px;
+    min-width: 300px;
+    background: #161613;
+    position:relative;
+    z-index: 1;
+  }
+  p {
+    line-height: 1.4em;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+  }
+  p.lead {
+    font-size: 1em;
+  }
+  ol,
+  ul {
+    margin: 0.5em 0 1.2em 2em;
+    line-height: 1.4em;
+  }
+  li {
+    margin-bottom: 0.2em;
+    font-size: 0.9em;
+  }
+  li strong {
+    color: #999;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Trebuchet MS", Verdana, Sans-Serif;
+  }
+  
+  h1 {
+    font-size: 2.3em;
+  }
+  h1 a {
+    color: #fff;
+    border: none;
+  }
+  h1 em {
+    font-size: 1.25em;
+    color: #d0eb6a;
+    font-style: normal;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    letter-spacing: 0.4pt;
+    color: #d0eb6a;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+  }
+  h3 {
+    font-size: 1em;
+    letter-spacing: 0.2pt;
+    color: #c0db5a;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+  }
+  
+  a,
+  .contact-link {
+    color: #8ad459;
+    text-decoration: none;
+    cursor: hand;
+  }
+  
+  a img {
+    border: none;
+  }
+  
+  small {
+    font-size: 0.8em;
+  }
+  
+  pre {
+    display: block;
+    margin: 1em 0;
+    padding: 0.5em;
+    border-left: 6px solid #0d0d09;
+    background-color: #000;
+    overflow: auto;
+  }
+  
+  code {
+    font-size: 11px;
+    font-family: Verdana, Sans-Serif;
+    background-color: #000;
+    color: #8d8d73;
+    padding: 0.3em 0.4em;
+  }
+  
+  pre code {
+    padding: 0;
+    margin: 0;
+  }
+  
+  kbd {
+    color: #555;
+    background-color: #ddd;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0 3px 2px 4px;
+  }
+  
+  #parteIzquierda a {
+    color: #fff;
+  }
+  
+  #parteIzquierda h1 a {
+    font-weight: bold;
+  }
+  #nav {
+    list-style: none;
+    margin: 1.5em 0 1em 0;
+  }
+  #nav li {
+    padding: 0;
+    margin: 0;
+  }
+  #nav a {
+    display: block;
+    height: 2em;
+    padding: 0.3em 0.2em 0 0.8em;
+    margin-bottom: 1px;
+    color: #eee;
+    background-color: #363633;
+  }
+  
+  #nav a:hover {
+    color: #1a1a1a;
+    background-color: #d0eb6a;
+  }
+  
+  #parteIzquierda .callout {
+    border: 1px solid #222;
+    padding: 0.25em 0.5em;
+  }
+  #parteIzquierda .callout a {
+    color: #8ad459;
+  }
+  #parteIzquierda .callout ul {
+    margin-top: -0.45em;
+    margin-left: 1em;
+    margin-bottom: 0.4em;
+  }
+  
+  #contenido ul {
+    margin-left: 4px;
+  }
+  
+  #contenido ul {
+    padding-left: 20px;
+    list-style-type: square;
+  }
+  
+  #contenido ul ul {
+    margin-top: 0;
+  }
+  
+  .download {
+    background-color: #333;
+    border: 1px solid #444;
+    padding: 0.7em 1.5em;
+  }
+  
+  .download:hover {
+    background-color: #555;
+    border: 1px solid #777;
+  }
+  #contenido ul.download li {
+    padding: 0.3em 0;
+    background-image: none;
+    list-style-type: none;
+  }
+  .download img {
+    padding-right: 0.3em;
+  }
+  .download li strong {
+    font-family: "Trebuchet MS", Verdana, Sans-Serif;
+    font-size: 2.25em;
+    color: #fff;
+  }
+  .download li em {
+    font-style: normal;
+    color: #d0eb6a;
+  }
+  
+  section {
+    border-top: 4px solid #3d3d33;
+    padding: 1.4em 0 1em 0;
+    overflow: auto;
+    width: 100%;
+  }
+  .first {
+    border-top: none;
+    padding-top: 0;
+  }
+  
+  .thumbnail {
+    padding: 3px 3px 8px 3px;
+    background-color: #222;
+    border: 1px solid #2a2a2a;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .caption {
+    font-size: 0.9em;
+    padding-top: 0.2em;
+  }
+  
+  
+  /* menú */
+  #parteIzquierda {
+    top: -115px;
+    left: -350px;
+    width: 230px;
+    transform: rotate(45deg);
+    border: 13px double grey;
+    transition: 0.1s;
+    border-radius: 10px;
+    background-color: #b7d844;
+  }
+  #parteIzquierda:hover {
+    transform: rotate(0);
+    top: 20px; left:0px;  
+    border:none;
+    background-color:inherit;
+  }
+  #parteIzquierda:hover+#contenido {
+    margin-left: 290px;
+  }

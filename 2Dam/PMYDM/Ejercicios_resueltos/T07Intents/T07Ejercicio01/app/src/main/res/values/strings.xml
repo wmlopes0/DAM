@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">T07Ejercicio01</string>
+    <string name="correr">Estamos corriendo</string>
+    <string name="flexiones">Estamos haciendo flexiones</string>
+    <string name="botonFlexiones">HACER FLEXIONES</string>
+    <string name="toastOnCreate">1.OnCreate</string>
+    <string name="toastOnStart">2.OnStart</string>
+    <string name="toastOnResume">3.OnResume</string>
+    <string name="toastOnPause">4.OnPause</string>
+    <string name="toastOnStop">5.OnStop</string>
+    <string name="toastOnDestroy">6.OnDestroy</string>
+</resources>

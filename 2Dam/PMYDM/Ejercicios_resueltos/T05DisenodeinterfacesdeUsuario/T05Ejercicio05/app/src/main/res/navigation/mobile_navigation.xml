@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_gato">
+
+    <fragment
+        android:id="@+id/nav_gato"
+        android:name="com.example.t05ejercicio05.ui.gato.GatoFragment"
+        android:label="@string/menu_gato"
+        tools:layout="@layout/fragment_gato" />
+
+    <fragment
+        android:id="@+id/nav_perro"
+        android:name="com.example.t05ejercicio05.ui.perro.PerroFragment"
+        android:label="@string/menu_perro"
+        tools:layout="@layout/fragment_perro" />
+
+    <fragment
+        android:id="@+id/nav_leon"
+        android:name="com.example.t05ejercicio05.ui.leon.LeonFragment"
+        android:label="@string/menu_leon"
+        tools:layout="@layout/fragment_leon" />
+</navigation>

@@ -1,0 +1,19 @@
+div + div p {
+    color: yellow;
+}
+
+body > h2 {
+    color: red;
+}
+
+body > div > p {
+    color: blue;
+}
+
+h2 ~ p {
+    color: brown;
+}
+
+div p {
+    color: aqua;
+}

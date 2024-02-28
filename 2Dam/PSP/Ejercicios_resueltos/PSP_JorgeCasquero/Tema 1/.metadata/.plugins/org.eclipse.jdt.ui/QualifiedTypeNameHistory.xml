@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="psp.Barberia"/>
+    <fullyQualifiedTypeName name="psp.Barbero"/>
+    <fullyQualifiedTypeName name="psp.Cliente"/>
+    <fullyQualifiedTypeName name="Canario"/>
+    <fullyQualifiedTypeName name="Comedero"/>
+    <fullyQualifiedTypeName name="Encargado"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="psp.Archivo"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="psp.Usuario"/>
+</qualifiedTypeNameHistroy>

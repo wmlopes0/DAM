@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.mycompany.ut6tarea4.VentanaController">
+   <children>
+      <TableView fx:id="tabla" layoutX="23.0" layoutY="13.0" prefHeight="371.0" prefWidth="553.0">
+        <columns>
+          <TableColumn fx:id="nombre" prefWidth="230.0" text="Nombre" />
+          <TableColumn fx:id="apellidos" minWidth="5.0" prefWidth="230.0" text="Apellidos" />
+            <TableColumn fx:id="edad" minWidth="0.0" prefWidth="95.0" text="Edad" />
+        </columns>
+      </TableView>
+      <Button fx:id="botonAgregar" layoutX="46.0" layoutY="395.0" mnemonicParsing="false" onAction="#agregarPersona" prefWidth="150.0" text="Agregar persona">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonModificar" layoutX="225.0" layoutY="395.0" mnemonicParsing="false" onAction="#modificarPersona" prefWidth="150.0" text="Modificar persona">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonEliminar" layoutX="404.0" layoutY="395.0" mnemonicParsing="false" onAction="#eliminarPersona" prefWidth="150.0" text="Eliminar persona">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

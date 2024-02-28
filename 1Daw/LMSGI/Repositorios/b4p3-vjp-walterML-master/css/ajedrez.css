@@ -1,0 +1,49 @@
+body {
+  margin: 40px;
+  background-color: #5d5e5d;
+}
+.wrapper {
+  border: 49px solid #462921;
+  width: 560px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 70px);
+  grid-template-rows: 40px repeat(8, 70px) 40px;
+}
+.wrapper-inner {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  background-color: #7d694c;
+}
+
+
+.box-inner {
+  text-align: center;
+  align-self: center;
+}
+.top,
+.bottom {
+  display: grid;
+}
+.top {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.bottom {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 10;
+  grid-row-end: 10;
+}
+
+/* ---------------------- */
+/* Cuadricula clara */
+.box{
+  background-color: #CDB87D;
+}
+/* Cuadricula oscura */
+.box:is(:nth-child(16n+3),:nth-child(16n+5),:nth-child(16n+7),:nth-child(16n+9),:nth-child(16n+10),:nth-child(16n+12),:nth-child(16n+14),:nth-child(16n+16)){
+  background-color: #441903;
+}

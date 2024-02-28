@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <id>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/</id>
+    <updated>2022-12-21T16:33:32+00:00</updated>
+    <title type="text">Bloque 2 - Práctica 4 - Walter ML</title>
+    <subtitle type="text">Curso 2022/2023</subtitle>
+    <link href="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/" />
+    <author>
+        <name>Walter ML</name>
+        <email>wmartinl01@iesvjp.es</email>
+    </author>
+    <link href="https://lmsgi.iesvjp.es/b3p1-vjp-walterML/atom.xml" rel="self"
+        type="application/atom+xml" />
+    <entry>
+        <id>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/listas.html</id>
+        <updated>2022-12-21T16:33:32+00:00</updated>
+        <title type="text">Ejercicio - Listas HTML</title>
+        <link href="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/listas.html" />
+        <author>
+            <name>Walter ML</name>
+            <email>wmartinl01@iesvjp.es</email>
+        </author>
+        <summary>Ejemplos de listas HTML</summary>
+        <content type="html"><![CDATA[Ejemplos de listas <dl></dl>, <ol></ol> y <ul></ul>]]></content>
+        <media:content url="http://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/listas.jpg" medium="image"></media:content>
+    </entry>
+    <entry>
+        <id>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/horario.html</id>
+        <updated>2022-12-21T16:33:32+00:00</updated>
+        <title type="text">Ejercicio - Horario HTML</title>
+        <link href="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/horario.html" />
+        <author>
+            <name>Walter ML</name>
+            <email>wmartinl01@iesvjp.es</email>
+        </author>
+        <summary>Horario HTML</summary>
+        <content type="html"><![CDATA[Ejemplos de <table>]]></content>
+        <media:content url="http://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/horario.jpg" medium="image"></media:content>
+    </entry>
+    <entry>
+        <id>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tabla_imagenes.html</id>
+        <updated>2022-12-21T16:33:32+00:00</updated>
+        <title type="text">Ejercicio - Tabla Imágenes HTML</title>
+        <link href="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tabla_imagenes.html" />
+        <author>
+            <name>Walter ML</name>
+            <email>wmartinl01@iesvjp.es</email>
+        </author>
+        <summary>Tabla Imágenes HTML</summary>
+        <content type="html"><![CDATA[Ejemplos de <table> con <ul> <ol> y <img>]]></content>
+        <media:content url="http://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/tabla_imagenes.jpg" medium="image"></media:content>
+    </entry>
+    <entry>
+        <id>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablas.html</id>
+        <updated>2022-12-21T16:33:32+00:00</updated>
+        <title type="text">Ejercicio - Tablas HTML</title>
+        <link href="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablas.html" />
+        <author>
+            <name>Walter ML</name>
+            <email>wmartinl01@iesvjp.es</email>
+        </author>
+        <summary>Tablas HTML</summary>
+        <content type="html"><![CDATA[Ejemplos de <table>]]></content>
+        <media:content url="http://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/tablas.jpg" medium="image"></media:content>
+    </entry>
+    <entry>
+        <id>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablaperiodica.html</id>
+        <updated>2022-12-21T16:33:32+00:00</updated>
+        <title type="text">Ejercicio - Tabla Periódica HTML</title>
+        <link href="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablaperiodica.html" />
+        <author>
+            <name>Walter ML</name>
+            <email>wmartinl01@iesvjp.es</email>
+        </author>
+        <summary>Tabla Periódica HTML</summary>
+        <content type="html"><![CDATA[Tabla Periódica con <table>]]></content>
+        <media:content url="http://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/tablaperiodica.jpg" medium="image"></media:content>
+    </entry>
+    <entry>
+        <id>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/multimedia.html</id>
+        <updated>2022-12-21T16:33:32+00:00</updated>
+        <title type="text">Ejercicio - Multimedia HTML</title>
+        <link href="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/multimedia.html" />
+        <author>
+            <name>Walter ML</name>
+            <email>wmartinl01@iesvjp.es</email>
+        </author>
+        <summary>Multimedia HTML</summary>
+        <content type="html"><![CDATA[Probando elementos multimedia]]></content>
+        <media:content url="http://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/multimedia.jpg" medium="image"></media:content>
+    </entry>
+    <entry>
+        <id>https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablas_V2.html</id>
+        <updated>2022-12-21T16:33:32+00:00</updated>
+        <title type="text">Ejercicio - Tablas V2 HTML</title>
+        <link href="https://lmsgi.iesvjp.es/b2p4-vjp-walterML/tablas_V2.html" />
+        <author>
+            <name>Walter ML</name>
+            <email>wmartinl01@iesvjp.es</email>
+        </author>
+        <summary>Tablas V2 HTML</summary>
+        <content type="html"><![CDATA[Ejemplos de <table> añadiendo <details> y <summary>]]></content>
+        <media:content url="http://lmsgi.iesvjp.es/b2p4-vjp-walterML/img/tablas_V2.jpg" medium="image"></media:content>
+    </entry>
+</feed>

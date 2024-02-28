@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<cursos> 
+<curso id="1"> 
+<nombre duracion="40">Oracle</nombre>
+<precio>800</precio>
+<plazas>15</plazas> 
+<comienzo>2017-03-20</comienzo>
+<fin>2017-06-30</fin>
+<docente>Anselmo López López</docente>
+<aula>TI2</aula> 
+</curso>
+<curso id="2"> 
+<nombre duracion="20">Programación C#</nombre>
+<precio>500</precio>
+<plazas>20</plazas> 
+<comienzo>2017-01-10</comienzo>
+<fin>2017-02-28</fin>
+<docente>Maria Hernández Martín</docente>
+<aula>TI1</aula> 
+</curso>
+
+<curso id="3"> 
+<nombre duracion="90">Programación Android</nombre>
+<precio>1000</precio>
+<plazas>10</plazas> 
+<comienzo>2017-01-12</comienzo>
+<fin>2017-04-04</fin>
+<docente>Maria Hernández Martín</docente>
+<docente>Antonio Valverde</docente>
+<aula>TI3</aula> 
+</curso>
+
+<curso id="4"> 
+<nombre duracion="90">Programación Java</nombre>
+<precio>750</precio>
+<plazas>30</plazas> 
+<comienzo>2017-05-03</comienzo>
+<fin>2017-07-20</fin>
+<docente>Maria Hernández Martín</docente>
+<docente>Antonio Valverde</docente>
+<aula>TI3</aula> 
+</curso>
+</cursos>

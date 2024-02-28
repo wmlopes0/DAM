@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="700.0" styleClass="fondo" stylesheets="@../../../../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectofinal.usuario.InterfazUsuarioController">
+   <children>
+      <Button fx:id="botonConsultarClasesApuntado" layoutX="40.0" layoutY="288.0" mnemonicParsing="false" onAction="#consultarClasesApuntado" styleClass="option-button" text="Consultar clases apuntado" />
+      <Button fx:id="botonConsultarClasesSemana" layoutX="372.0" layoutY="288.0" mnemonicParsing="false" onAction="#consultarClasesSemana" styleClass="option-button" text="Consultar clases semana" />
+      <ImageView fx:id="imagenUsuario" fitHeight="150.0" fitWidth="200.0" layoutX="272.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

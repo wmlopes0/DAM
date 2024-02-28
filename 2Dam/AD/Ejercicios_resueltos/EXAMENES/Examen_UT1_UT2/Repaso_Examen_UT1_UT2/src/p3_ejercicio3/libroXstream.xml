@@ -1,0 +1,62 @@
+<libros>
+  <libro>
+    <ISBN>978-0-7432-7354-5</ISBN>
+    <titulo>The Great Gatsby</titulo>
+    <autor>F. Scott Fitzgerald</autor>
+    <editorial>Scribner</editorial>
+  </libro>
+  <libro>
+    <ISBN>978-0-452-28423-2</ISBN>
+    <titulo>To Kill a Mockingbird</titulo>
+    <autor>Harper Lee</autor>
+    <editorial>J. B. Lippincott &amp; Co.</editorial>
+  </libro>
+  <libro>
+    <ISBN>978-0-140-27916-0</ISBN>
+    <titulo>1984</titulo>
+    <autor>George Orwell</autor>
+    <editorial>Penguin Books</editorial>
+  </libro>
+  <libro>
+    <ISBN>978-0-613-52590-1</ISBN>
+    <titulo>The Catcher in the Rye</titulo>
+    <autor>J.D. Salinger</autor>
+    <editorial>Little, Brown and Company</editorial>
+  </libro>
+  <libro>
+    <ISBN>978-0-140-13447-5</ISBN>
+    <titulo>Brave New World</titulo>
+    <autor>Aldous Huxley</autor>
+    <editorial>Penguin Books</editorial>
+  </libro>
+  <libro>
+    <ISBN>978-0-452-27750-5</ISBN>
+    <titulo>Moby-Dick</titulo>
+    <autor>Herman Melville</autor>
+    <editorial>Penguin Books</editorial>
+  </libro>
+  <libro>
+    <ISBN>978-0-140-30393-9</ISBN>
+    <titulo>The Odyssey</titulo>
+    <autor>Homer</autor>
+    <editorial>Penguin Books</editorial>
+  </libro>
+  <libro>
+    <ISBN>978-0-151-01283-0</ISBN>
+    <titulo>Pride and Prejudice</titulo>
+    <autor>Jane Austen</autor>
+    <editorial>Penguin Books</editorial>
+  </libro>
+  <libro>
+    <ISBN>978-0-553-21311-7</ISBN>
+    <titulo>Fahrenheit 451</titulo>
+    <autor>Ray Bradbury</autor>
+    <editorial>Ballantine Books</editorial>
+  </libro>
+  <libro>
+    <ISBN>978-0-670-08380-3</ISBN>
+    <titulo>The Hobbit</titulo>
+    <autor>J.R.R. Tolkien</autor>
+    <editorial>George Allen &amp; Unwin</editorial>
+  </libro>
+</libros>

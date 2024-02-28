@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "638857980192",
+    "firebase_url": "https://pruebafirebase-cb16d-default-rtdb.firebaseio.com",
+    "project_id": "pruebafirebase-cb16d",
+    "storage_bucket": "pruebafirebase-cb16d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638857980192:android:5b857f87fd93488cd88f45",
+        "android_client_info": {
+          "package_name": "com.example.pruebafirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGm-2NK8uzd9CswnU_tTdyEsb4QGeEb3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

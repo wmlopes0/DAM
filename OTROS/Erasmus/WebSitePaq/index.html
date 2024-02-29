@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Walter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <!-- CABECERA============================================================================================== -->
+    <div class="container" id="inicio">
+        <header class="cabecera row">
+            <div class="logo col-2">
+                <img src="img/logo.jpg" alt="Logo">
+            </div>
+            <div class="contenidoCabecera col-10">
+                <div class="row arriba ">
+                    <div class="telefono col-6">
+                        <i class="fas fa-phone-alt fa-rotate-90"></i>
+                        <a href="18005551234">1-800-555-1234</a>
+                    </div>
+                    <div class="opciones col-6">
+                        <ul>
+                            <li class="favorito">
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                    <span>FAVOURITE</span>
+                                </a>
+                            </li>
+                            <li class="login">
+                                <a href="#">LOGIN / SIGN UP</a>
+                            </li>
+                            <li class="anadir">
+                                <a href="#">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <span>SUBMIT PROPERTY</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sociales">
+                            <div class="cajaSocial twitter">
+                                <a href="#">
+                                    <i class="bi bi-twitter"></i>
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div class="cajaSocial facebook">
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row abajo">
+                    <nav class="barraNavegacion">
+                        <ul>
+                            <li>HOME
+                                <ul>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+                            <li>PROPERTIES
+                                <ul>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+                            <li>PROPERTY
+                                <ul>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+                            <li>NEWS</li>
+                            <li>PAGES
+                                <ul>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+                            <li>GALLERIES
+                                <ul>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+                            <li>CONTACT</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- CARRUSEL ========================================================================================== -->
+    <div id="carouselExampleInterval" class="carousel slide carrusel" data-bs-ride="carousel">
+        <div class="ventana">
+            <div class="titulo">
+                <h3>Home in Barcelos</h3>
+                <div class="precio">
+                    <span>250.000€</span>
+                    <a href="#"><i class="fas fa-tag"></i></a>
+                </div>
+            </div>
+            <div class="especificaciones">
+                <div class="a">
+                    <div class="icono"><i class="fas fa-vector-square"></i></div>
+                    <div class="info">
+                        <p>Area</p>
+                        <span>3800</span>
+                    </div>
+                </div>
+                <div class="b">
+                    <div class="icono"><i class="fas fa-bed"></i></div>
+                    <div class="info">
+                        <p>Bedrooms</p>
+                        <span>3</span>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="icono"><i class="fas fa-bath"></i></div>
+                    <div class="info">
+                        <p>Bathrooms</p>
+                        <span>2</span>
+                    </div>
+                </div>
+                <div class="d">
+                    <div class="icono"><i class="fas fa-house-user"></i></div>
+                    <div class="info">
+                        <p>Type</p>
+                        <span>Single Family</span>
+                    </div>
+                </div>
+                <div class="e">
+                    <div class="icono"><i class="fas fa-warehouse"></i></div>
+                    <div class="info">
+                        <p>Garages</p>
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="f"></div>
+            </div>
+            <div class="moreDetails">
+                <a href="#">
+                    <span>More Details</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="img/casa1.jpg" class="d-block w-100" alt="casa1">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/casa2.jpg" class="d-block w-100" alt="casa2">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/casa3.jpg" class="d-block w-100" alt="casa3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- FORMULARIO ========================================================================================== -->
+    <div class="formulario">
+        <div class="quickSearch">QUICK SEARCH</div>
+        <form action="#" class="containerFlex">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Location</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Property Type</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Property Status</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Keyword</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Property Id</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Min Beds</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Min Baths</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Min Price</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Max Price</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Min Area</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Max Area</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <div class="botonSearch">
+                <a href="#">SEARCH</a>
+            </div>
+        </form>
+    </div>
+    <!-- ANUNCIOS =============================================================================================== -->
+    <div class="fondoAnuncios">
+        <div class="anuncios">
+            <div class="uno anuncio">
+                <div class="imagen">
+                    <img src="img/anuncio1.jpg" alt="casa">
+                </div>
+                <div class="botonVenta">
+                    <a href="#">FOR SALE</a>
+                </div>
+                <div class="infoAnuncio">
+                    <h5><a href="#">Home in Merrick Way</a></h5>
+                    <span>$540,000</span>
+                </div>
+                <div class="masInfo">
+                    <div>
+                        <i class="fas fa-vector-square"></i>
+                        <h5>Sq Ft</h5>
+                        <p>4530</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-bed"></i>
+                        <h5>Bedrooms</h5>
+                        <p>3</p>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-shower"></i>
+                        <h5>Bathrooms</h5>
+                        <p>4</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-warehouse"></i>
+                        <h5>Garages</h5>
+                        <p>2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dos anuncio">
+                <div class="imagen">
+                    <img src="img/anuncio2.jpg" alt="casa">
+                </div>
+                <div class="botonVenta">
+                    <a href="#">FOR SALE</a>
+                </div>
+                <div class="infoAnuncio">
+                    <h5><a href="#">Villa in Coral Gables</a></h5>
+                    <span>$825,000</span>
+                </div>
+                <div class="masInfo">
+                    <div>
+                        <i class="fas fa-vector-square"></i>
+                        <h5>Sq Ft</h5>
+                        <p>3530</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-bed"></i>
+                        <h5>Bedrooms</h5>
+                        <p>4</p>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-shower"></i>
+                        <h5>Bathrooms</h5>
+                        <p>1.5</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-warehouse"></i>
+                        <h5>Garages</h5>
+                        <p>1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tres anuncio">
+                <div class="imagen">
+                    <img src="img/anuncio3.jpg" alt="casa">
+                </div>
+                <div class="botonAlquilar">
+                    <a href="#">FOR RENT</a>
+                </div>
+                <div class="infoAnuncio">
+                    <h5><a href="#">Street Food Restaurant</a></h5>
+                    <span>$1,600 Monthly</span>
+                </div>
+                <div class="masInfo">
+                    <div>
+                        <i class="fas fa-vector-square"></i>
+                        <h5>Sq Ft</h5>
+                        <p>950</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cuatro anuncio">
+                <div class="imagen">
+                    <img src="img/anuncio4.jpg" alt="casa">
+                </div>
+                <div class="botonAlquilar">
+                    <a href="#">FOR RENT</a>
+                </div>
+                <div class="infoAnuncio">
+                    <h5><a href="#">Villa on Hollywood Boulevard</a></h5>
+                    <span>$4,750 Monthly</span>
+                </div>
+                <div class="masInfo">
+                    <div>
+                        <i class="fas fa-vector-square"></i>
+                        <h5>Sq Ft</h5>
+                        <p>1500</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-bed"></i>
+                        <h5>Bedrooms</h5>
+                        <p>5</p>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-shower"></i>
+                        <h5>Bathrooms</h5>
+                        <p>3</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-warehouse"></i>
+                        <h5>Garages</h5>
+                        <p>3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cinco anuncio">
+                <div class="imagen">
+                    <img src="img/anuncio5.jpg" alt="casa">
+                </div>
+                <div class="botonVenta">
+                    <a href="#">FOR SALE</a>
+                </div>
+                <div class="infoAnuncio">
+                    <h5><a href="#">Villa on Grand Avenue</a></h5>
+                    <span>$740,000</span>
+                </div>
+                <div class="masInfo">
+                    <div>
+                        <i class="fas fa-vector-square"></i>
+                        <h5>Sq Ft</h5>
+                        <p>6530</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-bed"></i>
+                        <h5>Bedrooms</h5>
+                        <p>7</p>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-shower"></i>
+                        <h5>Bathrooms</h5>
+                        <p>4</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-warehouse"></i>
+                        <h5>Garages</h5>
+                        <p>3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="seis anuncio">
+                <div class="imagen">
+                    <img src="img/anuncio6.jpg" alt="casa">
+                </div>
+                <div class="botonAlquilar">
+                    <a href="#">FOR RENT</a>
+                </div>
+                <div class="infoAnuncio">
+                    <h5><a href="#">Office Space at Northwest</a></h5>
+                    <span>$3,100 Monthly</span>
+                </div>
+                <div class="masInfo">
+                    <div>
+                        <i class="fas fa-vector-square"></i>
+                        <h5>Sq Ft</h5>
+                        <p>2800</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AÑADIR TU PROPIEDAD =============================================================================================== -->
+    <div class="anadirPropiedad">
+        <div class="fondoTranslucido"></div>
+        <div class="infoAnadir">
+            <h3>Welcome</h3>
+            <h2>Add Your Property to Our List</h2>
+            <p>We have a big customer base to market your property to right buyers. So get started by following these
+                simple steps.</p>
+            <div class="instrucciones">
+                <div>
+                    <i class="fas fa-user-circle"></i>
+                    <h3>Register</h3>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor.</p>
+                </div>
+                <div>
+                    <i class="fas fa-clipboard"></i>
+                    <h3>Fill Up Property Details</h3>
+                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem
+                        malesuada magna mollis euismod.</p>
+                </div>
+                <div>
+                    <i class="fas fa-check-circle"></i>
+                    <h3>You are Done!</h3>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor.</p>
+                </div>
+            </div>
+            <div class="botonSubmit"><a href="#">Submit Your Property</a></div>
+        </div>
+    </div>
+    <!-- PROPIEDADES DESTACADAS =============================================================================================== -->
+    <div class="fondoDestacadas">
+        <div class="destacadas">
+            <h3>Featured Properties</h3>
+            <div class="propiedades">
+                <div class="propiedad">
+                    <div class="imagen">
+                        <img src="img/anuncio1.jpg" alt="casa">
+                    </div>
+                    <div class="ventanaDestacadas">
+                        <div class="titulo">
+                            <h3>Home in Barcelos</h3>
+                            <div class="precio">
+                                <span>$250,000</span>
+                                <a href="#"><i class="fas fa-tag"></i></a>
+                            </div>
+                        </div>
+                        <div class="especificaciones">
+                            <div class="a">
+                                <div class="icono"><i class="fas fa-vector-square"></i></div>
+                                <div class="info">
+                                    <p>Area</p>
+                                    <span>3800</span>
+                                </div>
+                            </div>
+                            <div class="b">
+                                <div class="icono"><i class="fas fa-bed"></i></div>
+                                <div class="info">
+                                    <p>Bedrooms</p>
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="c">
+                                <div class="icono"><i class="fas fa-bath"></i></div>
+                                <div class="info">
+                                    <p>Bathrooms</p>
+                                    <span>2</span>
+                                </div>
+                            </div>
+                            <div class="d">
+                                <div class="icono"><i class="fas fa-house-user"></i></div>
+                                <div class="info">
+                                    <p>Type</p>
+                                    <span>Single Family</span>
+                                </div>
+                            </div>
+                            <div class="e">
+                            </div>
+                            <div class="f"></div>
+                        </div>
+                        <div class="moreDetails">
+                            <a href="#">
+                                <span>More Details</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="propiedad">
+                    <div class="imagen">
+                        <img src="img/anuncio2.jpg" alt="casa">
+                    </div>
+                    <div class="ventanaDestacadas">
+                        <div class="titulo">
+                            <h3>Villa in Corral Gables</h3>
+                            <div class="precio">
+                                <span>$825,000</span>
+                                <a href="#"><i class="fas fa-tag"></i></a>
+                            </div>
+                        </div>
+                        <div class="especificaciones">
+                            <div class="a">
+                                <div class="icono"><i class="fas fa-vector-square"></i></div>
+                                <div class="info">
+                                    <p>Area</p>
+                                    <span>3800</span>
+                                </div>
+                            </div>
+                            <div class="b">
+                                <div class="icono"><i class="fas fa-bed"></i></div>
+                                <div class="info">
+                                    <p>Bedrooms</p>
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="c">
+                                <div class="icono"><i class="fas fa-bath"></i></div>
+                                <div class="info">
+                                    <p>Bathrooms</p>
+                                    <span>2</span>
+                                </div>
+                            </div>
+                            <div class="d">
+                                <div class="icono"><i class="fas fa-house-user"></i></div>
+                                <div class="info">
+                                    <p>Type</p>
+                                    <span>Single Family</span>
+                                </div>
+                            </div>
+                            <div class="e">
+                            </div>
+                            <div class="f"></div>
+                        </div>
+                        <div class="moreDetails">
+                            <a href="#">
+                                <span>More Details</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="propiedad">
+                    <div class="imagen">
+                        <img src="img/anuncio5.jpg" alt="casa">
+                    </div>
+                    <div class="ventanaDestacadas">
+                        <div class="titulo">
+                            <h3>Villa on Grand Avenue</h3>
+                            <div class="precio">
+                                <span>$475,000</span>
+                                <a href="#"><i class="fas fa-tag"></i></a>
+                            </div>
+                        </div>
+                        <div class="especificaciones">
+                            <div class="a">
+                                <div class="icono"><i class="fas fa-vector-square"></i></div>
+                                <div class="info">
+                                    <p>Area</p>
+                                    <span>3800</span>
+                                </div>
+                            </div>
+                            <div class="b">
+                                <div class="icono"><i class="fas fa-bed"></i></div>
+                                <div class="info">
+                                    <p>Bedrooms</p>
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="c">
+                                <div class="icono"><i class="fas fa-bath"></i></div>
+                                <div class="info">
+                                    <p>Bathrooms</p>
+                                    <span>2</span>
+                                </div>
+                            </div>
+                            <div class="d">
+                                <div class="icono"><i class="fas fa-house-user"></i></div>
+                                <div class="info">
+                                    <p>Type</p>
+                                    <span>Single Family</span>
+                                </div>
+                            </div>
+                            <div class="e">
+                            </div>
+                            <div class="f"></div>
+                        </div>
+                        <div class="moreDetails">
+                            <a href="#">
+                                <span>More Details</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="parrafo">We are Working as <span>Partners</span> with Following Prestigious Companies.</h3>
+            <div class="partners">
+                <img src="img/videohive.png" alt="videohive">
+                <img src="img/codecanyon.png" alt="codecanyon">
+                <img src="img/audiojungle.png" alt="audiojungle">
+                <img src="img/themeforest.png" alt="themeforest">
+                <img src="img/photodune.png" alt="photodune">
+            </div>
+            <!-- LATEST NEWS -->
+            <h3 class="h3latestNews">Latest News</h3>
+            <div class="latestNews">
+                <div class="new">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/interior1.jpg" class="d-block w-100" alt="casa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/interior2.jpg" class="d-block w-100" alt="casa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/interior3.jpg" class="d-block w-100" alt="casa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infoNew">
+                        <h4><a href="#">Gallery Post Format</a></h4>
+                        <p>By <a href="#">John Doe</a></p>
+                        <p>Competently harness enterprise vortals
+                            via revolutionary e-tailers.
+                            Monotonectally recaptiualize one-to-
+                            one relationships whereas ubiquitous.</p>
+                        <p class="moreInfoNew"><a href="#">More <i class="far fa-arrow-alt-circle-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="new">
+                    <div id="carouselExampleCaptions2" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/interior4.jpg" class="d-block w-100" alt="casa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/interior5.jpg" class="d-block w-100" alt="casa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/interior6.jpg" class="d-block w-100" alt="casa">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infoNew">
+                        <h4><a href="#">Gallery Post Format</a></h4>
+                        <p>By <a href="#">John Doe</a></p>
+                        <p>Competently harness enterprise vortals
+                            via revolutionary e-tailers.
+                            Monotonectally recaptiualize one-to-
+                            one relationships whereas ubiquitous.</p>
+                        <p class="moreInfoNew"><a href="#">More <i class="far fa-arrow-alt-circle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER ========================================================================================= -->
+    <footer>
+        <div class="logoFooter">
+            <img src="img/logoNegro.jpg" alt="Logo">
+            <p>&copy; Copyright 2020 All rights reserved by <a href="#">Inspiry Themes</a></p>
+        </div>
+        <div>
+            <h4>LOCATIONS</h4>
+            <ul>
+                <li><a href="#">Miami</a> <span>(12)</span>
+                    <ul>
+                        <li><a href="#">Little Havana</a> <span>(3)</span></li>
+                        <li><a href="#">Perrine</a> <span>(1)</span></li>
+                        <li><a href="#">Doral</a> <span>(1)</span></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>PROPERTY TYPES</h4>
+            <ul>
+                <li><a href="#">Miami</a> <span>(12)</span>
+                    <ul>
+                        <li><a href="#">Little Havana</a> <span>(3)</span></li>
+                        <li><a href="#">Perrine</a> <span>(1)</span></li>
+                        <li><a href="#">Doral</a> <span>(1)</span></li>
+                        <li><a href="#">Perrine</a> <span>(1)</span></li>
+                        <li><a href="#">Doral</a> <span>(1)</span></li>
+                    </ul>
+                </li>
+                <li><a href="#">Miami</a> <span>(12)</span>
+                    <ul>
+                        <li><a href="#">Little Havana</a> <span>(3)</span></li>
+                        <li><a href="#">Perrine</a> <span>(1)</span></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>PROPERTY STATUSES</h4>
+            <ul>
+                <li><a href="#">Little Havana</a> <span>(3)</span></li>
+                <li><a href="#">Perrine</a> <span>(1)</span></li>
+            </ul>
+        </div>
+        <div>
+            <h4>CONNECT WITH US</h4>
+            <div class="iconosFooter">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                <a href="#"><i class="fas fa-rss"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- BOTON INICIO -->
+    <div class="botonInicio"><a href="#inicio"><i class="fas fa-chevron-up"></i></a></div>
+    <!-- BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
